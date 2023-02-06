@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dicsoseglista_8h_source" xml:lang="hu">
+<title>dicsoseglista.h</title>
+Ugrás a fájl dokumentációjához.<programlisting linenumbering="unnumbered"><anchor xml:id="_dicsoseglista_8h_source_1l00001"/>00001 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00002"/>00002 <emphasis role="comment">//&#32;Created&#32;by&#32;Jajecnik&#32;Marcell&#32;on&#32;2022.&#32;12.&#32;02..</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00003"/>00003 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00004"/>00004 
+<anchor xml:id="_dicsoseglista_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#ifndef&#32;JATEK2_MENTES_H</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#define&#32;JATEK2_MENTES_H</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;stdlib.h&gt;</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;stdbool.h&gt;</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00010"/>00010 <emphasis role="preprocessor">#include&#32;&lt;string.h&gt;</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00011"/>00011 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_beolvas_8h">beolvas.h</link>&quot;</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_debugmalloc_8h">debugmalloc.h</link>&quot;</emphasis>
+<anchor xml:id="_dicsoseglista_8h_source_1l00013"/>00013 
+<anchor xml:id="_dicsoseglista_8h_source_1l00014"/><link linkend="_struct_eredmeny">00014</link> <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_eredmeny">Eredmeny</link>&#32;{
+<anchor xml:id="_dicsoseglista_8h_source_1l00015"/><link linkend="_struct_eredmeny_1ae8721cda7ae566103f9256b41efb04e1">00015</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_struct_eredmeny_1ae8721cda7ae566103f9256b41efb04e1">jatekosnev</link>;
+<anchor xml:id="_dicsoseglista_8h_source_1l00016"/><link linkend="_struct_eredmeny_1a5d76819d6e3c35c8f5e4716b3afc178f">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_eredmeny_1a5d76819d6e3c35c8f5e4716b3afc178f">megvalaszolt</link>;
+<anchor xml:id="_dicsoseglista_8h_source_1l00017"/><link linkend="_struct_eredmeny_1a836f5518cff34b84cc2d9cad57abeffe">00017</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_eredmeny_1a836f5518cff34b84cc2d9cad57abeffe">ido</link>;
+<anchor xml:id="_dicsoseglista_8h_source_1l00018"/><link linkend="_dicsoseglista_8h_1a35c6cb0d490612e6045c1a108dc40d21">00018</link> }&#32;<link linkend="_struct_eredmeny">Eredmeny</link>;
+<anchor xml:id="_dicsoseglista_8h_source_1l00019"/>00019 
+<anchor xml:id="_dicsoseglista_8h_source_1l00020"/>00020 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_dicsoseglista_8h_1a0c18fb8e3f059d3ead8b0abee0321f2f">dicsoseglistat_kezel</link>(<link linkend="_struct_eredmeny">Eredmeny</link>&#32;eredmeny,&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegiszint,&#32;<emphasis role="keywordtype">int</emphasis>&#32;nyeremenyek[]);
+<anchor xml:id="_dicsoseglista_8h_source_1l00021"/>00021 
+<anchor xml:id="_dicsoseglista_8h_source_1l00022"/>00022 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//JATEK2_MENTES_H</emphasis>
+</programlisting></section>

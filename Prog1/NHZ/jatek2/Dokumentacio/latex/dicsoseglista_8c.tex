@@ -1,0 +1,51 @@
+\hypertarget{dicsoseglista_8c}{}\doxysection{dicsoseglista.\+c File Reference}
+\label{dicsoseglista_8c}\index{dicsoseglista.c@{dicsoseglista.c}}
+{\ttfamily \#include \char`\"{}dicsoseglista.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dicsoseglista_8c_a0c18fb8e3f059d3ead8b0abee0321f2f}{dicsoseglistat\+\_\+kezel}} (\mbox{\hyperlink{struct_eredmeny}{Eredmeny}} eredmeny, int nehezsegiszint, int nyeremenyek\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em A \char`\"{}dicsoseglista.\+txt\char`\"{} fajlban tarolja a 10 legjobb idot nehézségi szint alapján. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dicsoseglista_8c_a0c18fb8e3f059d3ead8b0abee0321f2f}\label{dicsoseglista_8c_a0c18fb8e3f059d3ead8b0abee0321f2f}} 
+\index{dicsoseglista.c@{dicsoseglista.c}!dicsoseglistat\_kezel@{dicsoseglistat\_kezel}}
+\index{dicsoseglistat\_kezel@{dicsoseglistat\_kezel}!dicsoseglista.c@{dicsoseglista.c}}
+\doxysubsubsection{\texorpdfstring{dicsoseglistat\_kezel()}{dicsoseglistat\_kezel()}}
+{\footnotesize\ttfamily void dicsoseglistat\+\_\+kezel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_eredmeny}{Eredmeny}}}]{eredmeny,  }\item[{int}]{nehezsegiszint,  }\item[{int}]{nyeremenyek\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+A \char`\"{}dicsoseglista.\+txt\char`\"{} fajlban tarolja a 10 legjobb idot nehézségi szint alapján. 
+
+A dicsőséglistát beolvassa az adott nehézségi szinthez, betölti, szerkeszti, rendezi, majd kiírja azt a consol-\/ra és a hozzá tartozó fájlba. Mivel egy új elemet akarunk belerakni, és a végén csak a TOP 10 íródik ki
+
+Minden elemet alaphelyzetbe állít
+
+Fájlnév beállítás
+
+A fájlnév formátuma tartalmazza az utolsó karakterekben a nehézséget, ez alapján azonosítható
+
+Létrehozza a kívánt fájlnevet
+
+Fájlból olvasás
+
+Ha sikerült megnyitni beolvas, ha nem akkor még nem létezett ilyen fájl és majd később a kiírásnál jön létre
+
+Belerakja a játékos eredményét a dicsőséglista utolsó helyére
+
+Rendezi a dicsőséglistát a végső sorrendre
+
+Kiírja a consolra a végső dicsőséglistát
+
+Fájlba kiír
+
+Hiba
+
+Mivel volt neki memória foglalva felszabadít
+
+És mivel már a továbbiakban nincs szükség a dicsőséglistára így felszabadít
+
+Definition at line \mbox{\hyperlink{dicsoseglista_8c_source_l00100}{100}} of file \mbox{\hyperlink{dicsoseglista_8c_source}{dicsoseglista.\+c}}.
+

@@ -1,0 +1,218 @@
+\hypertarget{beolvas_8c_source}{}\doxysection{beolvas.\+c}
+\mbox{\hyperlink{beolvas_8c}{Ugrás a fájl dokumentációjához.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00002}00002 \textcolor{comment}{// Created by Jajecnik Marcell on 2022. 11. 22..}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00003}00003 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{beolvas_8h}{beolvas.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00008}\mbox{\hyperlink{beolvas_8c_a0d57e08bca0219f65eb7b01ef1b0846c}{00008}} \textcolor{keywordtype}{int} \mbox{\hyperlink{beolvas_8c_a0d57e08bca0219f65eb7b01ef1b0846c}{beolvas}}(\mbox{\hyperlink{struct_kerdes}{Kerdes}}* kerdes, FILE *f)\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00009}00009     \textcolor{keywordtype}{char} *sor = \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}}(f);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00010}00010     \textcolor{keywordflow}{if} (sor==NULL) \textcolor{keywordflow}{return} 2; }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00011}00011     \textcolor{keywordflow}{if} (strlen(sor)==1) \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00012}00012     \textcolor{keywordtype}{char} *token\_ptrek[8];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00013}00013     \textcolor{keywordtype}{int} darabolas\_eredmenye=\mbox{\hyperlink{beolvas_8c_a0d89848cb479cd1d01dec9e96cdf8697}{token}}(sor, token\_ptrek);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00014}00014     \textcolor{keywordflow}{if} (darabolas\_eredmenye==1) \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00015}00015     \textcolor{keywordflow}{if} (darabolas\_eredmenye==-\/1) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00016}00016     kerdes-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}} = atoi(token\_ptrek[0]);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00017}00017     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(token\_ptrek[0]);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00018}00018     kerdes-\/>\mbox{\hyperlink{struct_kerdes_aafe2cd723a5ed49b1ff625d04bf9f888}{kerdes}} = token\_ptrek[1];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00019}00019     kerdes-\/>\mbox{\hyperlink{struct_kerdes_aeb6cc951279dcb926cf3b7c2f76189ad}{a}} = token\_ptrek[2];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00020}00020     kerdes-\/>\mbox{\hyperlink{struct_kerdes_ad2f0c86b603832f03d12779659be489a}{b}} = token\_ptrek[3];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00021}00021     kerdes-\/>\mbox{\hyperlink{struct_kerdes_a431bf858427255dfc131c7483021b42e}{c}} = token\_ptrek[4];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00022}00022     kerdes-\/>\mbox{\hyperlink{struct_kerdes_a9cad5679b07cb70ae2af10ae6cc1acbb}{d}} = token\_ptrek[5];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00023}00023     kerdes-\/>\mbox{\hyperlink{struct_kerdes_adf118b1dd0220e07a96137e11554a781}{helyes}} = token\_ptrek[6][0];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00024}00024     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(token\_ptrek[6]);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00025}00025     kerdes-\/>\mbox{\hyperlink{struct_kerdes_acebd49a6b38f8941e93bc249f6f36cdf}{kategoria}} = token\_ptrek[7];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00027}00027     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(sor);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00028}00028     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00029}00029 \};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00032}\mbox{\hyperlink{beolvas_8c_a0d89848cb479cd1d01dec9e96cdf8697}{00032}} \textcolor{keywordtype}{int} \mbox{\hyperlink{beolvas_8c_a0d89848cb479cd1d01dec9e96cdf8697}{token}}(\textcolor{keywordtype}{char} *sor, \textcolor{keywordtype}{char} *token\_ptrek[])\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00033}00033     \textcolor{keywordtype}{int} l= strlen(sor);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00034}00034     \textcolor{keywordtype}{int} jelen\_resz\_kezdo\_index=0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00035}00035     \textcolor{keywordtype}{int} ptr\_szamlalo=0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00036}00036     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < l; ++i) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00037}00037         \textcolor{keywordflow}{if} (sor[i]==\textcolor{charliteral}{';'}||sor[i]==\textcolor{charliteral}{'\(\backslash\)r'})\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00038}00038             \textcolor{keywordtype}{char}* t=(\textcolor{keywordtype}{char} *) \mbox{\hyperlink{debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof} (\textcolor{keywordtype}{char} )*(i-\/jelen\_resz\_kezdo\_index+1));}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00039}00039             \textcolor{keywordflow}{if} (t==NULL) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00040}00040             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < i-\/jelen\_resz\_kezdo\_index; ++j) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00041}00041                 t[j]=sor[jelen\_resz\_kezdo\_index+j];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00042}00042             \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00043}00043             t[i-\/jelen\_resz\_kezdo\_index]=\textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00044}00044             token\_ptrek[ptr\_szamlalo]=t;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00045}00045             jelen\_resz\_kezdo\_index=i+1;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00046}00046             ptr\_szamlalo++;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00047}00047         \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00050}00050     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00051}00051 \};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00054}\mbox{\hyperlink{beolvas_8c_ab594ffb71c9823ba35b87d4842172bb3}{00054}} \textcolor{keywordtype}{void} \mbox{\hyperlink{beolvas_8c_ab594ffb71c9823ba35b87d4842172bb3}{kerdest\_beszur}}(\mbox{\hyperlink{struct_kerdes}{Kerdes}} **peleje) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00055}00055     \mbox{\hyperlink{struct_kerdes}{Kerdes}} *uj = (\mbox{\hyperlink{struct_kerdes}{Kerdes}} *) \mbox{\hyperlink{debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_kerdes}{Kerdes}}));}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00056}00056     \textcolor{keywordflow}{if} (peleje==NULL) uj-\/>\mbox{\hyperlink{struct_kerdes_a2cb3b43e998233533a209211872b7b95}{kov}}=NULL;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00057}00057     \textcolor{keywordflow}{else} uj-\/>\mbox{\hyperlink{struct_kerdes_a2cb3b43e998233533a209211872b7b95}{kov}}=*peleje;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00058}00058     *peleje = uj;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00062}\mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{00062}} \textcolor{keywordtype}{char}* \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}} (FILE *f) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00063}00063     \textcolor{keywordtype}{char} c\_in;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00064}00064     \textcolor{keywordtype}{int} db = 0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00065}00065     \textcolor{keywordtype}{char} *sor = (\textcolor{keywordtype}{char} *) \mbox{\hyperlink{debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}) * 1);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00066}00066     sor[0] = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00067}00067     \textcolor{keywordflow}{while} ((c\_in = fgetc(f)) != \textcolor{charliteral}{'\(\backslash\)n'} \&\& c\_in != EOF) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00069}00069         \textcolor{keywordtype}{char} *ujtomb = (\textcolor{keywordtype}{char} *) \mbox{\hyperlink{debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}) * (db + 1 + 1));}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00070}00070         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < db; ++i)}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00071}00071             ujtomb[i] = sor[i];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00072}00072         \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(sor);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00073}00073         sor = ujtomb;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00074}00074         ujtomb[db] = c\_in;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00075}00075         ujtomb[db + 1] = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00076}00076         ++db;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00077}00077     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00078}00078     \textcolor{keywordflow}{if} (c\_in == EOF) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00079}00079         \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(sor);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00080}00080         \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00081}00081     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00082}00082     \textcolor{keywordflow}{return} sor;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00083}00083 \};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00086}\mbox{\hyperlink{beolvas_8c_a0d342e6f077337002b1015d9adaa4916}{00086}} \textcolor{keywordtype}{int} \mbox{\hyperlink{beolvas_8c_a0d342e6f077337002b1015d9adaa4916}{lancoltbaolvas}}(\mbox{\hyperlink{struct_kerdes}{Kerdes}} **kerdesek\_eredeti)\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00087}00087     \mbox{\hyperlink{struct_kerdes}{Kerdes}} *kerdesek=NULL;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00088}00088     FILE *fp;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00089}00089     fp= fopen(\textcolor{stringliteral}{"{}kerdes.csv"{}},\textcolor{stringliteral}{"{}r"{}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00090}00090     \textcolor{keywordflow}{if} (fp==NULL) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00091}00091     \textcolor{comment}{//A forrásfájl elején hexa alapján van 3 extra karakter}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00092}00092     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 3; ++i) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00093}00093         fgetc(fp);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00094}00094     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00095}00095     \textcolor{keywordtype}{int} jo=0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00096}00096     \textcolor{keywordtype}{int} db=0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00097}00097     \textcolor{keywordflow}{while} (1) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00098}00098         \mbox{\hyperlink{beolvas_8c_ab594ffb71c9823ba35b87d4842172bb3}{kerdest\_beszur}}(\&kerdesek);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00099}00099         jo=\mbox{\hyperlink{beolvas_8c_a0d57e08bca0219f65eb7b01ef1b0846c}{beolvas}}(kerdesek, fp);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00100}00100         \textcolor{keywordflow}{if} (jo!=0) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00101}00101             \mbox{\hyperlink{struct_kerdes}{Kerdes}} *temp=kerdesek-\/>\mbox{\hyperlink{struct_kerdes_a2cb3b43e998233533a209211872b7b95}{kov}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00102}00102             \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdesek);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00103}00103             kerdesek=temp;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00104}00104             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00105}00105         \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00106}00106         db++;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00108}00108     printf(\textcolor{stringliteral}{"{}\%d kérdés beolvasva láncolt listába\(\backslash\)n"{}},db);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00109}00109     *kerdesek\_eredeti=kerdesek;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00110}00110     \textcolor{keywordflow}{return} db;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00111}00111 \};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00114}\mbox{\hyperlink{beolvas_8c_a6586b86a3d412f67a3721414e81ddc70}{00114}} \mbox{\hyperlink{struct_kerdes}{Kerdes}} *\mbox{\hyperlink{beolvas_8c_a6586b86a3d412f67a3721414e81ddc70}{felszabadit}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}}* torlendo\_kerdes)\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00115}00115     \mbox{\hyperlink{struct_kerdes}{Kerdes}} *temp=torlendo\_kerdes-\/>\mbox{\hyperlink{struct_kerdes_a2cb3b43e998233533a209211872b7b95}{kov}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00116}00116     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(torlendo\_kerdes-\/>\mbox{\hyperlink{struct_kerdes_aafe2cd723a5ed49b1ff625d04bf9f888}{kerdes}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00117}00117     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(torlendo\_kerdes-\/>\mbox{\hyperlink{struct_kerdes_aeb6cc951279dcb926cf3b7c2f76189ad}{a}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00118}00118     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(torlendo\_kerdes-\/>\mbox{\hyperlink{struct_kerdes_ad2f0c86b603832f03d12779659be489a}{b}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00119}00119     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(torlendo\_kerdes-\/>\mbox{\hyperlink{struct_kerdes_a431bf858427255dfc131c7483021b42e}{c}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00120}00120     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(torlendo\_kerdes-\/>\mbox{\hyperlink{struct_kerdes_a9cad5679b07cb70ae2af10ae6cc1acbb}{d}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00121}00121     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(torlendo\_kerdes-\/>\mbox{\hyperlink{struct_kerdes_acebd49a6b38f8941e93bc249f6f36cdf}{kategoria}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00122}00122     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(torlendo\_kerdes);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00123}00123     \textcolor{keywordflow}{return} temp;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00124}00124 \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00127}\mbox{\hyperlink{beolvas_8c_acc8e53f23b54287c14f939d3a20bf6ee}{00127}} \textcolor{keywordtype}{int}* \mbox{\hyperlink{beolvas_8c_acc8e53f23b54287c14f939d3a20bf6ee}{nehezsegeket\_szamol}}(\mbox{\hyperlink{struct_kerdes}{Kerdes}}* eleje, \textcolor{keywordtype}{int} *nehezsegfajtakszama)\{    \textcolor{keywordtype}{int} *t=NULL;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00128}00128     \mbox{\hyperlink{struct_kerdes}{Kerdes}} *mozgo;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00129}00129     \textcolor{keywordflow}{for} (mozgo = eleje; mozgo != NULL; mozgo = mozgo-\/>\mbox{\hyperlink{struct_kerdes_a2cb3b43e998233533a209211872b7b95}{kov}})\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00130}00130         \textcolor{keywordflow}{if} (*nehezsegfajtakszama<mozgo-\/>nehezseg) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00131}00131             \textcolor{keywordtype}{int} *temp = (\textcolor{keywordtype}{int} *) \mbox{\hyperlink{debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * mozgo-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00133}00133             \textcolor{keywordflow}{if} (temp==NULL) \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00134}00134             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < mozgo-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}}; ++i) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00135}00135                 temp[i]=0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00136}00136             \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00137}00137             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < *nehezsegfajtakszama; ++i) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00138}00138                 temp[i]=t[i];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00139}00139             \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00140}00140             temp[mozgo-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}}-\/1]=1;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00141}00141             *nehezsegfajtakszama=mozgo-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00142}00142             \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(t);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00143}00143             t=temp;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00144}00144         \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00145}00145         \textcolor{keywordflow}{else} t[mozgo-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}}-\/1]++;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00146}00146     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00147}00147     \textcolor{keywordflow}{return} t;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00148}00148 \};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00151}\mbox{\hyperlink{beolvas_8c_aea0b000c67a3937d39288473b771d86b}{00151}} \textcolor{keywordtype}{int} \mbox{\hyperlink{beolvas_8c_aea0b000c67a3937d39288473b771d86b}{kerdest\_csoportosit}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}} *kerdesek, \textcolor{keywordtype}{int} **kerdesek\_csoportositva)\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00152}00152     \textcolor{keywordtype}{int} *t;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00153}00153     \textcolor{keywordtype}{int} nehezsegfajtakszama=0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00154}00154     t=\mbox{\hyperlink{beolvas_8c_acc8e53f23b54287c14f939d3a20bf6ee}{nehezsegeket\_szamol}}(kerdesek,\&nehezsegfajtakszama);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00155}00155     \textcolor{keywordflow}{if} (t==NULL) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00156}00156     \textcolor{keywordtype}{int} osszeg=0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00157}00157     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nehezsegfajtakszama; ++i) osszeg+=t[i];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00158}00158     printf(\textcolor{stringliteral}{"{}\%d db kérdés nehézség alapján csoportosítva\(\backslash\)n"{}},osszeg);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00159}00159     *kerdesek\_csoportositva=t;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00160}00160     \textcolor{keywordflow}{return} nehezsegfajtakszama;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00161}00161 \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00164}\mbox{\hyperlink{beolvas_8c_a5168173497a2b8c4f6f28d6a4d237364}{00164}} \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}}** \mbox{\hyperlink{beolvas_8c_a5168173497a2b8c4f6f28d6a4d237364}{csop\_tomb\_belerak}}(\mbox{\hyperlink{struct_kerdes}{Kerdes}} *kerdesek\_lancoltban, \textcolor{keywordtype}{int} nehezsegfajtak,\textcolor{keywordtype}{int} *kerdesek\_csoportositva)\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00165}00165     \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}}** t=(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}}**) \mbox{\hyperlink{debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}}*)*nehezsegfajtak);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00166}00166     \textcolor{keywordflow}{if} (t==NULL) \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00167}00167     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nehezsegfajtak; ++i) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00168}00168         \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} *t\_belso=(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}}*) \mbox{\hyperlink{debugmalloc_8h_a535b58ab5aa48e2e86073e334d43fd32}{malloc}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}})*kerdesek\_csoportositva[i]);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00170}00170         \textcolor{keywordflow}{if}(t\_belso==NULL) \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00171}00171         t[i]=t\_belso;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00172}00172     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00173}00173     \textcolor{keywordtype}{int} jelenhely[nehezsegfajtak];}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00174}00174     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nehezsegfajtak; ++i) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00175}00175         jelenhely[i]=0;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00176}00176     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00178}00178     \mbox{\hyperlink{struct_kerdes}{Kerdes}} *mozgo = kerdesek\_lancoltban;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00179}00179     \textcolor{keywordflow}{while}(mozgo != NULL) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00180}00180         \mbox{\hyperlink{struct_kerdes}{Kerdes}}* kov = mozgo-\/>\mbox{\hyperlink{struct_kerdes_a2cb3b43e998233533a209211872b7b95}{kov}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00181}00181         t[mozgo-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}}-\/1][jelenhely[mozgo-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}}-\/1]]=\mbox{\hyperlink{beolvas_8c_aee3cca7e0b7c5495b9bbd22e597a4565}{konvertal}}(mozgo);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00182}00182         (jelenhely[mozgo-\/>\mbox{\hyperlink{struct_kerdes_a1e173c84ffac6a19c4a3d60e49363fdb}{nehezseg}}-\/1])++;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00183}00183         \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(mozgo); }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00184}00184         mozgo = kov;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00185}00185     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00186}00186     printf(\textcolor{stringliteral}{"{}Kérdések használatra kész állapotban\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00187}00187     \textcolor{keywordflow}{return} t;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00188}00188 \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00191}\mbox{\hyperlink{beolvas_8c_aee3cca7e0b7c5495b9bbd22e597a4565}{00191}} \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} \mbox{\hyperlink{beolvas_8c_aee3cca7e0b7c5495b9bbd22e597a4565}{konvertal}}(\mbox{\hyperlink{struct_kerdes}{Kerdes}}* kerdes)\{    \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} helyi;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00192}00192     helyi.\mbox{\hyperlink{structker__csop__tomben_aa6d42c5aa9a8eeed872fb41af0a5b139}{kerdes}}=kerdes-\/>\mbox{\hyperlink{struct_kerdes_aafe2cd723a5ed49b1ff625d04bf9f888}{kerdes}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00193}00193     helyi.\mbox{\hyperlink{structker__csop__tomben_a4c3df1bfaa56a1489e9e789d9cefc2b7}{a}}=kerdes-\/>\mbox{\hyperlink{struct_kerdes_aeb6cc951279dcb926cf3b7c2f76189ad}{a}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00194}00194     helyi.\mbox{\hyperlink{structker__csop__tomben_a0b63f603e064fd5c2ab041112695761b}{b}}=kerdes-\/>\mbox{\hyperlink{struct_kerdes_ad2f0c86b603832f03d12779659be489a}{b}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00195}00195     helyi.\mbox{\hyperlink{structker__csop__tomben_a172bb692b69754649b03c345cbd11c0f}{c}}=kerdes-\/>\mbox{\hyperlink{struct_kerdes_a431bf858427255dfc131c7483021b42e}{c}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00196}00196     helyi.\mbox{\hyperlink{structker__csop__tomben_a451b6a78a69494f831aa9eeb41ac2b2c}{d}}=kerdes-\/>\mbox{\hyperlink{struct_kerdes_a9cad5679b07cb70ae2af10ae6cc1acbb}{d}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00197}00197     helyi.\mbox{\hyperlink{structker__csop__tomben_a08bffbe430a1c51d77b8e274e54499ed}{helyes}}=kerdes-\/>\mbox{\hyperlink{struct_kerdes_adf118b1dd0220e07a96137e11554a781}{helyes}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00198}00198     helyi.\mbox{\hyperlink{structker__csop__tomben_a4b43ceebd6ce2e6d20c5b9e123a9f555}{kategoria}}=kerdes-\/>\mbox{\hyperlink{struct_kerdes_acebd49a6b38f8941e93bc249f6f36cdf}{kategoria}};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00199}00199     helyi.\mbox{\hyperlink{structker__csop__tomben_ac2cc4fa854b4bfc964bbe1ccc66fbaa1}{hasznalt}}=\textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00200}00200     \textcolor{keywordflow}{return} helyi;}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00201}00201 \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00203}00203 \textcolor{keyword}{static} \textcolor{keywordtype}{void} egy\_kerdest\_felszabadit(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} *kerdes)\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00204}00204     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdes-\/>\mbox{\hyperlink{structker__csop__tomben_aa6d42c5aa9a8eeed872fb41af0a5b139}{kerdes}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00205}00205     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdes-\/>\mbox{\hyperlink{structker__csop__tomben_a4c3df1bfaa56a1489e9e789d9cefc2b7}{a}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00206}00206     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdes-\/>\mbox{\hyperlink{structker__csop__tomben_a0b63f603e064fd5c2ab041112695761b}{b}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00207}00207     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdes-\/>\mbox{\hyperlink{structker__csop__tomben_a172bb692b69754649b03c345cbd11c0f}{c}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00208}00208     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdes-\/>\mbox{\hyperlink{structker__csop__tomben_a451b6a78a69494f831aa9eeb41ac2b2c}{d}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00209}00209     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdes-\/>\mbox{\hyperlink{structker__csop__tomben_a4b43ceebd6ce2e6d20c5b9e123a9f555}{kategoria}});}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00210}00210     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00211}00211 \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00212}00212 }
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00213}\mbox{\hyperlink{beolvas_8c_ab4e72ef8d466b9bbcd18eb534e05c141}{00213}} \textcolor{keywordtype}{void} \mbox{\hyperlink{beolvas_8c_ab4e72ef8d466b9bbcd18eb534e05c141}{kerdeseket\_felszabadit}}(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} **kerdesek, \textcolor{keywordtype}{int} *kerdesek\_csoportositva, \textcolor{keywordtype}{int} nehezsegfajtak)\{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00214}00214     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nehezsegfajtak; ++i) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00215}00215         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < kerdesek\_csoportositva[i]; ++j) \{}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00216}00216             egy\_kerdest\_felszabadit(\&kerdesek[i][j]);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00217}00217         \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00218}00218         \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdesek[i]);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00219}00219     \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00220}00220     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdesek);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00221}00221     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(kerdesek\_csoportositva);}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00222}00222     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00223}00223 \}}
+\DoxyCodeLine{\Hypertarget{beolvas_8c_source_l00224}00224 }
+
+\end{DoxyCode}

@@ -1,0 +1,3836 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment NHZ }NHZ}
+{\comment Generated by doxygen 1.9.5.}
+{\creatim \yr2022\mo12\dy9\hr17\min46\sec36}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt NHZ}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Fri Dec 9 2022 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Index\par \pard\plain 
+{\tc \v Data Structure Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Data Structures\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the data structures with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b DebugmallocData} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b DebugmallocEntry} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Eredmeny} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Egy j\'E1t\'E9k eredm\'E9nyeit t\'E1rolja })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ker_csop_tomben} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncoltlist\'E1ba olvasott k\'E9rd\'E9seimet t\'E1rolja majd egy 2 dimenzi\'F3s t\'F6mbben })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Kerdes} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A kerdes struct egy beolvasott sor feldarabolt elemeit t\'C3\'A1rolja, ebb\'C5\'91l k\'C3\'A9s\'C5\'91bb egy l\'C3\'A1ncolt list\'C3\'A1t \'C3\'A9p\'C3\'ADtek, beolvas\'C3\'A1si sorrendben })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b beolvas.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b beolvas.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b debugmalloc.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b dicsoseglista.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b dicsoseglista.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b jatek.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b jatek.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b main.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Documentation{\tc \v Data Structure Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+DebugmallocData Struct Reference\par \pard\plain 
+{\tc\tcl2 \v DebugmallocData}
+{\xe \v DebugmallocData}
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+\par
+{
+{\f2 #include <debugmalloc.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b logfile} [256]\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long {\b max_block_size}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long {\b alloc_count}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long long {\b alloc_bytes}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long {\b all_alloc_count}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long long {\b all_alloc_bytes}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b DebugmallocEntry} {\b head} [{\b debugmalloc_tablesize}]\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b DebugmallocEntry} {\b tail} [{\b debugmalloc_tablesize}]\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 64} of file {\b debugmalloc.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v all_alloc_bytes\:DebugmallocData}
+{\xe \v DebugmallocData\:all_alloc_bytes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long long all_alloc_bytes}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 70} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v all_alloc_count\:DebugmallocData}
+{\xe \v DebugmallocData\:all_alloc_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long all_alloc_count}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 69} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v alloc_bytes\:DebugmallocData}
+{\xe \v DebugmallocData\:alloc_bytes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long long alloc_bytes}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 68} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v alloc_count\:DebugmallocData}
+{\xe \v DebugmallocData\:alloc_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long alloc_count}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 67} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v head\:DebugmallocData}
+{\xe \v DebugmallocData\:head}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b DebugmallocEntry} head[{\b debugmalloc_tablesize}]}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 71} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v logfile\:DebugmallocData}
+{\xe \v DebugmallocData\:logfile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char logfile[256]}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 65} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v max_block_size\:DebugmallocData}
+{\xe \v DebugmallocData\:max_block_size}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long max_block_size}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 66} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v tail\:DebugmallocData}
+{\xe \v DebugmallocData\:tail}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b DebugmallocEntry} tail[{\b debugmalloc_tablesize}]}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 71} of file {\b debugmalloc.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b debugmalloc.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+DebugmallocEntry Struct Reference\par \pard\plain 
+{\tc\tcl2 \v DebugmallocEntry}
+{\xe \v DebugmallocEntry}
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+\par
+{
+{\f2 #include <debugmalloc.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void * {\b real_mem}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void * {\b user_mem}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+size_t {\b size}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b file} [64]\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned {\b line}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b func} [32]\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b expr} [128]\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b DebugmallocEntry} * {\b prev}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b DebugmallocEntry} * {\b next}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 49} of file {\b debugmalloc.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v expr\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:expr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char expr[128]}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 57} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v file\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char file[64]}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 54} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v func\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:func}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char func[32]}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 56} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v line\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:line}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned line}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 55} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v next\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:next}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\b DebugmallocEntry} * next}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 59} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v prev\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:prev}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\b DebugmallocEntry}* prev}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 59} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v real_mem\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:real_mem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void* real_mem}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 50} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v size\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:size}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+size_t size}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 52} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v user_mem\:DebugmallocEntry}
+{\xe \v DebugmallocEntry\:user_mem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void* user_mem}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 51} of file {\b debugmalloc.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b debugmalloc.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Eredmeny Struct Reference\par \pard\plain 
+{\tc\tcl2 \v Eredmeny}
+{\xe \v Eredmeny}
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Egy j\'E1t\'E9k eredm\'E9nyeit t\'E1rolja. }}\par
+{
+{\f2 #include <dicsoseglista.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b jatekosnev}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b megvalaszolt}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b ido}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Egy j\'E1t\'E9k eredm\'E9nyeit t\'E1rolja. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Created by Jajecnik Marcell on 2022. 12. 02.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell \par
+}}}{
+Definition at line {\b 17} of file {\b dicsoseglista.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v ido\:Eredmeny}
+{\xe \v Eredmeny\:ido}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ido}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos \'E1ltal helyesen megv\'E1laszolt k\'E9rd\'E9sek sz\'E1ma \par
+}{
+Definition at line {\b 20} of file {\b dicsoseglista.h}.}\par
+}
+{\xe \v jatekosnev\:Eredmeny}
+{\xe \v Eredmeny\:jatekosnev}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* jatekosnev}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 18} of file {\b dicsoseglista.h}.}\par
+}
+{\xe \v megvalaszolt\:Eredmeny}
+{\xe \v Eredmeny\:megvalaszolt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int megvalaszolt}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kot j\'E1tsz\'F3 j\'E1t\'E9kos j\'E1t\'E9kosneve \par
+}{
+Definition at line {\b 19} of file {\b dicsoseglista.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b dicsoseglista.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ker_csop_tomben Struct Reference\par \pard\plain 
+{\tc\tcl2 \v ker_csop_tomben}
+{\xe \v ker_csop_tomben}
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncoltlist\'E1ba olvasott k\'E9rd\'E9seimet t\'E1rolja majd egy 2 dimenzi\'F3s t\'F6mbben. }}\par
+{
+{\f2 #include <beolvas.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b kerdes}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b a}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b b}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b c}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b d}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b helyes}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b kategoria}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b hasznalt}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncoltlist\'E1ba olvasott k\'E9rd\'E9seimet t\'E1rolja majd egy 2 dimenzi\'F3s t\'F6mbben. \par
+}{
+Definition at line {\b 29} of file {\b beolvas.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v a\:ker_csop_tomben}
+{\xe \v ker_csop_tomben\:a}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* a}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A k\'E9rd\'E9st t\'E1rolja \par
+}{
+Definition at line {\b 31} of file {\b beolvas.h}.}\par
+}
+{\xe \v b\:ker_csop_tomben}
+{\xe \v ker_csop_tomben\:b}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* b}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az A v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get t\'C3\'A1rolja \par
+}{
+Definition at line {\b 32} of file {\b beolvas.h}.}\par
+}
+{\xe \v c\:ker_csop_tomben}
+{\xe \v ker_csop_tomben\:c}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* c}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az B v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get t\'C3\'A1rolja \par
+}{
+Definition at line {\b 33} of file {\b beolvas.h}.}\par
+}
+{\xe \v d\:ker_csop_tomben}
+{\xe \v ker_csop_tomben\:d}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* d}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az C v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get t\'C3\'A1rolja \par
+}{
+Definition at line {\b 34} of file {\b beolvas.h}.}\par
+}
+{\xe \v hasznalt\:ker_csop_tomben}
+{\xe \v ker_csop_tomben\:hasznalt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool hasznalt}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A k\'E9rd\'E9s kateg\'F3ri\'E1j\'E1t t\'E1rolja \par
+}{
+Definition at line {\b 37} of file {\b beolvas.h}.}\par
+}
+{\xe \v helyes\:ker_csop_tomben}
+{\xe \v ker_csop_tomben\:helyes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char helyes}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az C v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get t\'C3\'A1rolja \par
+}{
+Definition at line {\b 35} of file {\b beolvas.h}.}\par
+}
+{\xe \v kategoria\:ker_csop_tomben}
+{\xe \v ker_csop_tomben\:kategoria}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* kategoria}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A helyes v\'C3\'A1lasz bet\'C5\'B1jel\'C3\'A9t t\'C3\'A1rolja t\'C3\'A1rolja \par
+}{
+Definition at line {\b 36} of file {\b beolvas.h}.}\par
+}
+{\xe \v kerdes\:ker_csop_tomben}
+{\xe \v ker_csop_tomben\:kerdes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* kerdes}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 30} of file {\b beolvas.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b beolvas.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Kerdes Struct Reference\par \pard\plain 
+{\tc\tcl2 \v Kerdes}
+{\xe \v Kerdes}
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A kerdes struct egy beolvasott sor feldarabolt elemeit t\'C3\'A1rolja, ebb\'C5\'91l k\'C3\'A9s\'C5\'91bb egy l\'C3\'A1ncolt list\'C3\'A1t \'C3\'A9p\'C3\'ADtek, beolvas\'C3\'A1si sorrendben. }}\par
+{
+{\f2 #include <beolvas.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b nehezseg}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b kerdes}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b a}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b b}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b c}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b d}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b helyes}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b kategoria}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b Kerdes} * {\b kov}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A kerdes struct egy beolvasott sor feldarabolt elemeit t\'C3\'A1rolja, ebb\'C5\'91l k\'C3\'A9s\'C5\'91bb egy l\'C3\'A1ncolt list\'C3\'A1t \'C3\'A9p\'C3\'ADtek, beolvas\'C3\'A1si sorrendben. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Created by Jajecnik Marcell on 2022. 11. 22.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell \par
+}}}{
+Definition at line {\b 16} of file {\b beolvas.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v a\:Kerdes}
+{\xe \v Kerdes\:a}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* a}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A k\'E9rd\'E9st t\'E1rolja \par
+}{
+Definition at line {\b 19} of file {\b beolvas.h}.}\par
+}
+{\xe \v b\:Kerdes}
+{\xe \v Kerdes\:b}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* b}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az A v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get t\'C3\'A1rolja \par
+}{
+Definition at line {\b 20} of file {\b beolvas.h}.}\par
+}
+{\xe \v c\:Kerdes}
+{\xe \v Kerdes\:c}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* c}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az B v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get t\'C3\'A1rolja \par
+}{
+Definition at line {\b 21} of file {\b beolvas.h}.}\par
+}
+{\xe \v d\:Kerdes}
+{\xe \v Kerdes\:d}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* d}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az C v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get t\'C3\'A1rolja \par
+}{
+Definition at line {\b 22} of file {\b beolvas.h}.}\par
+}
+{\xe \v helyes\:Kerdes}
+{\xe \v Kerdes\:helyes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char helyes}}
+\par
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az C v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get t\'C3\'A1rolja \par
+}{
+Definition at line {\b 23} of file {\b beolvas.h}.}\par
+}
+{\xe \v kategoria\:Kerdes}
+{\xe \v Kerdes\:kategoria}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* kategoria}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A helyes v\'C3\'A1lasz bet\'C5\'B1jel\'C3\'A9t t\'C3\'A1rolja t\'C3\'A1rolja \par
+}{
+Definition at line {\b 24} of file {\b beolvas.h}.}\par
+}
+{\xe \v kerdes\:Kerdes}
+{\xe \v Kerdes\:kerdes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* kerdes}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A k\'E9rd\'E9s neh\'E9zs\'E9gi szintj\'E9t t\'E1rolja \par
+}{
+Definition at line {\b 18} of file {\b beolvas.h}.}\par
+}
+{\xe \v kov\:Kerdes}
+{\xe \v Kerdes\:kov}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\b Kerdes}* kov}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A k\'E9rd\'E9s kateg\'F3ri\'E1j\'E1t t\'E1rolja \par
+}{
+Definition at line {\b 25} of file {\b beolvas.h}.}\par
+}
+{\xe \v nehezseg\:Kerdes}
+{\xe \v Kerdes\:nehezseg}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int nehezseg}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 17} of file {\b beolvas.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b beolvas.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+beolvas.c File Reference\par \pard\plain 
+{\tc\tcl2 \v beolvas.c}
+{\xe \v beolvas.c}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "beolvas.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b beolvas} ({\b Kerdes} *kerdes, FILE *f)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvassa egy sor elemeit egy l\'E1ncolt list\'E1ba. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b token} (char *sor, char *token_ptrek[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A beolvasott sort elemekre bontja \'E9s visszaadja a r\'E1juk mutat\'F3 pointereket tartalmaz\'F3 t\'F6mb\'F6t. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b kerdest_beszur} ({\b Kerdes} **peleje)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1colt list\'C3\'A1ban l\'C3\'A9trehoz egy \'C3\'BAj elemet a k\'C3\'B6vetkez\'C5\'91 beolvas\'C3\'A1shoz. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b sor_be} (FILE *f)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A f\'E1jlb\'F3l beolvas egy sort \'E9s azt egy karaktert\'F6mben visszaadja. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b lancoltbaolvas} ({\b Kerdes} **kerdesek_eredeti)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A forr\'E1sf\'E1jl \'F6sszes sor\'E1t beolvassa \'E9s elt\'E1rolja egy l\'E1ncolt list\'E1ban \'E9s visszaadja a beolvasott k\'E9rd\'E9sek darabsz\'E1m\'E1t. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int * {\b nehezsegeket_szamol} ({\b Kerdes} *eleje, int *nehezsegfajtakszama)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Megsz\'E1molja hogy h\'E1ny neh\'E9zs\'E9gfajta van \'E9s hogy a bizonyos neh\'E9zs\'E9gfajt\'E1kb\'F3l h\'E1ny darab k\'E9rd\'E9s van. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b kerdest_csoportosit} ({\b Kerdes} *kerdesek, int **kerdesek_csoportositva)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A neh\'E9zs\'E9galap\'FA csoportos\'EDt\'E1st let\'E1rolja \'E9s visszaadja a neh\'E9zs\'E9gfajt\'E1k sz\'E1m\'E1t. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ker_csop_tomben} ** {\b csop_tomb_belerak} ({\b Kerdes} *kerdesek_lancoltban, int nehezsegfajtak, int *kerdesek_csoportositva)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncolt list\'E1ban t\'E1rolt k\'E9rd\'E9seket neh\'E9zs\'E9g alapj\'E1n csoportos\'EDtva belerakja egy 2 dimenzi\'F3s t\'F6mbbe. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ker_csop_tomben} {\b konvertal} ({\b Kerdes} *kerdes)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1ncolt list\'C3\'A1ban t\'C3\'A1rolt k\'C3\'A9rd\'C3\'A9seknek nincs sz\'C3\'BCks\'C3\'A9g minden elem\'C3\'A9re de sz\'C3\'BCks\'C3\'A9g van a haszn\'C3\'A1lts\'C3\'A1g\'C3\'A1ra a k\'C3\'A9rd\'C3\'A9sgener\'C3\'A1l\'C3\'A1sn\'C3\'A1l k\'C3\'A9s\'C5\'91bb. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b kerdeseket_felszabadit} ({\b ker_csop_tomben} **kerdesek, int *kerdesek_csoportositva, int nehezsegfajtak)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Felszabad\'EDtja a 2 dimenzi\'F3s t\'F6mb \'F6sszes elem\'E9t, majd mag\'E1t a t\'F6mb\'F6t is. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v beolvas\:beolvas.c}
+{\xe \v beolvas.c\:beolvas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int beolvas ({\b Kerdes} *  {\i kerdes}, FILE *  {\i f})}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvassa egy sor elemeit egy l\'E1ncolt list\'E1ba. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Created by Jajecnik Marcell on 2022. 11. 22.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell \par
+}}}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A f\'E1jlb\'F3l beolvas egy sort \'E9s azt beteszi egy karaktert\'F6mbbbe\par
+EOF-n\'E1l\par
+Sor csak a lez\'E1r\'F3 \\0-at tartalmazza\par
+A t\'F6mb elemeire mutat\'F3 pointereket tartalmaz\'F3 t\'F6mb\par
+Sikeress\'E9gre tesztel\'E9s a darabol\'E1skor\par
+Mem\'F3riafoglal\'E1si hib\'E1n\'E1l\par
+Int-t\'E9 alak\'EDtja majd berakja a neh\'E9zs\'E9get a k\'E9rd\'E9s sturct neh\'E9zs\'E9g elem\'E9be\par
+Felszabad\'EDt mert nincs sz\'FCks\'E9g m\'E1r a r\'E1 mutat\'F3 pointerre\par
+A t\'C3\'B6bbi r\'C3\'A9szelemet beteszi a nekik sz\'C3\'A1nt helybe, mivel a beolvas\'C3\'A1s sorrendje ismert el\'C5\'91re\par
+Mivel csak egy karaktert t\'E1rolunk \'EDgy nincs sz\'FCks\'E9g a lez\'E1r\'F3 0-ra\par
+Ezt felszabad\'C3\'ADtja ut\'C3\'A1na mivel a karakterre mutat\'C3\'B3 pointerre k\'C3\'A9s\'C5\'91bb m\'C3\'A1r nem lesz sz\'C3\'BCks\'C3\'A9g\par
+A pointereket k\'C3\'A9s\'C5\'91bb a teljes program lefut\'C3\'A1s\'C3\'A1nak v\'C3\'A9g\'C3\'A9n szabad\'C3\'ADtjuk fel\par
+Felszabad\'EDtja a beolvasott sort\par
+Sikeres lefut\'E1skor\par
+}{
+Definition at line {\b 10} of file {\b beolvas.c}.}\par
+}
+{\xe \v csop_tomb_belerak\:beolvas.c}
+{\xe \v beolvas.c\:csop_tomb_belerak}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b ker_csop_tomben} ** csop_tomb_belerak ({\b Kerdes} *  {\i kerdesek_lancoltban}, int  {\i nehezsegfajtak}, int *  {\i kerdesek_csoportositva})}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncolt list\'E1ban t\'E1rolt k\'E9rd\'E9seket neh\'E9zs\'E9g alapj\'E1n csoportos\'EDtva belerakja egy 2 dimenzi\'F3s t\'F6mbbe. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Helyet foglal az 1. dimenzi\'F3nak\par
+Ha nem siker\'FCl a foglal\'E1s visszat\'E9r\par
+Helyet foglal a 2. dimenzi\'F3elemeinek\par
+Ha nem siker\'FCl a foglal\'E1s akkor visszat\'E9r\par
+L\'C3\'A9trehoz egy integer t\'C3\'B6mb\'C3\'B6t ami indexeket t\'C3\'A1rol a neh\'C3\'A9zs\'C3\'A9gi szintekhez \'C3\'A9s els\'C5\'91k\'C3\'A9nt minden eleme 0\par
+A l\'E1ncolt lista v\'E9gigj\'E1r\'E1s\'E1hoz\par
+Am\'EDg el nem \'E9r az utols\'F3 elemig\par
+Elt\'C3\'A1rolja a k\'C3\'B6vetkez\'C5\'91 elemre mutat\'C3\'B3 helyc\'C3\'ADmet\par
+A neh\'E9zs\'E9gi szint szerinti legkisebb nem haszn\'E1lt indexre berakja a l\'E1ncolt lista elem\'E9t, amit a konvert\'E1l\'F3 f\'FCggv\'E9ny ad \'E1t m\'F3dos\'EDtva\par
+N\'F6veli a neh\'E9zs\'E9g indexj\'E9t\par
+Felszabaditja a lancolt listat, de az elemek tartalma megmarad a konvertalt kerdesekben!\par
+A k\'C3\'B6vetkez\'C5\'91 elemre \'C3\'A1ll\'C3\'ADtja a mozgo-t\par
+Visszaadja a 2 dimenzi\'F3s t\'F6mb\'F6t ami a k\'E9rd\'E9sekre \'E9s azok tulajdons\'E1gaira mutat\'F3 pointereket t\'E1rolja t\'E1rolja\par
+}{
+Definition at line {\b 162} of file {\b beolvas.c}.}\par
+}
+{\xe \v kerdeseket_felszabadit\:beolvas.c}
+{\xe \v beolvas.c\:kerdeseket_felszabadit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void kerdeseket_felszabadit ({\b ker_csop_tomben} **  {\i kerdesek}, int *  {\i kerdesek_csoportositva}, int  {\i nehezsegfajtak})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Felszabad\'EDtja a 2 dimenzi\'F3s t\'F6mb \'F6sszes elem\'E9t, majd mag\'E1t a t\'F6mb\'F6t is. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Felszabad\'EDtja a 2 dimenzi\'F3s m\'E1trix\'E1t a k\'E9rd\'E9seknek a malloc-ol\'E1s miatt a program lefut\'E1s\'E1nak v\'E9g\'E9n. \par
+}{
+Definition at line {\b 214} of file {\b beolvas.c}.}\par
+}
+{\xe \v kerdest_beszur\:beolvas.c}
+{\xe \v beolvas.c\:kerdest_beszur}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void kerdest_beszur ({\b Kerdes} **  {\i peleje})}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1colt list\'C3\'A1ban l\'C3\'A9trehoz egy \'C3\'BAj elemet a k\'C3\'B6vetkez\'C5\'91 beolvas\'C3\'A1shoz. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Foglal az \'FAj elemre\par
+\'DCres listakor\par
+Berakja a l\'E1ncolt lista elj\'E9re az \'FAj elemet\par
+A l\'E1ncolt list\'E1ra mutat\'F3 pointert az \'FAj elemre \'E1ll\'EDtja\par
+}{
+Definition at line {\b 58} of file {\b beolvas.c}.}\par
+}
+{\xe \v kerdest_csoportosit\:beolvas.c}
+{\xe \v beolvas.c\:kerdest_csoportosit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int kerdest_csoportosit ({\b Kerdes} *  {\i kerdesek}, int **  {\i kerdesek_csoportositva})}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A neh\'E9zs\'E9galap\'FA csoportos\'EDt\'E1st let\'E1rolja \'E9s visszaadja a neh\'E9zs\'E9gfajt\'E1k sz\'E1m\'E1t. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A neh\'E9zs\'E9giszintekhez tart\'F3z\'F3 k\'E9rd\'E9sek sz\'E1m\'E1t t\'E1rol\'F3 t\'F6mbre mutat\'F3 pointer\par
+Az \'F6sszes neh\'E9zs\'E9gfajta sz\'E1ma\par
+A visszakapott helyc\'EDmre \'E1ll\'EDtja a neh\'E9zs\'E9giszintekhez tart\'F3z\'F3 k\'E9rd\'E9sek sz\'E1m\'E1t t\'E1rol\'F3 t\'F6mb helyc\'EDm\'E9t\par
+Ha sikertelen a sz\'E1ml\'E1l\'E1s visszat\'E9r\par
+A t\'F6mb \'E1ltal \'E9rintett k\'E9rd\'E9sek sz\'E1ma\par
+Az eredeti t\'F6mb\'FCnk helyc\'EDm\'E9t a most k\'E9sz\'EDtettre \'E1ll\'EDtjuk\par
+Visszaadja a legnagyobb neh\'E9zs\'E9gi szint \'E9rt\'E9k\'E9t\par
+}{
+Definition at line {\b 149} of file {\b beolvas.c}.}\par
+}
+{\xe \v konvertal\:beolvas.c}
+{\xe \v beolvas.c\:konvertal}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b ker_csop_tomben} konvertal ({\b Kerdes} *  {\i kerdes})}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1ncolt list\'C3\'A1ban t\'C3\'A1rolt k\'C3\'A9rd\'C3\'A9seknek nincs sz\'C3\'BCks\'C3\'A9g minden elem\'C3\'A9re de sz\'C3\'BCks\'C3\'A9g van a haszn\'C3\'A1lts\'C3\'A1g\'C3\'A1ra a k\'C3\'A9rd\'C3\'A9sgener\'C3\'A1l\'C3\'A1sn\'C3\'A1l k\'C3\'A9s\'C5\'91bb. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1ncolt list\'C3\'A1ban t\'C3\'A1rolt k\'C3\'A9rd\'C3\'A9seknek nincs sz\'C3\'BCks\'C3\'A9g minden elem\'C3\'A9re de sz\'C3\'BCks\'C3\'A9g van a haszn\'C3\'A1lts\'C3\'A1g\'C3\'A1ra a k\'C3\'A9rd\'C3\'A9sgener\'C3\'A1l\'C3\'A1sn\'C3\'A1l k\'C3\'A9s\'C5\'91bb ez\'C3\'A9rt konvert\'C3\'A1l. \par
+}{
+Definition at line {\b 189} of file {\b beolvas.c}.}\par
+}
+{\xe \v lancoltbaolvas\:beolvas.c}
+{\xe \v beolvas.c\:lancoltbaolvas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int lancoltbaolvas ({\b Kerdes} **  {\i kerdesek_eredeti})}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A forr\'E1sf\'E1jl \'F6sszes sor\'E1t beolvassa \'E9s elt\'E1rolja egy l\'E1ncolt list\'E1ban \'E9s visszaadja a beolvasott k\'E9rd\'E9sek darabsz\'E1m\'E1t. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+L\'E9trehoz egy k\'E9rd\'E9s sturctot\par
+L\'E9trehoz egy v\'E1ltoz\'F3t a k\'E9rd\'E9sek forr\'E1sf\'E1jlj\'E1nak kezel\'E9s\'E9hez\par
+Megnyitja olvas\'E1sra a k\'E9rd\'E9sek forr\'E1sf\'E1jlj\'E1t\par
+Mem\'F3riafoglal\'E1si hibakor fut le\par
+A forr\'C3\'A1sf\'C3\'A1jl elej\'C3\'A9ben tal\'C3\'A1ltam 3 karaktert amit a sz\'C3\'B6vegszerkeszt\'C5\'91k nem ismernek fel, ez\'C3\'A9rt megn\'C3\'A9ztem hexaban \'C3\'A9s ott l\'C3\'A1tszanak, de nem azonos\'C3\'ADthat\'C3\'B3k, \'C3\'ADgy ezek ment\'C3\'A9s n\'C3\'A9lk\'C3\'BCli beolvas\'C3\'A1ssal kisz\'C5\'B1r\'C3\'B6m\par
+Beolvas\'E1s sikeress\'E9g\'E9nek t\'E1rol\'E1sa\par
+Beolvasott k\'E9rd\'E9sek sz\'E1m\'E1nak sz\'E1ml\'E1l\'E1s\'E1hoz\par
+Ciklus addig ameddig a beolvas\'E1s sikeres\par
+Besz\'FAr egy \'FCres elemet a l\'E1ncolt lista elej\'E9re\par
+Beolvassa egy sor tartalm\'E1t a l\'E9trehozott kerdes structba \'E9s visszaadja a sikeress\'E9get\par
+N\'F6veli a beolvasott k\'E9rd\'E9sek sz\'E1m\'E1t\par
+Mivel az utols\'C3\'B3 elemkor a beolvas f\'C3\'BCggv\'C3\'A9ny m\'C3\'A1r nem 0-at ad vissza de ut\'C3\'A1na m\'C3\'A9g n\'C3\'B6velj\'C3\'BCk az \'C3\'A9rt\'C3\'A9ket a ciklusb\'C3\'B3l kil\'C3\'A9p\'C3\'A9s el\'C5\'91tt \'C3\'ADgy levonunk egyet\par
+A tempben elt\'C3\'A1rolja a k\'C3\'A9rd\'C3\'A9sek k\'C3\'B6vetkez\'C5\'91 elem\'C3\'A9re mutat\'C3\'B3 pointert\par
+felszabad\'EDtja azt\par
+Majd belerakja az elt\'E1rolt helyc\'EDmet\par
+Ki\'EDrja a l\'E1ncolt list\'E1ba olvasott k\'E9rd\'E9sek sz\'E1m\'E1t\par
+A k\'C3\'A9rd\'C3\'A9sek eredetij\'C3\'A9nek els\'C5\'91 elem\'C3\'A9t be\'C3\'A1ll\'C3\'ADtja a f\'C3\'BCggv\'C3\'A9nyen bel\'C3\'BCli k\'C3\'A9rd\'C3\'A9sekre\par
+Visszaadja a beolvasott k\'E9rd\'E9sek sz\'E1m\'E1t\par
+}{
+Definition at line {\b 95} of file {\b beolvas.c}.}\par
+}
+{\xe \v nehezsegeket_szamol\:beolvas.c}
+{\xe \v beolvas.c\:nehezsegeket_szamol}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int * nehezsegeket_szamol ({\b Kerdes} *  {\i eleje}, int *  {\i nehezsegfajtakszama})}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Megsz\'E1molja hogy h\'E1ny neh\'E9zs\'E9gfajta van \'E9s hogy a bizonyos neh\'E9zs\'E9gfajt\'E1kb\'F3l h\'E1ny darab k\'E9rd\'E9s van. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+L\'E9trehoz egy integer pointert\par
+L\'E9trehoz egy helyi k\'E9rd\'E9s structot\par
+V\'E9gigmegy a l\'E1ncolt list\'E1n\par
+Ha olyan neh\'E9zs\'E9gi szinttel tal\'E1lkozik ami nagyobb mint az eddigiek\par
+Mem\'F3riafoglal\'E1si hiba\par
+A temp int t\'F6mb minden elem\'E9t 0ra \'E1ll\'EDtja a mem\'F3riaszem\'E9t elker\'FCl\'E9se v\'E9gett\par
+Belem\'E1solja az eddig beolvasott adatokat\par
+Az aktu\'C3\'A1lis neh\'C3\'A9zs\'C3\'A9gi szint sz\'C3\'A1ml\'C3\'A1l\'C3\'B3j\'C3\'A1t egyre \'C3\'A1ll\'C3\'ADtja mert ez az els\'C5\'91 alkalom hogy tal\'C3\'A1lkozott vele\par
+Felt\'C3\'A9telezz\'C3\'BCk, hogy a legnagyobb neh\'C3\'A9zs\'C3\'A9g\'C5\'B1 k\'C3\'A9rd\'C3\'A9sn\'C3\'A9l minden kissebb neh\'C3\'A9zs\'C3\'A9g l\'C3\'A9tezik, de a kev\'C3\'A9s k\'C3\'A9rd\'C3\'A9st tartalmaz\'C3\'B3 neh\'C3\'A9zs\'C3\'A9gi szinteket k\'C3\'A9s\'C5\'91bb kisz\'C5\'B1rj\'C3\'BCk\par
+Felszabad\'EDtjuk az eredeti t\'F6mb\'F6t\par
+\'C9s \'E1t\'E1ll\'EDtjuk az eredeti helyc\'EDm\'E9t a most l\'E9trehozott\'E9ra\par
+Ha m\'E1r ismeri a neh\'E9zs\'E9gfajt\'E1t akkor n\'F6veli a hozz\'E1 tartoz\'F3 sz\'E1ml\'E1l\'F3 \'E9rt\'E9k\'E9t 1-gyel\par
+V\'E9g\'FCl visszaadja a t\'F6mbre mutat\'F3 helyc\'EDmet\par
+}{
+Definition at line {\b 124} of file {\b beolvas.c}.}\par
+}
+{\xe \v sor_be\:beolvas.c}
+{\xe \v beolvas.c\:sor_be}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char * sor_be (FILE *  {\i f})}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A f\'E1jlb\'F3l beolvas egy sort \'E9s azt egy karaktert\'F6mben visszaadja. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvasott karakter\par
+Beolvasott karaktert\'F6mb hossza\par
+Ny\'C3\'BAjt\'C3\'A1ssal beolvas mindig egy karaktert majd \'C3\'BAj t\'C3\'B6mb\'C3\'B6t foglalva belerakja az \'C3\'BAj t\'C3\'B6mbbe az el\'C5\'91z\'C5\'91leg beolvasott elemeket \'C3\'A9s az \'C3\'BAj elemet\par
+Eddig\par
+Ha v\'E9ge a f\'E1jlnak felszabad\'EDtja a sort \'E9s visszat\'E9r Nullal\par
+Visszaadja a beolvasott karaktert\'F6mbre mutat\'F3 pointert\par
+}{
+Definition at line {\b 67} of file {\b beolvas.c}.}\par
+}
+{\xe \v token\:beolvas.c}
+{\xe \v beolvas.c\:token}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int token (char *  {\i sor}, char *  {\i token_ptrek}[])}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A beolvasott sort elemekre bontja \'E9s visszaadja a r\'E1juk mutat\'F3 pointereket tartalmaz\'F3 t\'F6mb\'F6t. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A beolvasott sor hossza\par
+A jelenlegi r\'C3\'A9sz kezd\'C5\'91 indexe az eredeti karaktert\'C3\'B6mbben\par
+indexel\'E9s a pointer t\'F6mbh\'F6z\par
+Addig am\'EDg az \'F6sszes karaktert nem rakta be a t\'F6mbbe\par
+Ha elv\'E1laszt\'F3 karaktert tal\'E1ltunk, vagy a sor v\'E9g\'E9n vagyunk\par
+\'DAj t\'F6mb\'F6t foglal a jelenlegi r\'E9sznek\par
+Ha nem siker\'FClt visszat\'E9r\par
+\'C1tm\'E1solja az eddig beolvasott r\'E9szekre mutat\'F3 pointereket az \'FAj t\'F6mbbe\par
+A r\'E9sz v\'E9g\'E9re beteszi a lez\'E1r\'F3 0-\'E1t\par
+\'C1tadja az eredeti t\'F6mbnek\par
+A kezd\'C5\'91 indexet a k\'C3\'B6vetkez\'C5\'91 elemre \'C3\'A1ll\'C3\'ADtja a lez\'C3\'A1rt r\'C3\'A9sz ut\'C3\'A1n\par
+A beolvasott r\'E9szek sz\'E1ma\par
+Sikeres lefut\'E1skor\par
+}{
+Definition at line {\b 37} of file {\b beolvas.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+beolvas.c\par \pard\plain 
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00005 \par
+00006 {\cf21 #include "beolvas.h"}\par
+00007 \par
+00008 \par
+00010 {\cf18 int} beolvas(Kerdes* kerdes, FILE *f)\{\par
+00011     {\cf18 char} *sor = sor_be(f);\par
+00012     {\cf19 if} (sor==NULL) {\cf19 return} 2; \par
+00013     {\cf19 if} (strlen(sor)==1) {\cf19 return} 1;\par
+00014     {\cf18 char} *token_ptrek[8];\par
+00015     {\cf18 int} darabolas_eredmenye=token(sor, token_ptrek);\par
+00016     {\cf19 if} (darabolas_eredmenye==-1) {\cf19 return} -1;\par
+00017     kerdes->nehezseg = atoi(token_ptrek[0]);\par
+00018     free(token_ptrek[0]);\par
+00020     kerdes->kerdes = token_ptrek[1];\par
+00021     kerdes->a = token_ptrek[2];\par
+00022     kerdes->b = token_ptrek[3];\par
+00023     kerdes->c = token_ptrek[4];\par
+00024     kerdes->d = token_ptrek[5];\par
+00025     kerdes->helyes = token_ptrek[6][0];\par
+00026     free(token_ptrek[6]);\par
+00027     kerdes->kategoria = token_ptrek[7];\par
+00031     free(sor);\par
+00032     {\cf19 return} 0;\par
+00033 \};\par
+00034 \par
+00035 \par
+00037 {\cf18 int} token({\cf18 char} *sor, {\cf18 char} *token_ptrek[])\{\par
+00038     {\cf18 int} l= strlen(sor);\par
+00039     {\cf18 int} jelen_resz_kezdo_index=0;\par
+00040     {\cf18 int} ptr_szamlalo=0;\par
+00041     {\cf19 for} ({\cf18 int} i = 0; i < l; ++i) \{\par
+00042         {\cf19 if} (sor[i]=={\cf23 ';'}||sor[i]=={\cf23 '\\r'})\{\par
+00043             {\cf18 char}* t=({\cf18 char} *) malloc({\cf17 sizeof} ({\cf18 char} )*(i-jelen_resz_kezdo_index+1));\par
+00044             {\cf19 if} (t==NULL) {\cf19 return} -1;\par
+00045             {\cf19 for} ({\cf18 int} j = 0; j < i-jelen_resz_kezdo_index; ++j) \{\par
+00046                 t[j]=sor[jelen_resz_kezdo_index+j];\par
+00047             \}\par
+00048             t[i-jelen_resz_kezdo_index]={\cf23 '\\0'};\par
+00049             token_ptrek[ptr_szamlalo]=t;\par
+00050             jelen_resz_kezdo_index=i+1;\par
+00051             ptr_szamlalo++;\par
+00052         \}\par
+00053     \}\par
+00054     {\cf19 return} 0;\par
+00055 \};\par
+00056 \par
+00058 {\cf18 void} kerdest_beszur(Kerdes **peleje) \{\par
+00059     Kerdes *uj = (Kerdes *) malloc({\cf17 sizeof}(Kerdes));\par
+00060     {\cf19 if} (peleje==NULL) uj->kov=NULL;\par
+00061     {\cf19 else} uj->kov=*peleje;\par
+00062     *peleje = uj;\par
+00063 \}\par
+00064 \par
+00065 \par
+00067 {\cf18 char}* sor_be (FILE *f) \{\par
+00068     {\cf18 char} c_in;\par
+00069     {\cf18 int} db = 0;\par
+00073     {\cf18 char} *sor = ({\cf18 char} *) malloc({\cf17 sizeof}({\cf18 char}) * 1);\par
+00074     sor[0] = {\cf23 '\\0'};\par
+00075     {\cf19 while} ((c_in = fgetc(f)) != {\cf23 '\\n'} && c_in != EOF) \{\par
+00076 \par
+00077         {\cf18 char} *ujtomb = ({\cf18 char} *) malloc({\cf17 sizeof}({\cf18 char}) * (db + 1 + 1));\par
+00078         {\cf19 for} ({\cf18 int} i = 0; i < db; ++i)\par
+00079             ujtomb[i] = sor[i];\par
+00080         free(sor);\par
+00081         sor = ujtomb;\par
+00082         ujtomb[db] = c_in;\par
+00083         ujtomb[db + 1] = {\cf23 '\\0'};\par
+00084         ++db;\par
+00085     \}\par
+00087     {\cf19 if} (c_in == EOF) \{\par
+00088         free(sor);\par
+00089         {\cf19 return} NULL;\par
+00090     \}\par
+00091     {\cf19 return} sor;\par
+00092 \};\par
+00093 \par
+00095 {\cf18 int} lancoltbaolvas(Kerdes **kerdesek_eredeti)\{\par
+00096     Kerdes *kerdesek=NULL;\par
+00097     FILE *fp;\par
+00098     fp= fopen({\cf22 "kerdes.csv"},{\cf22 "r"});\par
+00099     {\cf19 if} (fp==NULL) {\cf19 return} -1;\par
+00102     {\cf19 for} ({\cf18 int} i = 0; i < 3; ++i) \{\par
+00103         fgetc(fp);\par
+00104     \}\par
+00105 \par
+00106     {\cf18 int} jo=0;\par
+00107     {\cf18 int} db=0;\par
+00108     {\cf19 while} (jo==0) \{\par
+00109         kerdest_beszur(&kerdesek);\par
+00110         jo=beolvas(kerdesek, fp);\par
+00111         db++;\par
+00112     \}\par
+00113     db--;\par
+00114     Kerdes *temp=kerdesek->kov;\par
+00115     free(kerdesek);\par
+00116     kerdesek=temp;\par
+00118     printf({\cf22 "%d k\'E9rd\'E9s beolvasva l\'E1ncolt list\'E1ba\\n"},db);\par
+00119     *kerdesek_eredeti=kerdesek;\par
+00120     {\cf19 return} db;\par
+00121 \};\par
+00122 \par
+00124 {\cf18 int}* nehezsegeket_szamol(Kerdes* eleje, {\cf18 int} *nehezsegfajtakszama)\{\par
+00125     {\cf18 int} *t=NULL;\par
+00126     Kerdes *mozgo;\par
+00127     {\cf19 for} (mozgo = eleje; mozgo != NULL; mozgo = mozgo->kov)\{\par
+00128         {\cf19 if} (*nehezsegfajtakszama<mozgo->nehezseg) \{\par
+00129             {\cf18 int} *temp = ({\cf18 int} *) malloc({\cf17 sizeof}({\cf18 int}) * mozgo->nehezseg);\par
+00131             {\cf19 if} (temp==NULL) {\cf19 return} NULL;\par
+00132             {\cf19 for} ({\cf18 int} i = 0; i < mozgo->nehezseg; ++i) \{\par
+00133                 temp[i]=0;\par
+00134             \}\par
+00135             {\cf19 for} ({\cf18 int} i = 0; i < *nehezsegfajtakszama; ++i) \{\par
+00136                 temp[i]=t[i];\par
+00137             \}\par
+00138             temp[mozgo->nehezseg-1]=1;\par
+00139             *nehezsegfajtakszama=mozgo->nehezseg;\par
+00140             free(t);\par
+00141             t=temp;\par
+00142         \}\par
+00143         {\cf19 else} t[mozgo->nehezseg-1]++;\par
+00144     \}\par
+00145     {\cf19 return} t;\par
+00146 \};\par
+00147 \par
+00149 {\cf18 int} kerdest_csoportosit (Kerdes *kerdesek, {\cf18 int} **kerdesek_csoportositva)\{\par
+00150     {\cf18 int} *t;\par
+00151     {\cf18 int} nehezsegfajtakszama=0;\par
+00152     t=nehezsegeket_szamol(kerdesek,&nehezsegfajtakszama);\par
+00153     {\cf19 if} (t==NULL) {\cf19 return} -1;\par
+00154     {\cf18 int} osszeg=0;\par
+00155     {\cf19 for} ({\cf18 int} i = 0; i < nehezsegfajtakszama; ++i) osszeg+=t[i];\par
+00156     printf({\cf22 "%d db k\'E9rd\'E9s neh\'E9zs\'E9g alapj\'E1n csoportos\'EDtva\\n"},osszeg);\par
+00157     *kerdesek_csoportositva=t;\par
+00158     {\cf19 return} nehezsegfajtakszama;\par
+00159 \}\par
+00160 \par
+00162 ker_csop_tomben** csop_tomb_belerak(Kerdes *kerdesek_lancoltban, {\cf18 int} nehezsegfajtak,{\cf18 int} *kerdesek_csoportositva)\{\par
+00163     ker_csop_tomben** t=(ker_csop_tomben**) malloc({\cf17 sizeof}(ker_csop_tomben*)*nehezsegfajtak);\par
+00164     {\cf19 if} (t==NULL) {\cf19 return} NULL;\par
+00165     {\cf19 for} ({\cf18 int} i = 0; i < nehezsegfajtak; ++i) \{\par
+00166         ker_csop_tomben *t_belso=(ker_csop_tomben*) malloc({\cf17 sizeof}(ker_csop_tomben)*kerdesek_csoportositva[i]);\par
+00167 \par
+00168         {\cf19 if}(t_belso==NULL) {\cf19 return} NULL;\par
+00169         t[i]=t_belso;\par
+00170     \}\par
+00171     {\cf18 int} jelenhely[nehezsegfajtak];\par
+00172     {\cf19 for} ({\cf18 int} i = 0; i < nehezsegfajtak; ++i) \{\par
+00173         jelenhely[i]=0;\par
+00174     \}\par
+00175 \par
+00176     Kerdes *mozgo = kerdesek_lancoltban;\par
+00177     {\cf19 while}(mozgo != NULL) \{\par
+00178         Kerdes* kov = mozgo->kov;\par
+00179         t[mozgo->nehezseg-1][jelenhely[mozgo->nehezseg-1]]=konvertal(mozgo);\par
+00180         (jelenhely[mozgo->nehezseg-1])++;\par
+00181         free(mozgo); \par
+00182         mozgo = kov;\par
+00183     \}\par
+00184     printf({\cf22 "K\'E9rd\'E9sek haszn\'E1latra k\'E9sz \'E1llapotban\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n"});\par
+00185     {\cf19 return} t;\par
+00186 \}\par
+00187 \par
+00189 ker_csop_tomben konvertal(Kerdes* kerdes)\{\par
+00190     ker_csop_tomben helyi;\par
+00191     helyi.kerdes=kerdes->kerdes;\par
+00192     helyi.a=kerdes->a;\par
+00193     helyi.b=kerdes->b;\par
+00194     helyi.c=kerdes->c;\par
+00195     helyi.d=kerdes->d;\par
+00196     helyi.helyes=kerdes->helyes;\par
+00197     helyi.kategoria=kerdes->kategoria;\par
+00198     helyi.hasznalt={\cf17 false};\par
+00199     {\cf19 return} helyi;\par
+00200 \}\par
+00201 \par
+00203 {\cf17 static} {\cf18 void} egy_kerdest_felszabadit(ker_csop_tomben *kerdes)\{\par
+00204     free(kerdes->kerdes);\par
+00205     free(kerdes->a);\par
+00206     free(kerdes->b);\par
+00207     free(kerdes->c);\par
+00208     free(kerdes->d);\par
+00209     free(kerdes->kategoria);\par
+00210     {\cf19 return};\par
+00211 \}\par
+00212 \par
+00214 {\cf18 void} kerdeseket_felszabadit(ker_csop_tomben **kerdesek, {\cf18 int} *kerdesek_csoportositva, {\cf18 int} nehezsegfajtak)\{\par
+00215     {\cf19 for} ({\cf18 int} i = 0; i < nehezsegfajtak; ++i) \{\par
+00216         {\cf19 for} ({\cf18 int} j = 0; j < kerdesek_csoportositva[i]; ++j) \{\par
+00217             egy_kerdest_felszabadit(&kerdesek[i][j]);\par
+00218         \}\par
+00219         free(kerdesek[i]);\par
+00220     \}\par
+00221     free(kerdesek);\par
+00222     free(kerdesek_csoportositva);\par
+00223     {\cf19 return};\par
+00224 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+beolvas.h File Reference\par \pard\plain 
+{\tc\tcl2 \v beolvas.h}
+{\xe \v beolvas.h}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <assert.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <stdbool.h>}\par
+{\f2 #include "debugmalloc.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b Kerdes}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A kerdes struct egy beolvasott sor feldarabolt elemeit t\'C3\'A1rolja, ebb\'C5\'91l k\'C3\'A9s\'C5\'91bb egy l\'C3\'A1ncolt list\'C3\'A1t \'C3\'A9p\'C3\'ADtek, beolvas\'C3\'A1si sorrendben. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b ker_csop_tomben}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncoltlist\'E1ba olvasott k\'E9rd\'E9seimet t\'E1rolja majd egy 2 dimenzi\'F3s t\'F6mbben. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef struct {\b Kerdes} {\b Kerdes}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A kerdes struct egy beolvasott sor feldarabolt elemeit t\'C3\'A1rolja, ebb\'C5\'91l k\'C3\'A9s\'C5\'91bb egy l\'C3\'A1ncolt list\'C3\'A1t \'C3\'A9p\'C3\'ADtek, beolvas\'C3\'A1si sorrendben. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef struct {\b ker_csop_tomben} {\b ker_csop_tomben}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncoltlist\'E1ba olvasott k\'E9rd\'E9seimet t\'E1rolja majd egy 2 dimenzi\'F3s t\'F6mbben. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b beolvas} ({\b Kerdes} *kerdes, FILE *f)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvassa egy sor elemeit egy l\'E1ncolt list\'E1ba. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b sor_be} (FILE *f)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A f\'E1jlb\'F3l beolvas egy sort \'E9s azt egy karaktert\'F6mben visszaadja. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b kerdest_beszur} ({\b Kerdes} **peleje)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1colt list\'C3\'A1ban l\'C3\'A9trehoz egy \'C3\'BAj elemet a k\'C3\'B6vetkez\'C5\'91 beolvas\'C3\'A1shoz. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b token} (char *sor, char *token_ptrek[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A beolvasott sort elemekre bontja \'E9s visszaadja a r\'E1juk mutat\'F3 pointereket tartalmaz\'F3 t\'F6mb\'F6t. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b lancoltbaolvas} ({\b Kerdes} **kerdesek_eredeti)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A forr\'E1sf\'E1jl \'F6sszes sor\'E1t beolvassa \'E9s elt\'E1rolja egy l\'E1ncolt list\'E1ban \'E9s visszaadja a beolvasott k\'E9rd\'E9sek darabsz\'E1m\'E1t. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int * {\b nehezsegeket_szamol} ({\b Kerdes} *eleje, int *nehezsegfajtakszama)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Megsz\'E1molja hogy h\'E1ny neh\'E9zs\'E9gfajta van \'E9s hogy a bizonyos neh\'E9zs\'E9gfajt\'E1kb\'F3l h\'E1ny darab k\'E9rd\'E9s van. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b kerdest_csoportosit} ({\b Kerdes} *kerdesek, int **kerdesek_csoportositva)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A neh\'E9zs\'E9galap\'FA csoportos\'EDt\'E1st let\'E1rolja \'E9s visszaadja a neh\'E9zs\'E9gfajt\'E1k sz\'E1m\'E1t. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ker_csop_tomben} ** {\b csop_tomb_belerak} ({\b Kerdes} *kerdesek_lacoltban, int nehezsegfajtak, int *kerdesek_csoportositva)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncolt list\'E1ban t\'E1rolt k\'E9rd\'E9seket neh\'E9zs\'E9g alapj\'E1n csoportos\'EDtva belerakja egy 2 dimenzi\'F3s t\'F6mbbe. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ker_csop_tomben} {\b konvertal} ({\b Kerdes} *kerdes)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1ncolt list\'C3\'A1ban t\'C3\'A1rolt k\'C3\'A9rd\'C3\'A9seknek nincs sz\'C3\'BCks\'C3\'A9g minden elem\'C3\'A9re de sz\'C3\'BCks\'C3\'A9g van a haszn\'C3\'A1lts\'C3\'A1g\'C3\'A1ra a k\'C3\'A9rd\'C3\'A9sgener\'C3\'A1l\'C3\'A1sn\'C3\'A1l k\'C3\'A9s\'C5\'91bb ez\'C3\'A9rt konvert\'C3\'A1l. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b kerdeseket_felszabadit} ({\b ker_csop_tomben} **kerdesek, int *kerdesek_csoportositva, int nehezsegfajtak)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Felszabad\'EDtja a 2 dimenzi\'F3s m\'E1trix\'E1t a k\'E9rd\'E9seknek a malloc-ol\'E1s miatt a program lefut\'E1s\'E1nak v\'E9g\'E9n. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedef Documentation\par
+\pard\plain 
+{\xe \v ker_csop_tomben\:beolvas.h}
+{\xe \v beolvas.h\:ker_csop_tomben}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef struct {\b ker_csop_tomben} {\b ker_csop_tomben}}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncoltlist\'E1ba olvasott k\'E9rd\'E9seimet t\'E1rolja majd egy 2 dimenzi\'F3s t\'F6mbben. }}\par
+}
+{\xe \v Kerdes\:beolvas.h}
+{\xe \v beolvas.h\:Kerdes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef struct {\b Kerdes} {\b Kerdes}}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A kerdes struct egy beolvasott sor feldarabolt elemeit t\'C3\'A1rolja, ebb\'C5\'91l k\'C3\'A9s\'C5\'91bb egy l\'C3\'A1ncolt list\'C3\'A1t \'C3\'A9p\'C3\'ADtek, beolvas\'C3\'A1si sorrendben. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Created by Jajecnik Marcell on 2022. 11. 22.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v beolvas\:beolvas.h}
+{\xe \v beolvas.h\:beolvas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int beolvas ({\b Kerdes} *  {\i kerdes}, FILE *  {\i f})}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvassa egy sor elemeit egy l\'E1ncolt list\'E1ba. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Created by Jajecnik Marcell on 2022. 11. 22.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell \par
+}}}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A f\'E1jlb\'F3l beolvas egy sort \'E9s azt beteszi egy karaktert\'F6mbbbe\par
+EOF-n\'E1l\par
+Sor csak a lez\'E1r\'F3 \\0-at tartalmazza\par
+A t\'F6mb elemeire mutat\'F3 pointereket tartalmaz\'F3 t\'F6mb\par
+Sikeress\'E9gre tesztel\'E9s a darabol\'E1skor\par
+Mem\'F3riafoglal\'E1si hib\'E1n\'E1l\par
+Int-t\'E9 alak\'EDtja majd berakja a neh\'E9zs\'E9get a k\'E9rd\'E9s sturct neh\'E9zs\'E9g elem\'E9be\par
+Felszabad\'EDt mert nincs sz\'FCks\'E9g m\'E1r a r\'E1 mutat\'F3 pointerre\par
+A t\'C3\'B6bbi r\'C3\'A9szelemet beteszi a nekik sz\'C3\'A1nt helybe, mivel a beolvas\'C3\'A1s sorrendje ismert el\'C5\'91re\par
+Mivel csak egy karaktert t\'E1rolunk \'EDgy nincs sz\'FCks\'E9g a lez\'E1r\'F3 0-ra\par
+Ezt felszabad\'C3\'ADtja ut\'C3\'A1na mivel a karakterre mutat\'C3\'B3 pointerre k\'C3\'A9s\'C5\'91bb m\'C3\'A1r nem lesz sz\'C3\'BCks\'C3\'A9g\par
+A pointereket k\'C3\'A9s\'C5\'91bb a teljes program lefut\'C3\'A1s\'C3\'A1nak v\'C3\'A9g\'C3\'A9n szabad\'C3\'ADtjuk fel\par
+Felszabad\'EDtja a beolvasott sort\par
+Sikeres lefut\'E1skor\par
+}{
+Definition at line {\b 10} of file {\b beolvas.c}.}\par
+}
+{\xe \v csop_tomb_belerak\:beolvas.h}
+{\xe \v beolvas.h\:csop_tomb_belerak}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b ker_csop_tomben} ** csop_tomb_belerak ({\b Kerdes} *  {\i kerdesek_lacoltban}, int  {\i nehezsegfajtak}, int *  {\i kerdesek_csoportositva})}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'E1ncolt list\'E1ban t\'E1rolt k\'E9rd\'E9seket neh\'E9zs\'E9g alapj\'E1n csoportos\'EDtva belerakja egy 2 dimenzi\'F3s t\'F6mbbe. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Helyet foglal az 1. dimenzi\'F3nak\par
+Ha nem siker\'FCl a foglal\'E1s visszat\'E9r\par
+Helyet foglal a 2. dimenzi\'F3elemeinek\par
+Ha nem siker\'FCl a foglal\'E1s akkor visszat\'E9r\par
+L\'C3\'A9trehoz egy integer t\'C3\'B6mb\'C3\'B6t ami indexeket t\'C3\'A1rol a neh\'C3\'A9zs\'C3\'A9gi szintekhez \'C3\'A9s els\'C5\'91k\'C3\'A9nt minden eleme 0\par
+A l\'E1ncolt lista v\'E9gigj\'E1r\'E1s\'E1hoz\par
+Am\'EDg el nem \'E9r az utols\'F3 elemig\par
+Elt\'C3\'A1rolja a k\'C3\'B6vetkez\'C5\'91 elemre mutat\'C3\'B3 helyc\'C3\'ADmet\par
+A neh\'E9zs\'E9gi szint szerinti legkisebb nem haszn\'E1lt indexre berakja a l\'E1ncolt lista elem\'E9t, amit a konvert\'E1l\'F3 f\'FCggv\'E9ny ad \'E1t m\'F3dos\'EDtva\par
+N\'F6veli a neh\'E9zs\'E9g indexj\'E9t\par
+Felszabaditja a lancolt listat, de az elemek tartalma megmarad a konvertalt kerdesekben!\par
+A k\'C3\'B6vetkez\'C5\'91 elemre \'C3\'A1ll\'C3\'ADtja a mozgo-t\par
+Visszaadja a 2 dimenzi\'F3s t\'F6mb\'F6t ami a k\'E9rd\'E9sekre \'E9s azok tulajdons\'E1gaira mutat\'F3 pointereket t\'E1rolja t\'E1rolja\par
+}{
+Definition at line {\b 162} of file {\b beolvas.c}.}\par
+}
+{\xe \v kerdeseket_felszabadit\:beolvas.h}
+{\xe \v beolvas.h\:kerdeseket_felszabadit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void kerdeseket_felszabadit ({\b ker_csop_tomben} **  {\i kerdesek}, int *  {\i kerdesek_csoportositva}, int  {\i nehezsegfajtak})}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Felszabad\'EDtja a 2 dimenzi\'F3s m\'E1trix\'E1t a k\'E9rd\'E9seknek a malloc-ol\'E1s miatt a program lefut\'E1s\'E1nak v\'E9g\'E9n. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Felszabad\'EDtja a 2 dimenzi\'F3s m\'E1trix\'E1t a k\'E9rd\'E9seknek a malloc-ol\'E1s miatt a program lefut\'E1s\'E1nak v\'E9g\'E9n. \par
+}{
+Definition at line {\b 214} of file {\b beolvas.c}.}\par
+}
+{\xe \v kerdest_beszur\:beolvas.h}
+{\xe \v beolvas.h\:kerdest_beszur}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void kerdest_beszur ({\b Kerdes} **  {\i peleje})}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1colt list\'C3\'A1ban l\'C3\'A9trehoz egy \'C3\'BAj elemet a k\'C3\'B6vetkez\'C5\'91 beolvas\'C3\'A1shoz. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Foglal az \'FAj elemre\par
+\'DCres listakor\par
+Berakja a l\'E1ncolt lista elj\'E9re az \'FAj elemet\par
+A l\'E1ncolt list\'E1ra mutat\'F3 pointert az \'FAj elemre \'E1ll\'EDtja\par
+}{
+Definition at line {\b 58} of file {\b beolvas.c}.}\par
+}
+{\xe \v kerdest_csoportosit\:beolvas.h}
+{\xe \v beolvas.h\:kerdest_csoportosit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int kerdest_csoportosit ({\b Kerdes} *  {\i kerdesek}, int **  {\i kerdesek_csoportositva})}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A neh\'E9zs\'E9galap\'FA csoportos\'EDt\'E1st let\'E1rolja \'E9s visszaadja a neh\'E9zs\'E9gfajt\'E1k sz\'E1m\'E1t. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A neh\'E9zs\'E9giszintekhez tart\'F3z\'F3 k\'E9rd\'E9sek sz\'E1m\'E1t t\'E1rol\'F3 t\'F6mbre mutat\'F3 pointer\par
+Az \'F6sszes neh\'E9zs\'E9gfajta sz\'E1ma\par
+A visszakapott helyc\'EDmre \'E1ll\'EDtja a neh\'E9zs\'E9giszintekhez tart\'F3z\'F3 k\'E9rd\'E9sek sz\'E1m\'E1t t\'E1rol\'F3 t\'F6mb helyc\'EDm\'E9t\par
+Ha sikertelen a sz\'E1ml\'E1l\'E1s visszat\'E9r\par
+A t\'F6mb \'E1ltal \'E9rintett k\'E9rd\'E9sek sz\'E1ma\par
+Az eredeti t\'F6mb\'FCnk helyc\'EDm\'E9t a most k\'E9sz\'EDtettre \'E1ll\'EDtjuk\par
+Visszaadja a legnagyobb neh\'E9zs\'E9gi szint \'E9rt\'E9k\'E9t\par
+}{
+Definition at line {\b 149} of file {\b beolvas.c}.}\par
+}
+{\xe \v konvertal\:beolvas.h}
+{\xe \v beolvas.h\:konvertal}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b ker_csop_tomben} konvertal ({\b Kerdes} *  {\i kerdes})}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1ncolt list\'C3\'A1ban t\'C3\'A1rolt k\'C3\'A9rd\'C3\'A9seknek nincs sz\'C3\'BCks\'C3\'A9g minden elem\'C3\'A9re de sz\'C3\'BCks\'C3\'A9g van a haszn\'C3\'A1lts\'C3\'A1g\'C3\'A1ra a k\'C3\'A9rd\'C3\'A9sgener\'C3\'A1l\'C3\'A1sn\'C3\'A1l k\'C3\'A9s\'C5\'91bb ez\'C3\'A9rt konvert\'C3\'A1l. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A l\'C3\'A1ncolt list\'C3\'A1ban t\'C3\'A1rolt k\'C3\'A9rd\'C3\'A9seknek nincs sz\'C3\'BCks\'C3\'A9g minden elem\'C3\'A9re de sz\'C3\'BCks\'C3\'A9g van a haszn\'C3\'A1lts\'C3\'A1g\'C3\'A1ra a k\'C3\'A9rd\'C3\'A9sgener\'C3\'A1l\'C3\'A1sn\'C3\'A1l k\'C3\'A9s\'C5\'91bb ez\'C3\'A9rt konvert\'C3\'A1l. \par
+}{
+Definition at line {\b 189} of file {\b beolvas.c}.}\par
+}
+{\xe \v lancoltbaolvas\:beolvas.h}
+{\xe \v beolvas.h\:lancoltbaolvas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int lancoltbaolvas ({\b Kerdes} **  {\i kerdesek_eredeti})}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A forr\'E1sf\'E1jl \'F6sszes sor\'E1t beolvassa \'E9s elt\'E1rolja egy l\'E1ncolt list\'E1ban \'E9s visszaadja a beolvasott k\'E9rd\'E9sek darabsz\'E1m\'E1t. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+L\'E9trehoz egy k\'E9rd\'E9s sturctot\par
+L\'E9trehoz egy v\'E1ltoz\'F3t a k\'E9rd\'E9sek forr\'E1sf\'E1jlj\'E1nak kezel\'E9s\'E9hez\par
+Megnyitja olvas\'E1sra a k\'E9rd\'E9sek forr\'E1sf\'E1jlj\'E1t\par
+Mem\'F3riafoglal\'E1si hibakor fut le\par
+A forr\'C3\'A1sf\'C3\'A1jl elej\'C3\'A9ben tal\'C3\'A1ltam 3 karaktert amit a sz\'C3\'B6vegszerkeszt\'C5\'91k nem ismernek fel, ez\'C3\'A9rt megn\'C3\'A9ztem hexaban \'C3\'A9s ott l\'C3\'A1tszanak, de nem azonos\'C3\'ADthat\'C3\'B3k, \'C3\'ADgy ezek ment\'C3\'A9s n\'C3\'A9lk\'C3\'BCli beolvas\'C3\'A1ssal kisz\'C5\'B1r\'C3\'B6m\par
+Beolvas\'E1s sikeress\'E9g\'E9nek t\'E1rol\'E1sa\par
+Beolvasott k\'E9rd\'E9sek sz\'E1m\'E1nak sz\'E1ml\'E1l\'E1s\'E1hoz\par
+Ciklus addig ameddig a beolvas\'E1s sikeres\par
+Besz\'FAr egy \'FCres elemet a l\'E1ncolt lista elej\'E9re\par
+Beolvassa egy sor tartalm\'E1t a l\'E9trehozott kerdes structba \'E9s visszaadja a sikeress\'E9get\par
+N\'F6veli a beolvasott k\'E9rd\'E9sek sz\'E1m\'E1t\par
+Mivel az utols\'C3\'B3 elemkor a beolvas f\'C3\'BCggv\'C3\'A9ny m\'C3\'A1r nem 0-at ad vissza de ut\'C3\'A1na m\'C3\'A9g n\'C3\'B6velj\'C3\'BCk az \'C3\'A9rt\'C3\'A9ket a ciklusb\'C3\'B3l kil\'C3\'A9p\'C3\'A9s el\'C5\'91tt \'C3\'ADgy levonunk egyet\par
+A tempben elt\'C3\'A1rolja a k\'C3\'A9rd\'C3\'A9sek k\'C3\'B6vetkez\'C5\'91 elem\'C3\'A9re mutat\'C3\'B3 pointert\par
+felszabad\'EDtja azt\par
+Majd belerakja az elt\'E1rolt helyc\'EDmet\par
+Ki\'EDrja a l\'E1ncolt list\'E1ba olvasott k\'E9rd\'E9sek sz\'E1m\'E1t\par
+A k\'C3\'A9rd\'C3\'A9sek eredetij\'C3\'A9nek els\'C5\'91 elem\'C3\'A9t be\'C3\'A1ll\'C3\'ADtja a f\'C3\'BCggv\'C3\'A9nyen bel\'C3\'BCli k\'C3\'A9rd\'C3\'A9sekre\par
+Visszaadja a beolvasott k\'E9rd\'E9sek sz\'E1m\'E1t\par
+}{
+Definition at line {\b 95} of file {\b beolvas.c}.}\par
+}
+{\xe \v nehezsegeket_szamol\:beolvas.h}
+{\xe \v beolvas.h\:nehezsegeket_szamol}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int * nehezsegeket_szamol ({\b Kerdes} *  {\i eleje}, int *  {\i nehezsegfajtakszama})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Megsz\'E1molja hogy h\'E1ny neh\'E9zs\'E9gfajta van \'E9s hogy a bizonyos neh\'E9zs\'E9gfajt\'E1kb\'F3l h\'E1ny darab k\'E9rd\'E9s van. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+L\'E9trehoz egy integer pointert\par
+L\'E9trehoz egy helyi k\'E9rd\'E9s structot\par
+V\'E9gigmegy a l\'E1ncolt list\'E1n\par
+Ha olyan neh\'E9zs\'E9gi szinttel tal\'E1lkozik ami nagyobb mint az eddigiek\par
+Mem\'F3riafoglal\'E1si hiba\par
+A temp int t\'F6mb minden elem\'E9t 0ra \'E1ll\'EDtja a mem\'F3riaszem\'E9t elker\'FCl\'E9se v\'E9gett\par
+Belem\'E1solja az eddig beolvasott adatokat\par
+Az aktu\'C3\'A1lis neh\'C3\'A9zs\'C3\'A9gi szint sz\'C3\'A1ml\'C3\'A1l\'C3\'B3j\'C3\'A1t egyre \'C3\'A1ll\'C3\'ADtja mert ez az els\'C5\'91 alkalom hogy tal\'C3\'A1lkozott vele\par
+Felt\'C3\'A9telezz\'C3\'BCk, hogy a legnagyobb neh\'C3\'A9zs\'C3\'A9g\'C5\'B1 k\'C3\'A9rd\'C3\'A9sn\'C3\'A9l minden kissebb neh\'C3\'A9zs\'C3\'A9g l\'C3\'A9tezik, de a kev\'C3\'A9s k\'C3\'A9rd\'C3\'A9st tartalmaz\'C3\'B3 neh\'C3\'A9zs\'C3\'A9gi szinteket k\'C3\'A9s\'C5\'91bb kisz\'C5\'B1rj\'C3\'BCk\par
+Felszabad\'EDtjuk az eredeti t\'F6mb\'F6t\par
+\'C9s \'E1t\'E1ll\'EDtjuk az eredeti helyc\'EDm\'E9t a most l\'E9trehozott\'E9ra\par
+Ha m\'E1r ismeri a neh\'E9zs\'E9gfajt\'E1t akkor n\'F6veli a hozz\'E1 tartoz\'F3 sz\'E1ml\'E1l\'F3 \'E9rt\'E9k\'E9t 1-gyel\par
+V\'E9g\'FCl visszaadja a t\'F6mbre mutat\'F3 helyc\'EDmet\par
+}{
+Definition at line {\b 124} of file {\b beolvas.c}.}\par
+}
+{\xe \v sor_be\:beolvas.h}
+{\xe \v beolvas.h\:sor_be}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char * sor_be (FILE *  {\i f})}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A f\'E1jlb\'F3l beolvas egy sort \'E9s azt egy karaktert\'F6mben visszaadja. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvasott karakter\par
+Beolvasott karaktert\'F6mb hossza\par
+Ny\'C3\'BAjt\'C3\'A1ssal beolvas mindig egy karaktert majd \'C3\'BAj t\'C3\'B6mb\'C3\'B6t foglalva belerakja az \'C3\'BAj t\'C3\'B6mbbe az el\'C5\'91z\'C5\'91leg beolvasott elemeket \'C3\'A9s az \'C3\'BAj elemet\par
+Eddig\par
+Ha v\'E9ge a f\'E1jlnak felszabad\'EDtja a sort \'E9s visszat\'E9r Nullal\par
+Visszaadja a beolvasott karaktert\'F6mbre mutat\'F3 pointert\par
+}{
+Definition at line {\b 67} of file {\b beolvas.c}.}\par
+}
+{\xe \v token\:beolvas.h}
+{\xe \v beolvas.h\:token}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int token (char *  {\i sor}, char *  {\i token_ptrek}[])}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A beolvasott sort elemekre bontja \'E9s visszaadja a r\'E1juk mutat\'F3 pointereket tartalmaz\'F3 t\'F6mb\'F6t. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A beolvasott sor hossza\par
+A jelenlegi r\'C3\'A9sz kezd\'C5\'91 indexe az eredeti karaktert\'C3\'B6mbben\par
+indexel\'E9s a pointer t\'F6mbh\'F6z\par
+Addig am\'EDg az \'F6sszes karaktert nem rakta be a t\'F6mbbe\par
+Ha elv\'E1laszt\'F3 karaktert tal\'E1ltunk, vagy a sor v\'E9g\'E9n vagyunk\par
+\'DAj t\'F6mb\'F6t foglal a jelenlegi r\'E9sznek\par
+Ha nem siker\'FClt visszat\'E9r\par
+\'C1tm\'E1solja az eddig beolvasott r\'E9szekre mutat\'F3 pointereket az \'FAj t\'F6mbbe\par
+A r\'E9sz v\'E9g\'E9re beteszi a lez\'E1r\'F3 0-\'E1t\par
+\'C1tadja az eredeti t\'F6mbnek\par
+A kezd\'C5\'91 indexet a k\'C3\'B6vetkez\'C5\'91 elemre \'C3\'A1ll\'C3\'ADtja a lez\'C3\'A1rt r\'C3\'A9sz ut\'C3\'A1n\par
+A beolvasott r\'E9szek sz\'E1ma\par
+Sikeres lefut\'E1skor\par
+}{
+Definition at line {\b 37} of file {\b beolvas.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+beolvas.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00005 \par
+00006 {\cf21 #ifndef JATEK2_BEOLVAS_H}\par
+00007 {\cf21 #define JATEK2_BEOLVAS_H}\par
+00008 {\cf21 #include <stdio.h>}\par
+00009 {\cf21 #include <string.h>}\par
+00010 {\cf21 #include <assert.h>}\par
+00011 {\cf21 #include <stdlib.h>}\par
+00012 {\cf21 #include <stdbool.h>}\par
+00013 {\cf21 #include "debugmalloc.h"}\par
+00014 \par
+00016 {\cf17 typedef} {\cf17 struct }Kerdes\{\par
+00017     {\cf18 int} nehezseg;\par
+00018     {\cf18 char} *kerdes;\par
+00019     {\cf18 char} *a;\par
+00020     {\cf18 char} *b;\par
+00021     {\cf18 char} *c;\par
+00022     {\cf18 char} *d;\par
+00023     {\cf18 char} helyes;\par
+00024     {\cf18 char} *kategoria;\par
+00025     {\cf17 struct }Kerdes* kov;\par
+00026 \}Kerdes;\par
+00027 \par
+00029 {\cf17 typedef} {\cf17 struct }ker_csop_tomben\{\par
+00030     {\cf18 char} *kerdes;\par
+00031     {\cf18 char} *a;\par
+00032     {\cf18 char} *b;\par
+00033     {\cf18 char} *c;\par
+00034     {\cf18 char} *d;\par
+00035     {\cf18 char} helyes;\par
+00036     {\cf18 char} *kategoria;\par
+00037     {\cf18 bool} hasznalt;\par
+00038 \}ker_csop_tomben;\par
+00039 \par
+00041 {\cf18 int} beolvas(Kerdes* kerdes, FILE *f);\par
+00042 \par
+00044 {\cf18 char}* sor_be (FILE *f);\par
+00045 \par
+00047 {\cf18 void} kerdest_beszur(Kerdes **peleje);\par
+00048 \par
+00050 {\cf18 int} token({\cf18 char} *sor,{\cf18 char} *token_ptrek[]);\par
+00051 \par
+00053 {\cf18 int} lancoltbaolvas(Kerdes **kerdesek_eredeti);\par
+00054 \par
+00056 {\cf18 int}* nehezsegeket_szamol(Kerdes* eleje, {\cf18 int} *nehezsegfajtakszama);\par
+00057 \par
+00059 {\cf18 int} kerdest_csoportosit (Kerdes *kerdesek, {\cf18 int} **kerdesek_csoportositva);\par
+00060 \par
+00062 ker_csop_tomben **csop_tomb_belerak(Kerdes *kerdesek_lacoltban, {\cf18 int} nehezsegfajtak,{\cf18 int} *kerdesek_csoportositva);\par
+00063 \par
+00065 ker_csop_tomben konvertal(Kerdes* kerdes);\par
+00066 \par
+00068 {\cf18 void} kerdeseket_felszabadit(ker_csop_tomben **kerdesek, {\cf18 int} *kerdesek_csoportositva, {\cf18 int} nehezsegfajtak);\par
+00069 \par
+00070 {\cf21 #endif }{\cf20 //JATEK2_BEOLVAS_H}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+debugmalloc.h File Reference\par \pard\plain 
+{\tc\tcl2 \v debugmalloc.h}
+{\xe \v debugmalloc.h}
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdbool.h>}\par
+{\f2 #include <stddef.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <ctype.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <stdarg.h>}\par
+{\f2 #include <unistd.h>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b DebugmallocEntry}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b DebugmallocData}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b malloc}(S)\~ debugmalloc_malloc_full((S), "malloc", #S, __FILE__, __LINE__, false)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b calloc}(N,  S)\~ debugmalloc_malloc_full((N)*(S), "calloc", #N ", " #S, __FILE__, __LINE__, true)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b realloc}(P,  S)\~ debugmalloc_realloc_full((P), (S), "realloc", #S, __FILE__, __LINE__)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b free}(P)\~ debugmalloc_free_full((P), "free", __FILE__, __LINE__)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef struct {\b DebugmallocEntry} {\b DebugmallocEntry}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef struct {\b DebugmallocData} {\b DebugmallocData}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumerations\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum \{ {\b debugmalloc_canary_size} = 64
+, {\b debugmalloc_canary_char} = 'K'
+, {\b debugmalloc_tablesize} = 256
+, {\b debugmalloc_max_block_size_default} = 1048576
+ \}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v calloc\:debugmalloc.h}
+{\xe \v debugmalloc.h\:calloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define calloc( N,  S)\~ debugmalloc_malloc_full((N)*(S), "calloc", #N ", " #S, __FILE__, __LINE__, true)}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 499} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v free\:debugmalloc.h}
+{\xe \v debugmalloc.h\:free}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define free( P)\~ debugmalloc_free_full((P), "free", __FILE__, __LINE__)}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 501} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v malloc\:debugmalloc.h}
+{\xe \v debugmalloc.h\:malloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define malloc( S)\~ debugmalloc_malloc_full((S), "malloc", #S, __FILE__, __LINE__, false)}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 498} of file {\b debugmalloc.h}.}\par
+}
+{\xe \v realloc\:debugmalloc.h}
+{\xe \v debugmalloc.h\:realloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define realloc( P,  S)\~ debugmalloc_realloc_full((P), (S), "realloc", #S, __FILE__, __LINE__)}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 500} of file {\b debugmalloc.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedef Documentation\par
+\pard\plain 
+{\xe \v DebugmallocData\:debugmalloc.h}
+{\xe \v debugmalloc.h\:DebugmallocData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef struct {\b DebugmallocData} {\b DebugmallocData}}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v DebugmallocEntry\:debugmalloc.h}
+{\xe \v debugmalloc.h\:DebugmallocEntry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef struct {\b DebugmallocEntry} {\b DebugmallocEntry}}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumeration Type Documentation\par
+\pard\plain 
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+anonymous enum}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v debugmalloc_canary_size\:debugmalloc.h}
+{\xe \v debugmalloc.h\:debugmalloc_canary_size}
+{\qr debugmalloc_canary_size{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+\cell }{\cell }{\row }
+{\xe \v debugmalloc_canary_char\:debugmalloc.h}
+{\xe \v debugmalloc.h\:debugmalloc_canary_char}
+{\qr debugmalloc_canary_char{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+\cell }{\cell }{\row }
+{\xe \v debugmalloc_tablesize\:debugmalloc.h}
+{\xe \v debugmalloc.h\:debugmalloc_tablesize}
+{\qr debugmalloc_tablesize{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+\cell }{\cell }{\row }
+{\xe \v debugmalloc_max_block_size_default\:debugmalloc.h}
+{\xe \v debugmalloc.h\:debugmalloc_max_block_size_default}
+{\qr debugmalloc_max_block_size_default{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+\cell }{\cell }{\row }
+}
+\par
+{
+Definition at line {\b 13} of file {\b debugmalloc.h}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+debugmalloc.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf21 #ifndef DEBUGMALLOC_H}\par
+00002 {\cf21 #define DEBUGMALLOC_H}\par
+00003 \par
+00004 {\cf21 #include <stdbool.h>}\par
+00005 {\cf21 #include <stddef.h>}\par
+00006 {\cf21 #include <stdlib.h>}\par
+00007 {\cf21 #include <stdio.h>}\par
+00008 {\cf21 #include <ctype.h>}\par
+00009 {\cf21 #include <string.h>}\par
+00010 {\cf21 #include <stdarg.h>}\par
+00011 \par
+00012 \par
+00013 {\cf17 enum} \{\par
+00014     {\cf20 /* size of canary in bytes. should be multiple of largest alignment}\par
+00015 {\cf20      * required by any data type (usually 8 or 16) */}\par
+00016     debugmalloc_canary_size = 64,\par
+00017     \par
+00018     {\cf20 /* canary byte */}\par
+00019     debugmalloc_canary_char = {\cf23 'K'},\par
+00020 \par
+00021     {\cf20 /* hash table size for allocated entries */}\par
+00022     debugmalloc_tablesize = 256,\par
+00023     \par
+00024     {\cf20 /* max block size for allocation, can be modified with debugmalloc_max_block_size() */}\par
+00025     debugmalloc_max_block_size_default = 1048576\par
+00026 \};\par
+00027 \par
+00028 \par
+00029 {\cf20 /* make getpid and putenv "crossplatform". deprecated on windows but they work just fine,}\par
+00030 {\cf20  * however not declared. */}\par
+00031 {\cf21 #ifdef _WIN32}\par
+00032     {\cf20 /* windows */}\par
+00033 {\cf21     #include <process.h>}\par
+00034 {\cf21     #ifdef _MSC_VER}\par
+00035         {\cf20 /* visual studio, getenv/getpid deprecated warning */}\par
+00036 {\cf21         #pragma warning(disable: 4996)}\par
+00037 {\cf21     #else}\par
+00038         {\cf20 /* other windows. the declaration is unfortunately hidden}\par
+00039 {\cf20          * in mingw header files by ifdefs. */}\par
+00040         {\cf18 int} putenv({\cf17 const} {\cf18 char} *);\par
+00041 {\cf21     #endif}\par
+00042 {\cf21 #else}\par
+00043     {\cf20 /* posix */}\par
+00044 {\cf21     #include <unistd.h>}\par
+00045 {\cf21 #endif}\par
+00046 \par
+00047 \par
+00048 {\cf20 /* linked list entry for allocated blocks */}\par
+00049 {\cf17 typedef} {\cf17 struct }DebugmallocEntry \{\par
+00050     {\cf18 void} *real_mem;     {\cf20 /* the address of the real allocation */}\par
+00051     {\cf18 void} *user_mem;     {\cf20 /* address shown to the user */}\par
+00052     {\cf18 size_t} size;        {\cf20 /* size of block requested by user */}\par
+00053 \par
+00054     {\cf18 char} file[64];      {\cf20 /* malloc called in this file */}\par
+00055     {\cf18 unsigned} line;      {\cf20 /* malloc called at this line in file */}\par
+00056     {\cf18 char} func[32];      {\cf20 /* allocation function called (malloc, calloc, realloc) */}\par
+00057     {\cf18 char} expr[128];     {\cf20 /* expression calculating the size of allocation */}\par
+00058 \par
+00059     {\cf17 struct }DebugmallocEntry *prev, *next;  {\cf20 /* for doubly linked list */}\par
+00060 \} DebugmallocEntry;\par
+00061 \par
+00062 \par
+00063 {\cf20 /* debugmalloc singleton, storing all state */}\par
+00064 {\cf17 typedef} {\cf17 struct }DebugmallocData \{\par
+00065     {\cf18 char} logfile[256];    {\cf20 /* log file name or empty string */}\par
+00066     {\cf18 long} max_block_size;  {\cf20 /* max size of a single block allocated */}\par
+00067     {\cf18 long} alloc_count;     {\cf20 /* currently allocated; decreased with free */}\par
+00068     {\cf18 long} {\cf18 long} alloc_bytes;\par
+00069     {\cf18 long} all_alloc_count; {\cf20 /* all allocations, never decreased */}\par
+00070     {\cf18 long} {\cf18 long} all_alloc_bytes;\par
+00071     DebugmallocEntry head[debugmalloc_tablesize], tail[debugmalloc_tablesize];  {\cf20 /* head and tail elements of allocation lists */}\par
+00072 \} DebugmallocData;\par
+00073 \par
+00074 \par
+00075 {\cf20 /* this forward declaration is required by the singleton manager function */}\par
+00076 {\cf17 static} DebugmallocData * debugmalloc_create({\cf18 void});\par
+00077 \par
+00078 \par
+00079 {\cf20 /* creates singleton instance. as this function is static included to different}\par
+00080 {\cf20  * translation units, multiple instances of the static variables are created.}\par
+00081 {\cf20  * to make sure it is really a singleton, these instances must know each other}\par
+00082 {\cf20  * somethow. an environment variable is used for that purpose, ie. the address}\par
+00083 {\cf20  * of the singleton allocated is stored by the operating system.}\par
+00084 {\cf20  * this implementation is not thread-safe. */}\par
+00085 {\cf17 static} DebugmallocData * debugmalloc_singleton({\cf18 void}) \{\par
+00086     {\cf17 static} {\cf18 char} envstr[100];\par
+00087     {\cf17 static} {\cf18 void} *instance = NULL;\par
+00088 \par
+00089     {\cf20 /* if we do not know the address of the singleton:}\par
+00090 {\cf20      * - maybe we are the one to create it (env variable also does not exist)}\par
+00091 {\cf20      * - or it is already created, and stored in the env variable. */}\par
+00092     {\cf19 if} (instance == NULL) \{\par
+00093         {\cf18 char} envvarname[100] = {\cf22 ""};\par
+00094         sprintf(envvarname, {\cf22 "%s%d"}, {\cf22 "debugmallocsingleton"}, ({\cf18 int}) getpid());\par
+00095         {\cf18 char} *envptr = getenv(envvarname);\par
+00096         {\cf19 if} (envptr == NULL) \{\par
+00097             {\cf20 /* no env variable: create singleton. */}\par
+00098             instance = debugmalloc_create();\par
+00099             sprintf(envstr, {\cf22 "%s=%p"}, envvarname, instance);\par
+00100             putenv(envstr);\par
+00101         \} {\cf19 else} \{\par
+00102             {\cf20 /* another copy of this function already created it. */}\par
+00103             {\cf18 int} ok = sscanf(envptr, {\cf22 "%p"}, &instance);\par
+00104             {\cf19 if} (ok != 1) \{\par
+00105                 fprintf(stderr, {\cf22 "debugmalloc: nem lehet ertelmezni: %s!\\n"}, envptr);\par
+00106                 abort();\par
+00107             \}\par
+00108         \}\par
+00109     \}\par
+00110 \par
+00111     {\cf19 return} (DebugmallocData *) instance;\par
+00112 \}\par
+00113 \par
+00114 \par
+00115 {\cf20 /* better version of strncpy, always terminates string with \\0. */}\par
+00116 {\cf17 static} {\cf18 void} debugmalloc_strlcpy({\cf18 char} *dest, {\cf18 char} {\cf17 const} *src, {\cf18 size_t} destsize) \{\par
+00117     strncpy(dest, src, destsize);\par
+00118     dest[destsize - 1] = {\cf23 '\\0'};\par
+00119 \}\par
+00120 \par
+00121 \par
+00122 {\cf20 /* set the name of the log file for debugmalloc. empty filename}\par
+00123 {\cf20  * means logging to stderr. */}\par
+00124 {\cf17 static} {\cf18 void} debugmalloc_log_file({\cf18 char} {\cf17 const} *logfilename) \{\par
+00125     {\cf19 if} (logfilename == NULL)\par
+00126         logfilename = {\cf22 ""};\par
+00127     DebugmallocData *instance = debugmalloc_singleton();\par
+00128     debugmalloc_strlcpy(instance->logfile, logfilename, {\cf17 sizeof}(instance->logfile));\par
+00129 \}\par
+00130 \par
+00131 \par
+00132 {\cf20 /* set the maximum size of one block. useful for debugging purposes. */}\par
+00133 {\cf17 static} {\cf18 void} debugmalloc_max_block_size({\cf18 long} max_block_size) \{\par
+00134     DebugmallocData *instance = debugmalloc_singleton();\par
+00135     instance->max_block_size = max_block_size;\par
+00136 \}\par
+00137 \par
+00138 \par
+00139 \par
+00140 {\cf20 /* printf to the log file, or stderr. */}\par
+00141 {\cf17 static} {\cf18 void} debugmalloc_log({\cf18 char} {\cf17 const} *format, ...) \{\par
+00142     DebugmallocData *instance = debugmalloc_singleton();\par
+00143     FILE *f = stderr;\par
+00144     {\cf19 if} (instance->logfile[0] != {\cf23 '\\0'}) \{\par
+00145         f = fopen(instance->logfile, {\cf22 "at"});\par
+00146         {\cf19 if} (f == NULL) \{\par
+00147             f = stderr;\par
+00148             fprintf(stderr, {\cf22 "debugmalloc: nem tudom megnyitni a %s fajlt irasra!\\n"}, instance->logfile);\par
+00149             debugmalloc_strlcpy(instance->logfile, {\cf22 ""}, {\cf17 sizeof}(instance->logfile));\par
+00150         \}\par
+00151     \}\par
+00152 \par
+00153     va_list ap;\par
+00154     va_start(ap, format);\par
+00155     vfprintf(f, format, ap);\par
+00156     va_end(ap);\par
+00157 \par
+00158     {\cf19 if} (f != stderr)\par
+00159         fclose(f);\par
+00160 \}\par
+00161 \par
+00162 \par
+00163 {\cf20 /* initialize a memory block allocated for the user. the start and the end}\par
+00164 {\cf20  * of the block is initialized with the canary characters. if 'zero' is}\par
+00165 {\cf20  * true, the user memory area is zero-initialized, otherwise it is also}\par
+00166 {\cf20  * filled with the canary character to simulate garbage in memory. */}\par
+00167 {\cf17 static} {\cf18 void} debugmalloc_memory_init(DebugmallocEntry *elem, {\cf18 bool} zero) \{\par
+00168     {\cf18 unsigned} {\cf18 char} *real_mem = ({\cf18 unsigned} {\cf18 char} *) elem->real_mem;\par
+00169     {\cf18 unsigned} {\cf18 char} *user_mem = ({\cf18 unsigned} {\cf18 char} *) elem->user_mem;\par
+00170     {\cf18 unsigned} {\cf18 char} *canary1 = real_mem;\par
+00171     {\cf18 unsigned} {\cf18 char} *canary2 = real_mem + debugmalloc_canary_size + elem->size;\par
+00172     memset(canary1, debugmalloc_canary_char, debugmalloc_canary_size);\par
+00173     memset(canary2, debugmalloc_canary_char, debugmalloc_canary_size);\par
+00174     memset(user_mem, zero ? 0 : debugmalloc_canary_char, elem->size);\par
+00175 \}\par
+00176 \par
+00177 {\cf20 /* check canary, return true if ok, false if corrupted. */}\par
+00178 {\cf17 static} {\cf18 bool} debugmalloc_canary_ok(DebugmallocEntry {\cf17 const} *elem) \{\par
+00179     {\cf18 unsigned} {\cf18 char} *real_mem = ({\cf18 unsigned} {\cf18 char} *) elem->real_mem;\par
+00180     {\cf18 unsigned} {\cf18 char} *canary1 = real_mem;\par
+00181     {\cf18 unsigned} {\cf18 char} *canary2 = real_mem + debugmalloc_canary_size + elem->size;\par
+00182     for ({\cf18 size_t} i = 0; i < debugmalloc_canary_size; ++i) \{\par
+00183         {\cf19 if} (canary1[i] != debugmalloc_canary_char)\par
+00184             {\cf19 return} {\cf17 false};\par
+00185         {\cf19 if} (canary2[i] != debugmalloc_canary_char)\par
+00186             {\cf19 return} {\cf17 false};\par
+00187     \}\par
+00188     {\cf19 return} {\cf17 true};\par
+00189 \}\par
+00190 \par
+00191 \par
+00192 {\cf20 /* dump memory contents to log file. */}\par
+00193 {\cf17 static} {\cf18 void} debugmalloc_dump_memory({\cf18 char} {\cf17 const} *mem, {\cf18 size_t} size) \{\par
+00194     {\cf19 for} ({\cf18 unsigned} y = 0; y < (size + 15) / 16; y++) \{\par
+00195         {\cf18 char} line[80];\par
+00196         {\cf18 int} pos = 0;\par
+00197         pos += sprintf(line + pos, {\cf22 "      %04x  "}, y * 16);\par
+00198         {\cf19 for} ({\cf18 unsigned} x = 0; x < 16; x++) \{\par
+00199             {\cf19 if} (y * 16 + x < size)\par
+00200                 pos += sprintf(line + pos, {\cf22 "%02x "}, mem[y * 16 + x]);\par
+00201             {\cf19 else}\par
+00202                 pos += sprintf(line + pos, {\cf22 "   "});\par
+00203         \}\par
+00204         pos += sprintf(line + pos, {\cf22 "  "});\par
+00205         {\cf19 for} ({\cf18 unsigned} x = 0; x < 16; x++) \{\par
+00206             {\cf19 if} (y * 16 + x < size) \{\par
+00207                 {\cf18 unsigned} {\cf18 char} c = mem[y * 16 + x];\par
+00208                 pos += sprintf(line + pos, {\cf22 "%c"}, isprint(c) ? c : {\cf23 '.'});\par
+00209             \}\par
+00210             {\cf19 else} \{\par
+00211                 pos += sprintf(line + pos, {\cf22 " "});\par
+00212             \}\par
+00213         \}\par
+00214         debugmalloc_log({\cf22 "%s\\n"}, line);\par
+00215     \}\par
+00216 \}\par
+00217 \par
+00218 \par
+00219 {\cf20 /* dump data of allocated memory block.}\par
+00220 {\cf20  * if the canary is corrupted, it is also written to the log. */}\par
+00221 {\cf17 static} {\cf18 void} debugmalloc_dump_elem(DebugmallocEntry {\cf17 const} *elem) \{\par
+00222     {\cf18 bool} canary_ok = debugmalloc_canary_ok(elem);\par
+00223 \par
+00224     debugmalloc_log({\cf22 "  %p, %u bajt, kanari: %s\\n"}\par
+00225                     {\cf22 "  %s:%u, %s(%s)\\n"},\par
+00226                        elem->user_mem, ({\cf18 unsigned}) elem->size, canary_ok ? {\cf22 "ok"} : {\cf22 "**SERULT**"},\par
+00227                        elem->file, elem->line,\par
+00228                        elem->func, elem->expr);\par
+00229 \par
+00230     {\cf19 if} (!canary_ok) \{\par
+00231         debugmalloc_log({\cf22 "    ELOTTE kanari: \\n"});\par
+00232         debugmalloc_dump_memory(({\cf18 char} {\cf17 const} *) elem->real_mem, debugmalloc_canary_size);\par
+00233     \}\par
+00234 \par
+00235     debugmalloc_dump_memory(({\cf18 char} {\cf17 const} *) elem->user_mem, elem->size > 64 ? 64 : elem->size);\par
+00236 \par
+00237     {\cf19 if} (!canary_ok) \{\par
+00238         debugmalloc_log({\cf22 "    UTANA kanari: \\n"});\par
+00239         debugmalloc_dump_memory(({\cf18 char} {\cf17 const} *) elem->real_mem + debugmalloc_canary_size + elem->size, debugmalloc_canary_size);\par
+00240     \}\par
+00241 \}\par
+00242 \par
+00243 \par
+00244 {\cf20 /* dump data of all memory blocks allocated. */}\par
+00245 {\cf17 static} {\cf18 void} debugmalloc_dump({\cf18 void}) \{\par
+00246     DebugmallocData *instance = debugmalloc_singleton();\par
+00247     debugmalloc_log({\cf22 "** DEBUGMALLOC DUMP ************************************\\n"});\par
+00248     {\cf18 int} cnt = 0;\par
+00249     {\cf19 for} ({\cf18 size_t} i = 0; i < debugmalloc_tablesize; i++) \{\par
+00250         DebugmallocEntry *head = &instance->head[i];\par
+00251         {\cf19 for} (DebugmallocEntry *iter = head->next; iter->next != NULL; iter = iter->next) \{\par
+00252             ++cnt;\par
+00253             debugmalloc_log({\cf22 "** %d/%d. rekord:\\n"}, cnt, instance->alloc_count);\par
+00254             debugmalloc_dump_elem(iter);\par
+00255         \}\par
+00256     \}\par
+00257     debugmalloc_log({\cf22 "** DEBUGMALLOC DUMP VEGE *******************************\\n"});\par
+00258 \}\par
+00259 \par
+00260 \par
+00261 {\cf20 /* called at program exit to dump data if there is a leak,}\par
+00262 {\cf20  * ie. allocated block remained. */}\par
+00263 {\cf17 static} {\cf18 void} debugmalloc_atexit_dump({\cf18 void}) \{\par
+00264     DebugmallocData *instance = debugmalloc_singleton();\par
+00265     \par
+00266     {\cf19 if} (instance->alloc_count > 0) \{\par
+00267         debugmalloc_log({\cf22 "\\n"}\par
+00268                         {\cf22 "********************************************************\\n"}\par
+00269                         {\cf22 "* MEMORIASZIVARGAS VAN A PROGRAMBAN!!!\\n"}\par
+00270                         {\cf22 "********************************************************\\n"}\par
+00271                         {\cf22 "\\n"});\par
+00272         debugmalloc_dump();\par
+00273     \} {\cf19 else} \{\par
+00274         debugmalloc_log({\cf22 "****************************************************\\n"}\par
+00275                         {\cf22 "* Debugmalloc: nincs memoriaszivargas a programban.\\n"}\par
+00276                         {\cf22 "* Osszes foglalas: %d blokk, %d bajt.\\n"}\par
+00277                         {\cf22 "****************************************************\\n"},\par
+00278                         instance->all_alloc_count, instance->all_alloc_bytes);\par
+00279     \}\par
+00280 \}\par
+00281 \par
+00282 \par
+00283 {\cf20 /* hash function for bucket hash. */}\par
+00284 {\cf17 static} {\cf18 size_t} debugmalloc_hash({\cf18 void} *address) \{\par
+00285     {\cf20 /* the last few bits are ignored, as they are usually zero for}\par
+00286 {\cf20      * alignment purposes. all tested architectures used 16 byte allocation. */}\par
+00287     {\cf18 size_t} cut = (size_t)address >> 4;\par
+00288     {\cf19 return} cut % debugmalloc_tablesize;\par
+00289 \}\par
+00290 \par
+00291 \par
+00292 {\cf20 /* insert element to hash table. */}\par
+00293 {\cf17 static} {\cf18 void} debugmalloc_insert(DebugmallocEntry *entry) \{\par
+00294     DebugmallocData *instance = debugmalloc_singleton();\par
+00295     {\cf18 size_t} idx = debugmalloc_hash(entry->user_mem);\par
+00296     DebugmallocEntry *head = &instance->head[idx];\par
+00297     entry->prev = head;\par
+00298     entry->next = head->next;\par
+00299     head->next->prev = entry;\par
+00300     head->next = entry;\par
+00301     instance->alloc_count += 1;\par
+00302     instance->alloc_bytes += entry->size;\par
+00303     instance->all_alloc_count += 1;\par
+00304     instance->all_alloc_bytes += entry->size;\par
+00305 \}\par
+00306 \par
+00307 \par
+00308 {\cf20 /* remove element from hash table */}\par
+00309 {\cf17 static} {\cf18 void} debugmalloc_remove(DebugmallocEntry *entry) \{\par
+00310     DebugmallocData *instance = debugmalloc_singleton();\par
+00311     entry->next->prev = entry->prev;\par
+00312     entry->prev->next = entry->next;\par
+00313     instance->alloc_count -= 1;\par
+00314     instance->alloc_bytes -= entry->size;\par
+00315 \}\par
+00316 \par
+00317 \par
+00318 {\cf20 /* find element in hash table, given with the memory address that the user sees.}\par
+00319 {\cf20  * @return the linked list entry, or null if not found. */}\par
+00320 {\cf17 static} DebugmallocEntry *debugmalloc_find({\cf18 void} *mem) \{\par
+00321     DebugmallocData *instance = debugmalloc_singleton();\par
+00322     {\cf18 size_t} idx = debugmalloc_hash(mem);\par
+00323     DebugmallocEntry *head = &instance->head[idx];\par
+00324     {\cf19 for} (DebugmallocEntry *iter = head->next; iter->next != NULL; iter = iter->next)\par
+00325         {\cf19 if} (iter->user_mem == mem)\par
+00326             {\cf19 return} iter;\par
+00327     {\cf19 return} NULL;\par
+00328 \}\par
+00329 \par
+00330 \par
+00331 {\cf20 /* allocate memory. this function is called via the macro. */}\par
+00332 {\cf17 static} {\cf18 void} *debugmalloc_malloc_full({\cf18 size_t} size, {\cf18 char} {\cf17 const} *func, {\cf18 char} {\cf17 const} *expr, {\cf18 char} {\cf17 const} *file, {\cf18 unsigned} line, {\cf18 bool} zero) \{\par
+00333     {\cf20 /* imitate standard malloc: return null if size is zero */}\par
+00334     {\cf19 if} (size == 0)\par
+00335         {\cf19 return} NULL;\par
+00336     \par
+00337     {\cf20 /* check max size */}\par
+00338     DebugmallocData *instance = debugmalloc_singleton();\par
+00339     {\cf19 if} (size > instance->max_block_size) \{\par
+00340         debugmalloc_log({\cf22 "debugmalloc: %s @ %s:%u: a blokk merete tul nagy, %u bajt; debugmalloc_max_block_size() fuggvennyel novelheto.\\n"}, func, file, line, ({\cf18 unsigned}) size);\par
+00341         abort();\par
+00342     \}\par
+00343 \par
+00344     {\cf20 /* allocate more memory, make room for canary */}\par
+00345     {\cf18 void} *real_mem = malloc(size + 2 * debugmalloc_canary_size);\par
+00346     {\cf19 if} (real_mem == NULL) \{\par
+00347         debugmalloc_log({\cf22 "debugmalloc: %s @ %s:%u: nem sikerult %u meretu memoriat foglalni!\\n"}, func, file, line, ({\cf18 unsigned}) size);\par
+00348         {\cf19 return} NULL;\par
+00349     \}\par
+00350 \par
+00351     {\cf20 /* allocate memory for linked list element */}\par
+00352     DebugmallocEntry *newentry = (DebugmallocEntry *) malloc({\cf17 sizeof}(DebugmallocEntry));\par
+00353     {\cf19 if} (newentry == NULL) \{\par
+00354         free(real_mem);\par
+00355         debugmalloc_log({\cf22 "debugmalloc: %s @ %s:%u: le tudtam foglalni %u memoriat, de utana a sajatnak nem, sry\\n"}, func, file, line, ({\cf18 unsigned}) size);\par
+00356         abort();\par
+00357     \}\par
+00358 \par
+00359     {\cf20 /* metadata of allocation: caller function, code line etc. */}\par
+00360     debugmalloc_strlcpy(newentry->func, func, {\cf17 sizeof}(newentry->func));\par
+00361     debugmalloc_strlcpy(newentry->expr, expr, {\cf17 sizeof}(newentry->expr));\par
+00362     debugmalloc_strlcpy(newentry->file, file, {\cf17 sizeof}(newentry->file));\par
+00363     newentry->line = line;\par
+00364 \par
+00365     {\cf20 /* address of allocated memory chunk */}\par
+00366     newentry->real_mem = real_mem;\par
+00367     newentry->user_mem = ({\cf18 unsigned} {\cf18 char} *) real_mem + debugmalloc_canary_size;\par
+00368     newentry->size = size;\par
+00369     debugmalloc_memory_init(newentry, zero);\par
+00370 \par
+00371     {\cf20 /* store in list and return pointer to user area */}\par
+00372     debugmalloc_insert(newentry);\par
+00373     {\cf19 return} newentry->user_mem;\par
+00374 \}\par
+00375 \par
+00376 \par
+00377 {\cf20 /* free memory and remove list item. before deleting, the chuck is filled with}\par
+00378 {\cf20  * the canary byte to make sure that the user will see garbage if the memory}\par
+00379 {\cf20  * is accessed after freeing. */}\par
+00380 {\cf17 static} {\cf18 void} debugmalloc_free_inner(DebugmallocEntry *deleted) \{\par
+00381     debugmalloc_remove(deleted);\par
+00382 \par
+00383     {\cf20 /* fill with garbage, then remove from linked list */}\par
+00384     memset(deleted->real_mem, debugmalloc_canary_char, deleted->size + 2 * debugmalloc_canary_size);\par
+00385     free(deleted->real_mem);\par
+00386     free(deleted);\par
+00387 \}\par
+00388 \par
+00389 \par
+00390 {\cf20 /* free memory - called via the macro.}\par
+00391 {\cf20  * as all allocations are tracked in the list, this function can terminate the program}\par
+00392 {\cf20  * if a block is freed twice or the free function is called with an invalid address. */}\par
+00393 {\cf17 static} {\cf18 void} debugmalloc_free_full({\cf18 void} *mem, {\cf18 char} {\cf17 const} *func, {\cf18 char} {\cf17 const} *file, {\cf18 unsigned} line) \{\par
+00394     {\cf20 /* imitate standard free function: if ptr is null, no operation is performed */}\par
+00395     {\cf19 if} (mem == NULL)\par
+00396         {\cf19 return};\par
+00397 \par
+00398     {\cf20 /* find allocation, abort if not found */}\par
+00399     DebugmallocEntry *deleted = debugmalloc_find(mem);\par
+00400     {\cf19 if} (deleted == NULL) \{\par
+00401         debugmalloc_log({\cf22 "debugmalloc: %s @ %s:%u: olyan teruletet probalsz felszabaditani, ami nincs lefoglalva!\\n"}, func, file, line);\par
+00402         abort();\par
+00403     \}\par
+00404 \par
+00405     {\cf20 /* check canary and then free memory */}\par
+00406     {\cf19 if} (!debugmalloc_canary_ok(deleted)) \{\par
+00407         debugmalloc_log({\cf22 "debugmalloc: %s @ %s:%u: a %p memoriateruletet tulindexelted!\\n"}, func, file, line, mem);\par
+00408         debugmalloc_dump_elem(deleted);\par
+00409     \}\par
+00410     debugmalloc_free_inner(deleted);\par
+00411 \}\par
+00412 \par
+00413 \par
+00414 {\cf20 /* realloc-like function. */}\par
+00415 {\cf17 static} {\cf18 void} *debugmalloc_realloc_full({\cf18 void} *oldmem, {\cf18 size_t} newsize, {\cf18 char} {\cf17 const} *func, {\cf18 char} {\cf17 const} *expr, {\cf18 char} {\cf17 const} *file, {\cf18 unsigned} line) \{\par
+00416     {\cf20 /* imitate standard realloc: equivalent to free if size is null. */}\par
+00417     {\cf19 if} (newsize == 0) \{\par
+00418         debugmalloc_free_full(oldmem, func, file, line);\par
+00419         {\cf19 return} NULL;\par
+00420     \}\par
+00421     {\cf20 /* imitate standard realloc: equivalent to malloc if first param is NULL */}\par
+00422     {\cf19 if} (oldmem == NULL)\par
+00423         {\cf19 return} debugmalloc_malloc_full(newsize, func, expr, file, line, 0);\par
+00424 \par
+00425     {\cf20 /* find old allocation. abort if not found. */}\par
+00426     DebugmallocEntry *oldentry = debugmalloc_find(oldmem);\par
+00427     {\cf19 if} (oldentry == NULL) \{\par
+00428         debugmalloc_log({\cf22 "debugmalloc: %s @ %s:%u: olyan teruletet probalsz atmeretezni, ami nincs lefoglalva!\\n"}, func, file, line);\par
+00429         abort();\par
+00430     \}\par
+00431 \par
+00432     {\cf20 /* create new allocation, copy & free old data */}\par
+00433     {\cf18 void} *newmem = debugmalloc_malloc_full(newsize, func, expr, file, line, {\cf17 false});\par
+00434     {\cf19 if} (newmem == NULL) \{\par
+00435         debugmalloc_log({\cf22 "debugmalloc: %s @ %s:%u: nem sikerult uj memoriat foglalni az atmeretezeshez!\\n"}, func, file, line);\par
+00436         {\cf20 /* imitate standard realloc: original block is untouched, but return NULL */}\par
+00437         {\cf19 return} NULL;\par
+00438     \}\par
+00439     {\cf18 size_t} smaller = oldentry->size < newsize ? oldentry->size : newsize;\par
+00440     memcpy(newmem, oldmem, smaller);\par
+00441     debugmalloc_free_inner(oldentry);\par
+00442 \par
+00443     {\cf19 return} newmem;\par
+00444 \}\par
+00445 \par
+00446 \par
+00447 {\cf20 /* initialize debugmalloc singleton. returns the newly allocated instance */}\par
+00448 {\cf17 static} DebugmallocData * debugmalloc_create({\cf18 void}) \{\par
+00449     {\cf20 /* config check */}\par
+00450     {\cf19 if} (debugmalloc_canary_size % 16 != 0) \{\par
+00451         debugmalloc_log({\cf22 "debugmalloc: a kanari merete legyen 16-tal oszthato\\n"});\par
+00452         abort();\par
+00453     \}\par
+00454     {\cf19 if} (debugmalloc_canary_char == 0) \{\par
+00455         debugmalloc_log({\cf22 "debugmalloc: a kanari legyen 0-tol kulonbozo\\n"});\par
+00456         abort();\par
+00457     \}\par
+00458     {\cf20 /* avoid compiler warning if these functions are not used */}\par
+00459     (void) debugmalloc_realloc_full;\par
+00460     (void) debugmalloc_log_file;\par
+00461     (void) debugmalloc_max_block_size;\par
+00462 \par
+00463     {\cf20 /* create and initialize instance */}\par
+00464     DebugmallocData *instance = (DebugmallocData *) malloc({\cf17 sizeof}(DebugmallocData));\par
+00465     {\cf19 if} (instance == NULL) \{\par
+00466         debugmalloc_log({\cf22 "debugmalloc: nem sikerult elinditani a memoriakezelest\\n"});\par
+00467         abort();\par
+00468     \}\par
+00469     debugmalloc_strlcpy(instance->logfile, {\cf22 ""}, {\cf17 sizeof}(instance->logfile));\par
+00470     instance->max_block_size = debugmalloc_max_block_size_default;\par
+00471     instance->alloc_count = 0;\par
+00472     instance->alloc_bytes = 0;\par
+00473     instance->all_alloc_count = 0;\par
+00474     instance->all_alloc_bytes = 0;\par
+00475     {\cf19 for} ({\cf18 size_t} i = 0; i < debugmalloc_tablesize; i++) \{\par
+00476         instance->head[i].prev = NULL;\par
+00477         instance->head[i].next = &instance->tail[i];\par
+00478         instance->tail[i].next = NULL;\par
+00479         instance->tail[i].prev = &instance->head[i];\par
+00480     \}\par
+00481 \par
+00482     atexit(debugmalloc_atexit_dump);\par
+00483     {\cf19 return} instance;\par
+00484 \}\par
+00485 \par
+00486 \par
+00487 {\cf20 /* These macro-like functions forward all allocation/free}\par
+00488 {\cf20  * calls to debugmalloc. Usage is the same, malloc(size)}\par
+00489 {\cf20  * gives the address of a new memory block, free(ptr)}\par
+00490 {\cf20  * deallocates etc.}\par
+00491 {\cf20  * }\par
+00492 {\cf20  * If you use this file, make sure that you include this}\par
+00493 {\cf20  * in *ALL* translation units (*.c) of your source. The}\par
+00494 {\cf20  * builtin free() function cannot deallocate a memory block}\par
+00495 {\cf20  * that was allocated via debugmalloc, yet the name of}\par
+00496 {\cf20  * the function is the same! */}\par
+00497 \par
+00498 {\cf21 #define malloc(S) debugmalloc_malloc_full((S), "malloc"}, #S, __FILE__, __LINE__, false)\par
+00499 {\cf21 #define calloc(N,S) debugmalloc_malloc_full((N)*(S), "calloc"}, #N ", " #S, __FILE__, __LINE__, true)\par
+00500 {\cf21 #define realloc(P,S) debugmalloc_realloc_full((P), (S), "realloc"}, #S, __FILE__, __LINE__)\par
+00501 {\cf21 #define free(P) debugmalloc_free_full((P), "free"}, __FILE__, __LINE__)\par
+00502 \par
+00503 {\cf21 #endif}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+dicsoseglista.c File Reference\par \pard\plain 
+{\tc\tcl2 \v dicsoseglista.c}
+{\xe \v dicsoseglista.c}
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "dicsoseglista.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b dicsoseglistat_kezel} ({\b Eredmeny} eredmeny, int nehezsegiszint, int nyeremenyek[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A "dicsoseglista.txt" fajlban tarolja a 10 legjobb idot neh\'E9zs\'E9gi szint alapj\'E1n. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v dicsoseglistat_kezel\:dicsoseglista.c}
+{\xe \v dicsoseglista.c\:dicsoseglistat_kezel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void dicsoseglistat_kezel ({\b Eredmeny}  {\i eredmeny}, int  {\i nehezsegiszint}, int  {\i nyeremenyek}[])}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A "dicsoseglista.txt" fajlban tarolja a 10 legjobb idot neh\'E9zs\'E9gi szint alapj\'E1n. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A dics\'C5\'91s\'C3\'A9glist\'C3\'A1t beolvassa az adott neh\'C3\'A9zs\'C3\'A9gi szinthez, bet\'C3\'B6lti, szerkeszti, rendezi, majd ki\'C3\'ADrja azt a consol-ra \'C3\'A9s a hozz\'C3\'A1 tartoz\'C3\'B3 f\'C3\'A1jlba. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Mivel egy \'FAj elemet akarunk belerakni, \'E9s a v\'E9g\'E9n csak a TOP 10 \'EDr\'F3dik ki\par
+Minden elemet alaphelyzetbe \'E1ll\'EDt\par
+F\'E1jln\'E9v be\'E1ll\'EDt\'E1s\par
+A f\'E1jln\'E9v form\'E1tuma tartalmazza az utols\'F3 karakterekben a neh\'E9zs\'E9get, ez alapj\'E1n azonos\'EDthat\'F3\par
+L\'E9trehozza a k\'EDv\'E1nt f\'E1jlnevet\par
+F\'E1jlb\'F3l olvas\'E1s\par
+Ha siker\'C3\'BClt megnyitni beolvas, ha nem akkor m\'C3\'A9g nem l\'C3\'A9tezett ilyen f\'C3\'A1jl \'C3\'A9s majd k\'C3\'A9s\'C5\'91bb a ki\'C3\'ADr\'C3\'A1sn\'C3\'A1l j\'C3\'B6n l\'C3\'A9tre\par
+Belerakja a j\'C3\'A1t\'C3\'A9kos eredm\'C3\'A9ny\'C3\'A9t a dics\'C5\'91s\'C3\'A9glista utols\'C3\'B3 hely\'C3\'A9re\par
+Rendezi a dics\'C5\'91s\'C3\'A9glist\'C3\'A1t a v\'C3\'A9gs\'C5\'91 sorrendre\par
+Ki\'C3\'ADrja a consolra a v\'C3\'A9gs\'C5\'91 dics\'C5\'91s\'C3\'A9glist\'C3\'A1t\par
+F\'E1jlba ki\'EDr\par
+Hiba\par
+Mivel volt neki mem\'F3ria foglalva felszabad\'EDt\par
+\'C3\'89s mivel m\'C3\'A1r a tov\'C3\'A1bbiakban nincs sz\'C3\'BCks\'C3\'A9g a dics\'C5\'91s\'C3\'A9glist\'C3\'A1ra \'C3\'ADgy felszabad\'C3\'ADt\par
+}{
+Definition at line {\b 100} of file {\b dicsoseglista.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+dicsoseglista.c\par \pard\plain 
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 //}\par
+00002 {\cf20 // Created by Jajecnik Marcell on 2022. 12. 02..}\par
+00003 {\cf20 //}\par
+00004 \par
+00005 {\cf21 #include "dicsoseglista.h"}\par
+00006 \par
+00007 {\cf17 static} {\cf17 const} {\cf18 int} DICSOSEGLISTA_MERET = 10;\par
+00010 {\cf17 static} {\cf18 void} dicsoseglista_beolvas(FILE* fp, Eredmeny dicsoseglista[]) \{\par
+00011     {\cf19 for}({\cf18 int} i = 0; i < DICSOSEGLISTA_MERET; i++) \{\par
+00012         {\cf18 char}* sor = sor_be(fp);\par
+00013         dicsoseglista[i].jatekosnev = sor;\par
+00014         sor = sor_be(fp);\par
+00015         dicsoseglista[i].megvalaszolt = atoi(sor);\par
+00016         free(sor);\par
+00017         sor = sor_be(fp);\par
+00018         dicsoseglista[i].ido = atoi(sor);\par
+00019         free(sor);\par
+00020     \}\par
+00021 \}\par
+00022 \par
+00024 {\cf17 static} {\cf18 void} dicsoseglistabarak(Eredmeny eredmeny, Eredmeny dicsoseglista[])\{\par
+00025     dicsoseglista[DICSOSEGLISTA_MERET].jatekosnev = eredmeny.jatekosnev;\par
+00026     dicsoseglista[DICSOSEGLISTA_MERET].megvalaszolt = eredmeny.megvalaszolt;\par
+00027     dicsoseglista[DICSOSEGLISTA_MERET].ido=eredmeny.ido;\par
+00028 \}\par
+00029 \par
+00031 {\cf17 static} {\cf18 void} rendez(Eredmeny dicsoseglista[]) \{\par
+00032     {\cf18 int} index = -1;\par
+00033     {\cf19 for} ({\cf18 int} i = 0; i < DICSOSEGLISTA_MERET; ++i) \{\par
+00034         {\cf19 if} (dicsoseglista[i].megvalaszolt==dicsoseglista[DICSOSEGLISTA_MERET].megvalaszolt && dicsoseglista[i].ido > dicsoseglista[DICSOSEGLISTA_MERET].ido )\{\par
+00040             index = i;\par
+00041             {\cf19 break};\par
+00042         \} {\cf19 else} {\cf19 if} (dicsoseglista[i].megvalaszolt<dicsoseglista[DICSOSEGLISTA_MERET].megvalaszolt)\{\par
+00049             index = i;\par
+00050             {\cf19 break};\par
+00051         \}\par
+00052     \}\par
+00054     {\cf19 if}(index == DICSOSEGLISTA_MERET || index == -1) {\cf19 return};\par
+00055 \par
+00056 \par
+00057     Eredmeny temp = dicsoseglista[index];\par
+00058     dicsoseglista[index]=dicsoseglista[DICSOSEGLISTA_MERET]; \par
+00060     {\cf19 for} ({\cf18 int} i = index + 1; i < DICSOSEGLISTA_MERET; ++i) \{\par
+00061 \par
+00063         dicsoseglista[DICSOSEGLISTA_MERET]=dicsoseglista[i];\par
+00064 \par
+00066         dicsoseglista[i] = temp;\par
+00067 \par
+00069         temp = dicsoseglista[DICSOSEGLISTA_MERET];\par
+00070     \}\par
+00071 \}\par
+00072 \par
+00074 {\cf17 static} {\cf18 void} dicsoseglistat_deklaral(Eredmeny dicsoseglista[])\{\par
+00075     {\cf19 for} ({\cf18 int} i = 0; i < DICSOSEGLISTA_MERET+1; ++i) \{\par
+00079         dicsoseglista[i].jatekosnev={\cf23 '\\0'};\par
+00080         dicsoseglista[i].megvalaszolt=-1;\par
+00081         dicsoseglista[i].ido=0;\par
+00082     \}\par
+00083 \}\par
+00084 \par
+00086 {\cf17 static} {\cf18 void} dicsoseglistatkiir(Eredmeny dicsoseglista[], {\cf18 int} nyeremenyek[], {\cf18 int} nehezsegiszint)\{\par
+00087     printf({\cf22 "\\n\\n%d. neh\'E9zs\'E9gi szinten\\n"},nehezsegiszint);\par
+00089     {\cf19 for} ({\cf18 int} i = 0; i < DICSOSEGLISTA_MERET; ++i) \{\par
+00090         {\cf19 if} (dicsoseglista[i].megvalaszolt==-1) {\cf19 break};\par
+00091         printf({\cf22 "%d. helyezett: %s, %d Ft nyert \'F6sszeg, %d m\'E1sodperc alatt\\n"},\par
+00092                i+1,\par
+00093                dicsoseglista[i].jatekosnev,\par
+00094                dicsoseglista[i].megvalaszolt > 0 ? nyeremenyek[dicsoseglista[i].megvalaszolt-1] : 0,\par
+00095                dicsoseglista[i].ido);\par
+00096     \}\par
+00097 \}\par
+00098 \par
+00100 {\cf18 void} dicsoseglistat_kezel(Eredmeny eredmeny, {\cf18 int} nehezsegiszint, {\cf18 int} nyeremenyek[]) \{\par
+00101     Eredmeny dicsoseglista[DICSOSEGLISTA_MERET + 1];\par
+00102     dicsoseglistat_deklaral(dicsoseglista);\par
+00105     FILE *fp;\par
+00106     {\cf18 char} fajlnev_format[] = {\cf22 "dicsoseglista_%d"};\par
+00107     {\cf18 char} fajlnev[] = {\cf22 "dicsoseglista_00"};\par
+00108     sprintf(fajlnev, fajlnev_format, nehezsegiszint);\par
+00111     fp = fopen(fajlnev, {\cf22 "r+"});\par
+00115     {\cf19 if} (fp != NULL) \{\par
+00116         dicsoseglista_beolvas(fp, dicsoseglista);\par
+00117         fclose(fp);\par
+00118     \}\par
+00119 \par
+00121     dicsoseglistabarak(eredmeny, dicsoseglista);\par
+00122 \par
+00124     rendez(dicsoseglista);\par
+00125 \par
+00127     dicsoseglistatkiir(dicsoseglista, nyeremenyek, nehezsegiszint);\par
+00128 \par
+00130     fp = fopen(fajlnev, {\cf22 "w"});\par
+00131     {\cf19 if} (fp == NULL) {\cf19 return}; \par
+00132     {\cf19 for} ({\cf18 int} i = 0; i < DICSOSEGLISTA_MERET; ++i) \{\par
+00133         fprintf(fp, {\cf22 "%s\\n"}, dicsoseglista[i].jatekosnev);\par
+00134         free(dicsoseglista[i].jatekosnev);\par
+00135         fprintf(fp, {\cf22 "%d\\n"}, dicsoseglista[i].megvalaszolt);\par
+00136         fprintf(fp, {\cf22 "%d\\n"}, dicsoseglista[i].ido);\par
+00137     \}\par
+00138     fclose(fp);\par
+00139 \par
+00140     free(dicsoseglista[DICSOSEGLISTA_MERET].jatekosnev);\par
+00141 \};\par
+00142 \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+dicsoseglista.h File Reference\par \pard\plain 
+{\tc\tcl2 \v dicsoseglista.h}
+{\xe \v dicsoseglista.h}
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdlib.h>}\par
+{\f2 #include <stdbool.h>}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include "beolvas.h"}\par
+{\f2 #include "debugmalloc.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b Eredmeny}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Egy j\'E1t\'E9k eredm\'E9nyeit t\'E1rolja. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef struct {\b Eredmeny} {\b Eredmeny}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Egy j\'E1t\'E9k eredm\'E9nyeit t\'E1rolja. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b dicsoseglistat_kezel} ({\b Eredmeny} eredmeny, int nehezsegiszint, int nyeremenyek[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A dics\'C5\'91s\'C3\'A9glist\'C3\'A1t beolvassa az adott neh\'C3\'A9zs\'C3\'A9gi szinthez, bet\'C3\'B6lti, szerkeszti, rendezi, majd ki\'C3\'ADrja azt a consol-ra \'C3\'A9s a hozz\'C3\'A1 tartoz\'C3\'B3 f\'C3\'A1jlba. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedef Documentation\par
+\pard\plain 
+{\xe \v Eredmeny\:dicsoseglista.h}
+{\xe \v dicsoseglista.h\:Eredmeny}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef struct {\b Eredmeny} {\b Eredmeny}}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Egy j\'E1t\'E9k eredm\'E9nyeit t\'E1rolja. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Created by Jajecnik Marcell on 2022. 12. 02.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v dicsoseglistat_kezel\:dicsoseglista.h}
+{\xe \v dicsoseglista.h\:dicsoseglistat_kezel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void dicsoseglistat_kezel ({\b Eredmeny}  {\i eredmeny}, int  {\i nehezsegiszint}, int  {\i nyeremenyek}[])}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A dics\'C5\'91s\'C3\'A9glist\'C3\'A1t beolvassa az adott neh\'C3\'A9zs\'C3\'A9gi szinthez, bet\'C3\'B6lti, szerkeszti, rendezi, majd ki\'C3\'ADrja azt a consol-ra \'C3\'A9s a hozz\'C3\'A1 tartoz\'C3\'B3 f\'C3\'A1jlba. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A dics\'C5\'91s\'C3\'A9glist\'C3\'A1t beolvassa az adott neh\'C3\'A9zs\'C3\'A9gi szinthez, bet\'C3\'B6lti, szerkeszti, rendezi, majd ki\'C3\'ADrja azt a consol-ra \'C3\'A9s a hozz\'C3\'A1 tartoz\'C3\'B3 f\'C3\'A1jlba. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Mivel egy \'FAj elemet akarunk belerakni, \'E9s a v\'E9g\'E9n csak a TOP 10 \'EDr\'F3dik ki\par
+Minden elemet alaphelyzetbe \'E1ll\'EDt\par
+F\'E1jln\'E9v be\'E1ll\'EDt\'E1s\par
+A f\'E1jln\'E9v form\'E1tuma tartalmazza az utols\'F3 karakterekben a neh\'E9zs\'E9get, ez alapj\'E1n azonos\'EDthat\'F3\par
+L\'E9trehozza a k\'EDv\'E1nt f\'E1jlnevet\par
+F\'E1jlb\'F3l olvas\'E1s\par
+Ha siker\'C3\'BClt megnyitni beolvas, ha nem akkor m\'C3\'A9g nem l\'C3\'A9tezett ilyen f\'C3\'A1jl \'C3\'A9s majd k\'C3\'A9s\'C5\'91bb a ki\'C3\'ADr\'C3\'A1sn\'C3\'A1l j\'C3\'B6n l\'C3\'A9tre\par
+Belerakja a j\'C3\'A1t\'C3\'A9kos eredm\'C3\'A9ny\'C3\'A9t a dics\'C5\'91s\'C3\'A9glista utols\'C3\'B3 hely\'C3\'A9re\par
+Rendezi a dics\'C5\'91s\'C3\'A9glist\'C3\'A1t a v\'C3\'A9gs\'C5\'91 sorrendre\par
+Ki\'C3\'ADrja a consolra a v\'C3\'A9gs\'C5\'91 dics\'C5\'91s\'C3\'A9glist\'C3\'A1t\par
+F\'E1jlba ki\'EDr\par
+Hiba\par
+Mivel volt neki mem\'F3ria foglalva felszabad\'EDt\par
+\'C3\'89s mivel m\'C3\'A1r a tov\'C3\'A1bbiakban nincs sz\'C3\'BCks\'C3\'A9g a dics\'C5\'91s\'C3\'A9glist\'C3\'A1ra \'C3\'ADgy felszabad\'C3\'ADt\par
+}{
+Definition at line {\b 100} of file {\b dicsoseglista.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+dicsoseglista.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00005 \par
+00006 {\cf21 #ifndef JATEK2_MENTES_H}\par
+00007 {\cf21 #define JATEK2_MENTES_H}\par
+00008 \par
+00009 {\cf21 #include <stdlib.h>}\par
+00010 {\cf21 #include <stdbool.h>}\par
+00011 {\cf21 #include <stdio.h>}\par
+00012 {\cf21 #include <string.h>}\par
+00013 {\cf21 #include "beolvas.h"}\par
+00014 {\cf21 #include "debugmalloc.h"}\par
+00015 \par
+00017 {\cf17 typedef} {\cf17 struct }Eredmeny \{\par
+00018     {\cf18 char}* jatekosnev;\par
+00019     {\cf18 int} megvalaszolt;\par
+00020     {\cf18 int} ido;\par
+00021 \} Eredmeny;\par
+00022 \par
+00024 {\cf18 void} dicsoseglistat_kezel(Eredmeny eredmeny, {\cf18 int} nehezsegiszint, {\cf18 int} nyeremenyek[]);\par
+00025 \par
+00026 {\cf21 #endif }{\cf20 //JATEK2_MENTES_H}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+jatek.c File Reference\par \pard\plain 
+{\tc\tcl2 \v jatek.c}
+{\xe \v jatek.c}
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "jatek.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b kivant_nehezsegi_szint} (int kerdesek_csoportositva[], int nehezsegfajtak)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Bek\'C3\'A9r egy neh\'C3\'A9zs\'C3\'A9gi szintet a j\'C3\'A1t\'C3\'A9kost\'C3\'B3l \'C3\'A9s ellen\'C5\'91rzi, hogy azon a neh\'C3\'A9zs\'C3\'A9gi szinten j\'C3\'A1tszhat\'C3\'B3-e a j\'C3\'A1t\'C3\'A9k. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ker_csop_tomben} {\b kerdes_felteves} ({\b ker_csop_tomben} *kerdesektarhaza[], int kerdesek_csoportositva[], int nehezsegi_szint)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ki\'C3\'ADr a consol-ra egy k\'C3\'A9rd\'C3\'A9st \'C3\'A9s a hozz\'C3\'A1 tart\'C3\'B3z\'C3\'B3 v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9geket. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b segitseg_keres} ({\b ker_csop_tomben} kerdes, bool *felezes_hasznaltsag, bool *kozonseg_szavazata_hasznaltsag)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A seg\'EDts\'E9gk\'E9r\'E9sek vez\'E9rl\'E9se. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b valasz_beker} ({\b ker_csop_tomben} kerdes)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos v\'E1lasz\'E1t ki\'E9rt\'E9keli \'E9s ha rossz a form\'E1tum rekurz\'EDvan fut. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v kerdes_felteves\:jatek.c}
+{\xe \v jatek.c\:kerdes_felteves}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b ker_csop_tomben} kerdes_felteves ({\b ker_csop_tomben} *  {\i kerdesektarhaza}[], int  {\i kerdesek_csoportositva}[], int  {\i nehezsegi_szint})}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ki\'C3\'ADr a consol-ra egy k\'C3\'A9rd\'C3\'A9st \'C3\'A9s a hozz\'C3\'A1 tart\'C3\'B3z\'C3\'B3 v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9geket. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Feltesz egy random kerdest az adott nehezsegi szintbol, visszater a kerdessel. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az adott neh\'E9zs\'E9gi szinthez tart\'F3z\'F3 k\'E9rd\'E9sek k\'F6z\'FCl kisorsol egy indexet\par
+Megfelel\'C5\'91en sok k\'C3\'A9rd\'C3\'A9ssel v\'C3\'A9ges id\'C5\'91n bel\'C3\'BCl v\'C3\'A9get \'C3\'A9r a ciklus.\par
+Belerakja a gener\'E1lt maxim\'E1lisan a neh\'E9zs\'E9gi k\'E9rd\'E9shez tartoz\'F3 maxim\'E1lis nagys\'E1g\'FA sz\'E1mot\par
+Addig ameddig olyat nem tal\'E1l amit m\'E9g nem haszn\'E1lt\par
+A kisorsolt k\'E9rd\'E9st elt\'E1rolja helyileg\par
+}{
+Definition at line {\b 29} of file {\b jatek.c}.}\par
+}
+{\xe \v kivant_nehezsegi_szint\:jatek.c}
+{\xe \v jatek.c\:kivant_nehezsegi_szint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int kivant_nehezsegi_szint (int  {\i kerdesek_csoportositva}[], int  {\i nehezsegfajtak})}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Bek\'C3\'A9r egy neh\'C3\'A9zs\'C3\'A9gi szintet a j\'C3\'A1t\'C3\'A9kost\'C3\'B3l \'C3\'A9s ellen\'C5\'91rzi, hogy azon a neh\'C3\'A9zs\'C3\'A9gi szinten j\'C3\'A1tszhat\'C3\'B3-e a j\'C3\'A1t\'C3\'A9k. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvassa a kivant nehezsegi szintet es visszater a felhasznalo altal latott ertekkel;.\par
+Created by Jajecnik Marcell on 2022. 12. 01.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell \par
+}}}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos kiv\'E1lasztja az \'E1ltala k\'EDv\'E1nt neh\'E9zs\'E9gi szintet amin a j\'E1t\'E9k futni fog\par
+A bek\'E9rt neh\'E9zs\'E9gi szintet t\'E1rolja\par
+Beolvassa a consolra \'EDrt sort az enterig\par
+\'C1talak\'EDtja integerr\'E9 a beolvasott adatot, ha sikertelen 0-at vissza\par
+Majd a sort felszabad\'EDtja\par
+Ha a form\'E1tum helyes\par
+\'C9s van el\'E9g k\'E9rd\'E9s a j\'E1t\'E9khoz\par
+Visszaadja a bek\'E9rt neh\'E9zs\'E9gi szintet\par
+Ha nem lehet a bek\'E9rt neh\'E9zs\'E9gi szinten j\'E1tszani\par
+Rekurz\'EDvan addig k\'E9r be am\'EDg futtathat\'F3 \'E9rt\'E9ket nem kap\par
+}{
+Definition at line {\b 9} of file {\b jatek.c}.}\par
+}
+{\xe \v segitseg_keres\:jatek.c}
+{\xe \v jatek.c\:segitseg_keres}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void segitseg_keres ({\b ker_csop_tomben}  {\i kerdes}, bool *  {\i felezes_hasznaltsag}, bool *  {\i kozonseg_szavazata_hasznaltsag})}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A seg\'EDts\'E9gk\'E9r\'E9sek vez\'E9rl\'E9se. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos seg\'EDts\'E9gk\'E9r\'E9seit teszteli \'E9s v\'E9grehajtja ha jogosult r\'E1 \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ha m\'C3\'A1r nincs lehet\'C5\'91s\'C3\'A9ge seg\'C3\'ADts\'C3\'A9get hazsn\'C3\'A1lni akkor nem fut le\par
+Bek\'E9r egy karaktert amit naggy\'E1 alak\'EDt\par
+Ha van m\'C3\'A9g lehet\'C5\'91s\'C3\'A9ge felez\'C3\'A9st haszn\'C3\'A1lni akkor v\'C3\'A9grehajtja \'C3\'A9s a haszn\'C3\'A1lts\'C3\'A1got igazra \'C3\'A1ll\'C3\'ADtja\par
+Ha nincs, akkor rekurz\'EDv\par
+Ha van m\'C3\'A9g lehet\'C5\'91s\'C3\'A9ge haszn\'C3\'A1lni akkor v\'C3\'A9grehajtja \'C3\'A9s a haszn\'C3\'A1lts\'C3\'A1got igazra \'C3\'A1ll\'C3\'ADtja\par
+Ha nincs akkor rekurz\'EDv\par
+Ha nem j\'F3 form\'E1tum\'FA a v\'E1lasz akkor rekurz\'EDv\par
+}{
+Definition at line {\b 112} of file {\b jatek.c}.}\par
+}
+{\xe \v valasz_beker\:jatek.c}
+{\xe \v jatek.c\:valasz_beker}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool valasz_beker ({\b ker_csop_tomben}  {\i kerdes})}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos v\'E1lasz\'E1t ki\'E9rt\'E9keli \'E9s ha rossz a form\'E1tum rekurz\'EDvan fut. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Igazzal ter vissza, ha helyes a valasz, kezeli az ervenytelen valaszokat. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Elt\'E1rolja a beolvasott karaktert\par
+Nagybet\'C5\'B1ss\'C3\'A9 teszi\par
+Ha a v\'E1lasz helyes igazat ad vissza\par
+Ha nem igaz akkor hamisat\par
+Ha pedig nem j\'F3 az adott v\'E1lasz form\'E1tuma akkor rekurz\'EDv\par
+}{
+Definition at line {\b 154} of file {\b jatek.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+jatek.c\par \pard\plain 
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00005 \par
+00006 {\cf21 #include "jatek.h"}\par
+00007 \par
+00009 {\cf18 int} kivant_nehezsegi_szint ({\cf18 int} kerdesek_csoportositva[], {\cf18 int} nehezsegfajtak)\{\par
+00010     printf({\cf22 "Milyen neh\'E9zs\'E9gi szinten szeretne j\'E1tszani? Adjon meg egy sz\'E1mot 1 \'E9s %d k\'F6z\'F6tt\\n"}, nehezsegfajtak);\par
+00011     {\cf18 int} nehezsegi_szint;\par
+00012     {\cf18 char}* sor = sor_be(stdin);\par
+00013     nehezsegi_szint = atoi(sor);\par
+00014     free(sor);\par
+00016     {\cf19 if} (nehezsegi_szint <= nehezsegfajtak && nehezsegi_szint > 0) \{\par
+00017         {\cf19 if} (kerdesek_csoportositva[nehezsegi_szint-1] >=15)\{\par
+00019                 {\cf19 return} nehezsegi_szint;\par
+00020         \}\par
+00021     \}\par
+00022 \par
+00024     printf({\cf22 "Ilyen neh\'E9zs\'E9gi szinten sajnos jelenleg nem tud j\'E1tszani, k\'E9rem v\'E1lasszon egy m\'E1sik neh\'E9zs\'E9giszintet\\n"});\par
+00025     {\cf19 return} kivant_nehezsegi_szint(kerdesek_csoportositva, nehezsegfajtak);\par
+00026 \};\par
+00027 \par
+00029 ker_csop_tomben kerdes_felteves (ker_csop_tomben *kerdesektarhaza[], {\cf18 int} kerdesek_csoportositva[], {\cf18 int} nehezsegi_szint)\{\par
+00030     {\cf18 int} index;\par
+00034     {\cf19 do} \{\par
+00035         index = rand() % (kerdesek_csoportositva[nehezsegi_szint - 1]);\par
+00036     \} {\cf19 while} (kerdesektarhaza[nehezsegi_szint-1][index].hasznalt);\par
+00038     ker_csop_tomben kerdes = kerdesektarhaza[nehezsegi_szint-1][index];\par
+00039     printf({\cf22 "%s\\n"}, kerdes.kerdes);\par
+00040     printf({\cf22 "A: %s     B:%s\\nC: %s     D:%s\\n"}, kerdes.a, kerdes.b, kerdes.c, kerdes.d);\par
+00041     kerdesektarhaza[nehezsegi_szint-1][index].hasznalt={\cf17 true};\par
+00042     {\cf19 return} kerdes;\par
+00043 \};\par
+00044 \par
+00045 \par
+00047 {\cf17 static} {\cf18 char} karakter_beker() \{\par
+00048     {\cf18 char}* sor = sor_be(stdin);\par
+00049     {\cf19 if} (strlen(sor)>1)\{\par
+00050         free(sor);\par
+00051         printf({\cf22 "\'C9rv\'E9nytelen v\'E1lasz! K\'E9rem pr\'F3b\'E1lkozzon \'FAjra!\\n"});\par
+00052         {\cf19 return} karakter_beker();\par
+00053     \}\par
+00054     {\cf18 char} c = sor[0];\par
+00055     free(sor);\par
+00056     {\cf19 return} c;\par
+00057 \}\par
+00058 \par
+00060 {\cf17 static} {\cf18 void} felezes(ker_csop_tomben kerdes)\{\par
+00061     {\cf18 int} helyes = kerdes.helyes - {\cf23 'A'};\par
+00062     {\cf18 char} valaszok[4]=\{{\cf23 'A'},{\cf23 'B'},{\cf23 'C'},{\cf23 'D'}\};\par
+00063     {\cf18 char} rosszak[3];\par
+00064     {\cf18 int} j = 0;\par
+00065     {\cf19 for} ({\cf18 int} i = 0; i < 4; ++i) \{\par
+00066         {\cf19 if} (i != helyes) \{\par
+00067             rosszak[j]=valaszok[i];\par
+00068             j++;\par
+00069         \}\par
+00070     \}\par
+00071     {\cf18 int} kiirasi_sorrend = rand() % 2;\par
+00072     {\cf18 int} rosszkerdes = rand() % 3;\par
+00073     {\cf18 char} out[2];\par
+00074     out[kiirasi_sorrend]=rosszak[rosszkerdes];\par
+00075     out[1-kiirasi_sorrend]=kerdes.helyes;\par
+00076     printf({\cf22 "%c \'E9s %c k\'F6z\'F6tt van a j\'F3 v\'E1lasz\\n"}, out[0], out[1]);\par
+00077 \}\par
+00078 \par
+00080 {\cf17 static} {\cf18 void} kozonseg_szavazata(ker_csop_tomben kerdes)\{\par
+00081     {\cf18 int} szazalekok[4]; \par
+00082     {\cf18 int} r=rand()%100;\par
+00084     {\cf19 if} (r<50) szazalekok[3]=100-r;\par
+00085     {\cf19 else} szazalekok[3]=r;\par
+00086 \par
+00087     {\cf18 int} maradek=100-szazalekok[3];\par
+00088     {\cf19 for} ({\cf18 int} i = 0; i < 2; ++i) \{\par
+00089         szazalekok[i]=rand()%maradek;\par
+00090         maradek-=szazalekok[i];\par
+00091     \}\par
+00092     szazalekok[2]=maradek;\par
+00094     printf({\cf22 "A n\'C3\'A9z\'C5\'91k szavazatai: \\n"});\par
+00095 \par
+00096     {\cf18 int} j=0;\par
+00099     {\cf19 for}({\cf18 int} i = 0; i < 4; i++) \{\par
+00100         {\cf19 if}(kerdes.helyes - {\cf23 'A'} == i) \{\par
+00101             printf({\cf22 "%c: %d%% "}, kerdes.helyes, szazalekok[3]);\par
+00102         \}\par
+00103         {\cf19 else} \{\par
+00104             printf({\cf22 "%c: %d%%  "}, i + {\cf23 'A'}, szazalekok[j]);\par
+00105             j++;\par
+00106         \}\par
+00107     \}\par
+00108     printf({\cf22 "\\n"});\par
+00109 \}\par
+00110 \par
+00112 {\cf18 void} segitseg_keres(ker_csop_tomben kerdes, {\cf18 bool} *felezes_hasznaltsag, {\cf18 bool} *kozonseg_szavazata_hasznaltsag)\{\par
+00113     {\cf19 if} (*felezes_hasznaltsag && *kozonseg_szavazata_hasznaltsag) {\cf19 return};\par
+00114     printf({\cf22 "Szeretne seg\'EDts\'E9get haszn\'E1lni? (F ha a felez\'E9st, K ha a k\'F6z\'F6ns\'E9g szavazat\'E1t \'E9s N ha nem szeretne seg\'EDts\'E9get haszn\'E1lni)\\n"});\par
+00115     {\cf18 char} in = (char)toupper(karakter_beker());\par
+00116     {\cf19 switch} (in) \{\par
+00117         {\cf19 case} {\cf23 'F'}:\par
+00118             {\cf19 if}(!(*felezes_hasznaltsag))\{\par
+00122                 felezes(kerdes);\par
+00123                 *felezes_hasznaltsag = {\cf17 true};\par
+00124             \} {\cf19 else}\{\par
+00125                 printf({\cf22 "Ezt a seg\'EDts\'E9get m\'E1r haszn\'E1lta\\n"});\par
+00126                 segitseg_keres(kerdes, felezes_hasznaltsag, kozonseg_szavazata_hasznaltsag);\par
+00127             \}\par
+00128             {\cf19 break};\par
+00129         {\cf19 case} {\cf23 'K'}:\par
+00130             {\cf19 if} (!(*kozonseg_szavazata_hasznaltsag)) \{\par
+00134                 kozonseg_szavazata(kerdes);\par
+00135                 *kozonseg_szavazata_hasznaltsag = {\cf17 true};\par
+00136             \} {\cf19 else} \{\par
+00137                 printf({\cf22 "Ezt a seg\'EDts\'E9get m\'E1r haszn\'E1lta\\n"});\par
+00138                 segitseg_keres(kerdes, felezes_hasznaltsag, kozonseg_szavazata_hasznaltsag);\par
+00139             \}\par
+00140             {\cf19 break};\par
+00141         {\cf19 case} {\cf23 'N'}:\par
+00142             {\cf19 break};\par
+00143         {\cf19 default}: \{\par
+00144             printf({\cf22 "\'C9rv\'E9nytelen v\'E1lasz.\\n"});\par
+00148             segitseg_keres(kerdes, felezes_hasznaltsag, kozonseg_szavazata_hasznaltsag);\par
+00149         \}\par
+00150     \}\par
+00151 \}\par
+00152 \par
+00154 {\cf18 bool} valasz_beker(ker_csop_tomben kerdes)\{\par
+00155     {\cf18 char} in = karakter_beker();\par
+00156     in = (char)toupper(in);\par
+00157     {\cf19 if} (in==kerdes.helyes) {\cf19 return} {\cf17 true};\par
+00158     {\cf19 else} {\cf19 if} (in >= {\cf23 'A'} && in <= {\cf23 'D'})\par
+00162         {\cf19 return} {\cf17 false};\par
+00163     {\cf19 else} \{\par
+00167         printf({\cf22 "\'C9rv\'E9nytelen v\'E1lasz!\\n"});\par
+00168         {\cf19 return} valasz_beker(kerdes);\par
+00169     \}\par
+00170 \};\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+jatek.h File Reference\par \pard\plain 
+{\tc\tcl2 \v jatek.h}
+{\xe \v jatek.h}
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include "beolvas.h"}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <stdbool.h>}\par
+{\f2 #include <ctype.h>}\par
+{\f2 #include "debugmalloc.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b kivant_nehezsegi_szint} (int kerdesek_csoportositva[], int nehezsegfajtak)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvassa a kivant nehezsegi szintet es visszater a felhasznalo altal latott ertekkel;. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ker_csop_tomben} {\b kerdes_felteves} ({\b ker_csop_tomben} *kerdesektarhaza[], int kerdesek_csoportositva[], int nehezsegi_szint)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Feltesz egy random kerdest az adott nehezsegi szintbol, visszater a kerdessel. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b valasz_beker} ({\b ker_csop_tomben} kerdes)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Igazzal ter vissza, ha helyes a valasz, kezeli az ervenytelen valaszokat. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b segitseg_keres} ({\b ker_csop_tomben} kerdes, bool *felezes_hasznaltsag, bool *kozonseg_szavazata_hasznaltsag)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos seg\'EDts\'E9gk\'E9r\'E9seit teszteli \'E9s v\'E9grehajtja ha jogosult r\'E1 }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v kerdes_felteves\:jatek.h}
+{\xe \v jatek.h\:kerdes_felteves}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b ker_csop_tomben} kerdes_felteves ({\b ker_csop_tomben} *  {\i kerdesektarhaza}[], int  {\i kerdesek_csoportositva}[], int  {\i nehezsegi_szint})}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Feltesz egy random kerdest az adott nehezsegi szintbol, visszater a kerdessel. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Feltesz egy random kerdest az adott nehezsegi szintbol, visszater a kerdessel. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Az adott neh\'E9zs\'E9gi szinthez tart\'F3z\'F3 k\'E9rd\'E9sek k\'F6z\'FCl kisorsol egy indexet\par
+Megfelel\'C5\'91en sok k\'C3\'A9rd\'C3\'A9ssel v\'C3\'A9ges id\'C5\'91n bel\'C3\'BCl v\'C3\'A9get \'C3\'A9r a ciklus.\par
+Belerakja a gener\'E1lt maxim\'E1lisan a neh\'E9zs\'E9gi k\'E9rd\'E9shez tartoz\'F3 maxim\'E1lis nagys\'E1g\'FA sz\'E1mot\par
+Addig ameddig olyat nem tal\'E1l amit m\'E9g nem haszn\'E1lt\par
+A kisorsolt k\'E9rd\'E9st elt\'E1rolja helyileg\par
+}{
+Definition at line {\b 29} of file {\b jatek.c}.}\par
+}
+{\xe \v kivant_nehezsegi_szint\:jatek.h}
+{\xe \v jatek.h\:kivant_nehezsegi_szint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int kivant_nehezsegi_szint (int  {\i kerdesek_csoportositva}[], int  {\i nehezsegfajtak})}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Beolvassa a kivant nehezsegi szintet es visszater a felhasznalo altal latott ertekkel;. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Created by Jajecnik Marcell on 2022. 12. 01.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell\par
+}}Beolvassa a kivant nehezsegi szintet es visszater a felhasznalo altal latott ertekkel;.\par
+Created by Jajecnik Marcell on 2022. 12. 01.. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Jajecnik Marcell \par
+}}}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos kiv\'E1lasztja az \'E1ltala k\'EDv\'E1nt neh\'E9zs\'E9gi szintet amin a j\'E1t\'E9k futni fog\par
+A bek\'E9rt neh\'E9zs\'E9gi szintet t\'E1rolja\par
+Beolvassa a consolra \'EDrt sort az enterig\par
+\'C1talak\'EDtja integerr\'E9 a beolvasott adatot, ha sikertelen 0-at vissza\par
+Majd a sort felszabad\'EDtja\par
+Ha a form\'E1tum helyes\par
+\'C9s van el\'E9g k\'E9rd\'E9s a j\'E1t\'E9khoz\par
+Visszaadja a bek\'E9rt neh\'E9zs\'E9gi szintet\par
+Ha nem lehet a bek\'E9rt neh\'E9zs\'E9gi szinten j\'E1tszani\par
+Rekurz\'EDvan addig k\'E9r be am\'EDg futtathat\'F3 \'E9rt\'E9ket nem kap\par
+}{
+Definition at line {\b 9} of file {\b jatek.c}.}\par
+}
+{\xe \v segitseg_keres\:jatek.h}
+{\xe \v jatek.h\:segitseg_keres}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void segitseg_keres ({\b ker_csop_tomben}  {\i kerdes}, bool *  {\i felezes_hasznaltsag}, bool *  {\i kozonseg_szavazata_hasznaltsag})}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos seg\'EDts\'E9gk\'E9r\'E9seit teszteli \'E9s v\'E9grehajtja ha jogosult r\'E1 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A j\'E1t\'E9kos seg\'EDts\'E9gk\'E9r\'E9seit teszteli \'E9s v\'E9grehajtja ha jogosult r\'E1 \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ha m\'C3\'A1r nincs lehet\'C5\'91s\'C3\'A9ge seg\'C3\'ADts\'C3\'A9get hazsn\'C3\'A1lni akkor nem fut le\par
+Bek\'E9r egy karaktert amit naggy\'E1 alak\'EDt\par
+Ha van m\'C3\'A9g lehet\'C5\'91s\'C3\'A9ge felez\'C3\'A9st haszn\'C3\'A1lni akkor v\'C3\'A9grehajtja \'C3\'A9s a haszn\'C3\'A1lts\'C3\'A1got igazra \'C3\'A1ll\'C3\'ADtja\par
+Ha nincs, akkor rekurz\'EDv\par
+Ha van m\'C3\'A9g lehet\'C5\'91s\'C3\'A9ge haszn\'C3\'A1lni akkor v\'C3\'A9grehajtja \'C3\'A9s a haszn\'C3\'A1lts\'C3\'A1got igazra \'C3\'A1ll\'C3\'ADtja\par
+Ha nincs akkor rekurz\'EDv\par
+Ha nem j\'F3 form\'E1tum\'FA a v\'E1lasz akkor rekurz\'EDv\par
+}{
+Definition at line {\b 112} of file {\b jatek.c}.}\par
+}
+{\xe \v valasz_beker\:jatek.h}
+{\xe \v jatek.h\:valasz_beker}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool valasz_beker ({\b ker_csop_tomben}  {\i kerdes})}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Igazzal ter vissza, ha helyes a valasz, kezeli az ervenytelen valaszokat. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Igazzal ter vissza, ha helyes a valasz, kezeli az ervenytelen valaszokat. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Elt\'E1rolja a beolvasott karaktert\par
+Nagybet\'C5\'B1ss\'C3\'A9 teszi\par
+Ha a v\'E1lasz helyes igazat ad vissza\par
+Ha nem igaz akkor hamisat\par
+Ha pedig nem j\'F3 az adott v\'E1lasz form\'E1tuma akkor rekurz\'EDv\par
+}{
+Definition at line {\b 154} of file {\b jatek.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+jatek.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00005 \par
+00006 {\cf21 #ifndef JATEK2_KIFORGATOM_ONT_IS_A_PENZEBOL_H}\par
+00007 {\cf21 #define JATEK2_KIFORGATOM_ONT_IS_A_PENZEBOL_H}\par
+00008 \par
+00009 {\cf21 #endif }{\cf20 //JATEK2_KIFORGATOM_ONT_IS_A_PENZEBOL_H}\par
+00010 \par
+00011 {\cf21 #include <stdio.h>}\par
+00012 {\cf21 #include "beolvas.h"}\par
+00013 {\cf21 #include <stdlib.h>}\par
+00014 {\cf21 #include <stdbool.h>}\par
+00015 {\cf21 #include <ctype.h>}\par
+00016 {\cf21 #include "debugmalloc.h"}\par
+00017 \par
+00018 \par
+00019 \par
+00021 {\cf18 int} kivant_nehezsegi_szint ({\cf18 int} kerdesek_csoportositva[], {\cf18 int} nehezsegfajtak);\par
+00022 \par
+00024 ker_csop_tomben kerdes_felteves (ker_csop_tomben *kerdesektarhaza[], {\cf18 int} kerdesek_csoportositva[], {\cf18 int} nehezsegi_szint);\par
+00025 \par
+00027 {\cf18 bool} valasz_beker(ker_csop_tomben kerdes);\par
+00028 \par
+00030 {\cf18 void} segitseg_keres(ker_csop_tomben kerdes, {\cf18 bool} *felezes_hasznaltsag, {\cf18 bool} *kozonseg_szavazata_hasznaltsag);\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.c File Reference\par \pard\plain 
+{\tc\tcl2 \v main.c}
+{\xe \v main.c}
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <time.h>}\par
+{\f2 #include "beolvas.h"}\par
+{\f2 #include "jatek.h"}\par
+{\f2 #include "dicsoseglista.h"}\par
+{\f2 #include "debugmalloc.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v main\:main.c}
+{\xe \v main.c\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< Id\'C5\'91k\'C3\'B6vet\'C3\'A9s implement\'C3\'A1l\'C3\'A1sa\par
+A beolvas\'E1s kezdete\par
+<K\'E9rd\'E9seket t\'E1rol\'F3 l\'E1colt lista\par
+Tesztel\'E9s a beolvas\'E1s sikeress\'E9g\'E9re\par
+Neh\'C3\'A9zs\'C3\'A9gi szintek alapj\'C3\'A1n megsz\'C3\'A1molja, hogy mennyi k\'C3\'A9rd\'C3\'A9s tal\'C3\'A1lhat\'C3\'B3 az adott neh\'C3\'A9zs\'C3\'A9gi szintb\'C5\'91l\par
+A neh\'E9zs\'E9gi szinteket sz\'E1ma\par
+Tesztel\'E9s a sikeress\'E9g\'E9re\par
+nehezsegek_alapjan_csoportositott_tombok_tombje ami egy 2 dimenzi\'F3s t\'F6mb mely neh\'E9zs\'E9gek alapj\'E1n csoportos\'EDtva t\'E1rolja a k\'E9rd\'E9seket\par
+Tesztel\'E9s a foglal\'E1s sikeress\'E9g\'E9re\par
+A beolvas\'E1s v\'E9ge\par
+A j\'E1t\'E9k kezdete\par
+A j\'E1t\'E9kos \'E1ltal v\'E1lasztott neh\'E9zs\'E9gi szint elt\'E1rol\'E1sa\par
+A nyerem\'E9nyeket egy t\'F6mbben t\'E1rolja el\par
+A j\'C3\'A1t\'C3\'A9k kezdet\'C3\'A9nek id\'C5\'91pontj\'C3\'A1t elt\'C3\'A1rolja egy v\'C3\'A1ltoz\'C3\'B3ban\par
+Felez\'E9s seg\'EDts\'E9g haszn\'E1lts\'E1g\'E1nak sz\'E1montart\'E1s\'E1hoz\par
+K\'F6z\'F6ns\'E9g seg\'EDts\'E9g\'E9nek seg\'EDts\'E9g nyilv\'E1ntart\'E1s\'E1hoz\par
+A j\'E1t\'E9kos halad\'E1s\'E1nak nyomonk\'F6vet\'E9s\'E9re szolg\'E1l\par
+15 k\'C3\'A9rd\'C3\'A9sb\'C5\'91l \'C3\'A1ll a j\'C3\'A1t\'C3\'A9k\par
+Jelenlegi szont ki\'C3\'ADr\'C3\'A1si a k\'C3\'B6vetkez\'C5\'91 nyerem\'C3\'A9ny\'C3\'A9rt\par
+Ki\'EDr egy k\'E9rd\'E9st \'E9s elt\'E1rolja \par
+Amennyiben m\'E9g maradt seg\'EDts\'E9ge felm\'E9ri hogy szeretn\'E9-e haszn\'E1lni azt\par
+Ellen\'C5\'91rzi a helyess\'C3\'A9g\'C3\'A9t a v\'C3\'A1lasznak\par
+Ha nem helyes a v\'E1lasz ki\'EDrja a nyerem\'E9nyt \'E9s kil\'E9p a ciklusb\'F3l\par
+Ha az \'F6sszes k\'E9rd\'E9st helyesen megv\'E1laszolta akkor fut le\par
+A j\'C3\'A1t\'C3\'A9k kezdetekor elmentett id\'C5\'91b\'C5\'91l kisz\'C3\'A1m\'C3\'ADtja a j\'C3\'A1t\'C3\'A9kban t\'C3\'B6lt\'C3\'B6tt id\'C5\'91t\par
+A j\'E1t\'E9k v\'E9ge\par
+Ki\'E9rt\'E9kel\'E9s kezdete\par
+A j\'E1t\'E9k kimenetel\'E9t t\'E1rolja el\par
+A j\'C3\'A1t\'C3\'A9kban t\'C3\'B6lt\'C3\'B6tt id\'C5\'91\par
+A helyesen megv\'E1laszolt k\'E9rd\'E9sek sz\'E1ma\par
+Bek\'C3\'A9ri a j\'C3\'A1t\'C3\'A9kos nev\'C3\'A9t a dics\'C5\'91s\'C3\'A9glist\'C3\'A1ba \'C3\'ADr\'C3\'A1shoz\par
+Bet\'C3\'B6lti a dics\'C5\'91s\'C3\'A9glist\'C3\'A1t, kezeli, ki\'C3\'ADrja a consolra \'C3\'A9s a hozz\'C3\'A1 tartoz\'C3\'B3 f\'C3\'A1jlba\par
+Ki\'E9rt\'E9kel\'E9s v\'E9ge\par
+Felszabad\'EDtja az elt\'E1rolt k\'E9rd\'E9seket\par
+Minden fel lett szabad\'EDtva \'E9s bez\'E1rva, \'EDgy a program lez\'E1rul\par
+}{
+Definition at line {\b 10} of file {\b main.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.c\par \pard\plain 
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf21 #include <stdio.h>}\par
+00002 {\cf21 #include <stdlib.h>}\par
+00003 {\cf21 #include <time.h>}\par
+00004 {\cf21 #include "beolvas.h"}\par
+00005 {\cf21 #include "jatek.h"}\par
+00006 {\cf21 #include "dicsoseglista.h"}\par
+00007 {\cf21 #include <time.h>}\par
+00008 {\cf21 #include "debugmalloc.h"}\par
+00009 \par
+00010 {\cf18 int} main() \{\par
+00011     srand(time(0)); \par
+00014     Kerdes *kerdesekLacoltban;\par
+00015     {\cf19 if} ((lancoltbaolvas(&kerdesekLacoltban)) == -1) \{\par
+00016         printf({\cf22 "Beolvas\'E1si hiba"});\par
+00017         {\cf19 return} 0;\par
+00018     \};\par
+00019     {\cf18 int} *kerdesek_csoportositva;\par
+00020     {\cf18 int} nehezsegfajtak=0;\par
+00021     {\cf19 if} ((nehezsegfajtak=kerdest_csoportosit(kerdesekLacoltban, &kerdesek_csoportositva)) == -1) \{\par
+00022         printf({\cf22 "Beolvas\'E1si hiba"});\par
+00023         {\cf19 return} 0;\par
+00024     \};\par
+00025     ker_csop_tomben** neh_csop_tomb_tomb; \par
+00026     {\cf19 if} ((neh_csop_tomb_tomb = csop_tomb_belerak(kerdesekLacoltban, nehezsegfajtak, kerdesek_csoportositva)) == NULL) \{\par
+00027         printf({\cf22 "Beolvas\'E1si hiba"});\par
+00028         {\cf19 return} 0;\par
+00029     \};\par
+00031 \par
+00033     {\cf18 int} nehezsegiszint = kivant_nehezsegi_szint(kerdesek_csoportositva, nehezsegfajtak);\par
+00034     {\cf18 int} nyeremenyek[15] = \{5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 800000, 1500000, 3000000, 5000000, 10000000, 20000000, 40000000\};\par
+00036     {\cf18 int} jatekeleje = (int)time(NULL); \par
+00038     {\cf18 bool} felezes_hasznaltsag={\cf17 false}; \par
+00039     {\cf18 bool} kozonseg_szavazata_hasznaltsag={\cf17 false};\par
+00041     printf({\cf22 "\\n\\n\'DCdv\'F6zl\'F6m \'F6nt a legyen \'F6n is milliomos j\'E1t\'E9kban!\\n"}\par
+00042            {\cf22 " A j\'E1t\'E9k c\'E9lja hogy megv\'E1laszoljon minn\'E9l t\'F6bb k\'E9rd\'E9st helyesen\\n"}\par
+00043            {\cf22 "Amennyiben 15 k\'C3\'A9rd\'C3\'A9st hib\'C3\'A1tlanul megv\'C3\'A1laszol sorozatban \'C3\'B6n megnyeri a f\'C5\'91nyerem\'C3\'A9nyt\\n"}\par
+00044            {\cf22 "A j\'E1t\'E9kban 2 fajta seg\'EDts\'E9g \'E1ll a rendelkez\'E9s\'E9re, a felez\'E9st \'E9s a k\'F6z\'F6ns\'E9g seg\'EDts\'E9g\'E9t\\n"}\par
+00045            {\cf22 "A felez\'C3\'A9skor a g\'C3\'A9p elvesz 2 rossz v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get, \'C3\'ADgy \'C3\'B6nnek 50-50% es\'C3\'A9lye lesz a helyes v\'C3\'A1laszra\\n"}\par
+00046            {\cf22 "A k\'C3\'B6z\'C3\'B6ns\'C3\'A9g seg\'C3\'ADts\'C3\'A9g\'C3\'A9nek k\'C3\'A9r\'C3\'A9sekor %%-os form\'C3\'A1ban kap meg \'C3\'A9rt\'C3\'A9keket ami alapj\'C3\'A1n elnd\'C3\'B6nthati, hogy melyik v\'C3\'A1laszlehet\'C5\'91s\'C3\'A9get v\'C3\'A1lasztja\\n"}\par
+00047            {\cf22 "Minden seg\'EDts\'E9get csak egyszer tud felhaszn\'E1lni a j\'E1t\'E9k alatt\\n\\n"}\par
+00048            {\cf22 "J\'F3 j\'E1t\'E9kot!"});\par
+00049 \par
+00050     {\cf18 int} szint=0;\par
+00051     {\cf19 for} (; szint < 15; ++szint) \{\par
+00052         printf({\cf22 "\\n%d Forint\'E9rt \'EDme a %d. k\'E9rd\'E9s.\\n"},nyeremenyek[szint],szint+1);\par
+00053         ker_csop_tomben kerdes = kerdes_felteves(neh_csop_tomb_tomb,kerdesek_csoportositva,nehezsegiszint);\par
+00054         segitseg_keres(kerdes, &felezes_hasznaltsag, &kozonseg_szavazata_hasznaltsag);\par
+00055         printf({\cf22 "Adja meg a v\'E1lasz\'E1t!\\n"});\par
+00056         {\cf18 bool} helyes = valasz_beker(kerdes);\par
+00057         {\cf19 if} (!helyes) \{\par
+00058             printf({\cf22 "Sajnos rossz a v\'E1lasz.\\n"});\par
+00059             {\cf19 if} (szint > 0) \{\par
+00060                 printf({\cf22 "Az \'F6n nyerem\'E9nye:%d Forint. Sok szerencs\'E9t legk\'F6zelebb!\\n"}, nyeremenyek[szint - 1]);\par
+00061             \}\par
+00063             {\cf19 break};\par
+00064         \} {\cf19 else} printf({\cf22 "Helyes v\'E1lasz\\n"});\par
+00065     \}\par
+00066     {\cf19 if} (szint==15) printf({\cf22 "Gratul\'C3\'A1lunk \'C3\'B6n megnyerte a f\'C5\'91nyerem\'C3\'A9nyt (%d Forint)!\\n"}, nyeremenyek[14]);\par
+00067     {\cf18 int} jatekido = (int)time(NULL) - jatekeleje;\par
+00069 \par
+00071     Eredmeny eredmeny;\par
+00072     eredmeny.ido = jatekido;\par
+00073     eredmeny.megvalaszolt = szint;\par
+00075     printf({\cf22 "\\nAdja meg a j\'E1t\'E9kosnev\'E9t:\\n"});\par
+00076     eredmeny.jatekosnev = sor_be(stdin);\par
+00077     dicsoseglistat_kezel(eredmeny, nehezsegiszint, nyeremenyek);\par
+00079 \par
+00081     kerdeseket_felszabadit(neh_csop_tomb_tomb, kerdesek_csoportositva, nehezsegfajtak);\par
+00082 \par
+00084     {\cf19 return} 0;\par
+00085 \}\par
+00086 \par
+00087 \par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

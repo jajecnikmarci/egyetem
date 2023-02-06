@@ -1,0 +1,3 @@
+/Users/jajecnik.marci/CLionProjects/Labor3/tomb_frissito/cmake-build-debug/CMakeFiles/tomb_frissito.dir
+/Users/jajecnik.marci/CLionProjects/Labor3/tomb_frissito/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jajecnik.marci/CLionProjects/Labor3/tomb_frissito/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structker__csop__tomben" xml:lang="hu">
+<title>ker_csop_tomben struktúrareferencia</title>
+<indexterm><primary>ker_csop_tomben</primary></indexterm>
+<para>
+
+<para>A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;beolvas.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Adatmezők    </title>
+        <itemizedlist>
+            <listitem><para>char * <link linkend="_structker__csop__tomben_1aa6d42c5aa9a8eeed872fb41af0a5b139">kerdes</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_structker__csop__tomben_1a4c3df1bfaa56a1489e9e789d9cefc2b7">a</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_structker__csop__tomben_1a0b63f603e064fd5c2ab041112695761b">b</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_structker__csop__tomben_1a172bb692b69754649b03c345cbd11c0f">c</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_structker__csop__tomben_1a451b6a78a69494f831aa9eeb41ac2b2c">d</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">helyes</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_structker__csop__tomben_1a4b43ceebd6ce2e6d20c5b9e123a9f555">kategoria</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_structker__csop__tomben_1ac2cc4fa854b4bfc964bbe1ccc66fbaa1">hasznalt</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Részletes leírás</title>
+
+<para>A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben. </para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00028">28</link>. sorában.</para>
+</section>
+<section>
+<title>Adatmezők dokumentációja</title>
+<anchor xml:id="_structker__csop__tomben_1a4c3df1bfaa56a1489e9e789d9cefc2b7"/><section>
+    <title>a</title>
+<indexterm><primary>a</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<indexterm><primary>ker_csop_tomben</primary><secondary>a</secondary></indexterm>
+<para><computeroutput>char* ker_csop_tomben::a</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00030">30</link>. sorában.</para>
+</section>
+<anchor xml:id="_structker__csop__tomben_1a0b63f603e064fd5c2ab041112695761b"/><section>
+    <title>b</title>
+<indexterm><primary>b</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<indexterm><primary>ker_csop_tomben</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>char* ker_csop_tomben::b</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00031">31</link>. sorában.</para>
+</section>
+<anchor xml:id="_structker__csop__tomben_1a172bb692b69754649b03c345cbd11c0f"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<indexterm><primary>ker_csop_tomben</primary><secondary>c</secondary></indexterm>
+<para><computeroutput>char* ker_csop_tomben::c</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00032">32</link>. sorában.</para>
+</section>
+<anchor xml:id="_structker__csop__tomben_1a451b6a78a69494f831aa9eeb41ac2b2c"/><section>
+    <title>d</title>
+<indexterm><primary>d</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<indexterm><primary>ker_csop_tomben</primary><secondary>d</secondary></indexterm>
+<para><computeroutput>char* ker_csop_tomben::d</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00033">33</link>. sorában.</para>
+</section>
+<anchor xml:id="_structker__csop__tomben_1ac2cc4fa854b4bfc964bbe1ccc66fbaa1"/><section>
+    <title>hasznalt</title>
+<indexterm><primary>hasznalt</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<indexterm><primary>ker_csop_tomben</primary><secondary>hasznalt</secondary></indexterm>
+<para><computeroutput>bool ker_csop_tomben::hasznalt</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00036">36</link>. sorában.</para>
+</section>
+<anchor xml:id="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed"/><section>
+    <title>helyes</title>
+<indexterm><primary>helyes</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<indexterm><primary>ker_csop_tomben</primary><secondary>helyes</secondary></indexterm>
+<para><computeroutput>char ker_csop_tomben::helyes</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00034">34</link>. sorában.</para>
+</section>
+<anchor xml:id="_structker__csop__tomben_1a4b43ceebd6ce2e6d20c5b9e123a9f555"/><section>
+    <title>kategoria</title>
+<indexterm><primary>kategoria</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<indexterm><primary>ker_csop_tomben</primary><secondary>kategoria</secondary></indexterm>
+<para><computeroutput>char* ker_csop_tomben::kategoria</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00035">35</link>. sorában.</para>
+</section>
+<anchor xml:id="_structker__csop__tomben_1aa6d42c5aa9a8eeed872fb41af0a5b139"/><section>
+    <title>kerdes</title>
+<indexterm><primary>kerdes</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<indexterm><primary>ker_csop_tomben</primary><secondary>kerdes</secondary></indexterm>
+<para><computeroutput>char* ker_csop_tomben::kerdes</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00029">29</link>. sorában.</para>
+</section>
+<para>
+Ez a dokumentáció a struktúráról a következő fájl alapján készült:</para>
+<link linkend="_beolvas_8h">beolvas.h</link></section>
+</section>

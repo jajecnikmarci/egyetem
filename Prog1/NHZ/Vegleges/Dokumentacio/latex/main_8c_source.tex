@@ -1,0 +1,78 @@
+\hypertarget{main_8c_source}{}\doxysection{main.\+c}
+\mbox{\hyperlink{main_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00001}00001 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00002}00002 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00003}00003 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{beolvas_8h}{beolvas.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{jatek_8h}{jatek.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{dicsoseglista_8h}{dicsoseglista.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00007}00007 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{debugmalloc_8h}{debugmalloc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00010}\mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{00010}} \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00011}00011     srand(time(0)); }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00014}00014     \mbox{\hyperlink{struct_kerdes}{Kerdes}} *kerdesekLacoltban;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00015}00015     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{beolvas_8c_a0d342e6f077337002b1015d9adaa4916}{lancoltbaolvas}}(\&kerdesekLacoltban)) == -\/1) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00016}00016         printf(\textcolor{stringliteral}{"{}Beolvasási hiba"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00017}00017         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00018}00018     \};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00019}00019     \textcolor{keywordtype}{int} *kerdesek\_csoportositva;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00020}00020     \textcolor{keywordtype}{int} nehezsegfajtak=0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00021}00021     \textcolor{keywordflow}{if} ((nehezsegfajtak=\mbox{\hyperlink{beolvas_8c_aea0b000c67a3937d39288473b771d86b}{kerdest\_csoportosit}}(kerdesekLacoltban, \&kerdesek\_csoportositva)) == -\/1) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00022}00022         printf(\textcolor{stringliteral}{"{}Beolvasási hiba"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00023}00023         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00024}00024     \};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00025}00025     \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}}** neh\_csop\_tomb\_tomb; }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00026}00026     \textcolor{keywordflow}{if} ((neh\_csop\_tomb\_tomb = \mbox{\hyperlink{beolvas_8c_a5168173497a2b8c4f6f28d6a4d237364}{csop\_tomb\_belerak}}(kerdesekLacoltban, nehezsegfajtak, kerdesek\_csoportositva)) == NULL) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00027}00027         printf(\textcolor{stringliteral}{"{}Beolvasási hiba"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00028}00028         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00029}00029     \};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00033}00033     \textcolor{keywordtype}{int} nehezsegiszint = \mbox{\hyperlink{jatek_8c_a9277a4a90e115c7b8b567b84c5ef1688}{kivant\_nehezsegi\_szint}}(kerdesek\_csoportositva, nehezsegfajtak);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00034}00034     \textcolor{keywordtype}{int} nyeremenyek[15] = \{5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 800000, 1500000, 3000000, 5000000, 10000000, 20000000, 40000000\};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00036}00036     \textcolor{keywordtype}{int} jatekeleje = (int)time(NULL); }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00038}00038     \textcolor{keywordtype}{bool} felezes\_hasznaltsag=\textcolor{keyword}{false}; }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00039}00039     \textcolor{keywordtype}{bool} kozonseg\_szavazata\_hasznaltsag=\textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00041}00041     printf(\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nÜdvözlöm önt a legyen ön is milliomos játékban!\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00042}00042            \textcolor{stringliteral}{"{} A játék célja hogy megválaszoljon minnél több kérdést helyesen\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00043}00043            \textcolor{stringliteral}{"{}Amennyiben 15 kérdést hibátlanul megválaszol sorozatban ön megnyeri a főnyereményt\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00044}00044            \textcolor{stringliteral}{"{}A játékban 2 fajta segítség áll a rendelkezésére, a felezést és a közönség segítségét\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00045}00045            \textcolor{stringliteral}{"{}A felezéskor a gép elvesz 2 rossz válaszlehetőséget, így önnek 50-\/50\% esélye lesz a helyes válaszra\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00046}00046            \textcolor{stringliteral}{"{}A közönség segítségének kérésekor \%\%-\/os formában kap meg értékeket ami alapján elndönthati, hogy melyik válaszlehetőséget választja\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00047}00047            \textcolor{stringliteral}{"{}Minden segítséget csak egyszer tud felhasználni a játék alatt\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00048}00048            \textcolor{stringliteral}{"{}Jó játékot!"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00050}00050     \textcolor{keywordtype}{int} szint=0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00051}00051     \textcolor{keywordflow}{for} (; szint < 15; ++szint) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00052}00052         printf(\textcolor{stringliteral}{"{}\(\backslash\)n\%d Forintért íme a \%d. kérdés.\(\backslash\)n"{}},nyeremenyek[szint],szint+1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00053}00053         \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} kerdes = \mbox{\hyperlink{jatek_8c_aacf43817bf40c738a1ad02a58995d45f}{kerdes\_felteves}}(neh\_csop\_tomb\_tomb,kerdesek\_csoportositva,nehezsegiszint);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00054}00054         \mbox{\hyperlink{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}{segitseg\_keres}}(kerdes, \&felezes\_hasznaltsag, \&kozonseg\_szavazata\_hasznaltsag);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00055}00055         printf(\textcolor{stringliteral}{"{}Adja meg a válaszát!\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00056}00056         \textcolor{keywordtype}{bool} helyes = \mbox{\hyperlink{jatek_8c_a9a4f7307dee2c276a0facc89751f248e}{valasz\_beker}}(kerdes);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00057}00057         \textcolor{keywordflow}{if} (!helyes) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00058}00058             printf(\textcolor{stringliteral}{"{}Sajnos rossz a válasz.\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00059}00059             \textcolor{keywordflow}{if} (szint > 0) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00060}00060                 printf(\textcolor{stringliteral}{"{}Az ön nyereménye:\%d Forint. Sok szerencsét legközelebb!\(\backslash\)n"{}}, nyeremenyek[szint -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00061}00061             \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00063}00063             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00064}00064         \} \textcolor{keywordflow}{else} printf(\textcolor{stringliteral}{"{}Helyes válasz\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00065}00065     \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00066}00066     \textcolor{keywordflow}{if} (szint==15) printf(\textcolor{stringliteral}{"{}Gratulálunk ön megnyerte a főnyereményt (\%d Forint)!\(\backslash\)n"{}}, nyeremenyek[14]);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00067}00067     \textcolor{keywordtype}{int} jatekido = (int)time(NULL) -\/ jatekeleje;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00071}00071     \mbox{\hyperlink{struct_eredmeny}{Eredmeny}} eredmeny;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00072}00072     eredmeny.\mbox{\hyperlink{struct_eredmeny_a11b0e07027a04b6c3140254942b8f030}{ido}} = jatekido;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00073}00073     eredmeny.\mbox{\hyperlink{struct_eredmeny_a05caadba6f41e9f5e13409c3fb881c5e}{megvalaszolt}} = szint;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00075}00075     printf(\textcolor{stringliteral}{"{}\(\backslash\)nAdja meg a játékosnevét:\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00076}00076     eredmeny.\mbox{\hyperlink{struct_eredmeny_a998594565b609f6df42f959408aa6eff}{jatekosnev}} = \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}}(stdin);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00077}00077     \mbox{\hyperlink{dicsoseglista_8c_a0c18fb8e3f059d3ead8b0abee0321f2f}{dicsoseglistat\_kezel}}(eredmeny, nehezsegiszint, nyeremenyek);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00081}00081     \mbox{\hyperlink{beolvas_8c_ab4e72ef8d466b9bbcd18eb534e05c141}{kerdeseket\_felszabadit}}(neh\_csop\_tomb\_tomb, kerdesek\_csoportositva, nehezsegfajtak);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00084}00084     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00085}00085 \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00087}00087 }
+
+\end{DoxyCode}

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_eredmeny" xml:lang="hu">
+<title>Eredmeny struktúrareferencia</title>
+<indexterm><primary>Eredmeny</primary></indexterm>
+<para>
+<computeroutput>#include &lt;dicsoseglista.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Adatmezők    </title>
+        <itemizedlist>
+            <listitem><para>char * <link linkend="_struct_eredmeny_1ae8721cda7ae566103f9256b41efb04e1">jatekosnev</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_eredmeny_1a5d76819d6e3c35c8f5e4716b3afc178f">megvalaszolt</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_eredmeny_1a836f5518cff34b84cc2d9cad57abeffe">ido</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Részletes leírás</title>
+<para>
+Definíció a(z) <link linkend="_dicsoseglista_8h_source">dicsoseglista.h</link> fájl <link linkend="_dicsoseglista_8h_source_1l00014">14</link>. sorában.</para>
+</section>
+<section>
+<title>Adatmezők dokumentációja</title>
+<anchor xml:id="_struct_eredmeny_1a836f5518cff34b84cc2d9cad57abeffe"/><section>
+    <title>ido</title>
+<indexterm><primary>ido</primary><secondary>Eredmeny</secondary></indexterm>
+<indexterm><primary>Eredmeny</primary><secondary>ido</secondary></indexterm>
+<para><computeroutput>int Eredmeny::ido</computeroutput></para><para>
+Definíció a(z) <link linkend="_dicsoseglista_8h_source">dicsoseglista.h</link> fájl <link linkend="_dicsoseglista_8h_source_1l00017">17</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_eredmeny_1ae8721cda7ae566103f9256b41efb04e1"/><section>
+    <title>jatekosnev</title>
+<indexterm><primary>jatekosnev</primary><secondary>Eredmeny</secondary></indexterm>
+<indexterm><primary>Eredmeny</primary><secondary>jatekosnev</secondary></indexterm>
+<para><computeroutput>char* Eredmeny::jatekosnev</computeroutput></para><para>
+Definíció a(z) <link linkend="_dicsoseglista_8h_source">dicsoseglista.h</link> fájl <link linkend="_dicsoseglista_8h_source_1l00015">15</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_eredmeny_1a5d76819d6e3c35c8f5e4716b3afc178f"/><section>
+    <title>megvalaszolt</title>
+<indexterm><primary>megvalaszolt</primary><secondary>Eredmeny</secondary></indexterm>
+<indexterm><primary>Eredmeny</primary><secondary>megvalaszolt</secondary></indexterm>
+<para><computeroutput>int Eredmeny::megvalaszolt</computeroutput></para><para>
+Definíció a(z) <link linkend="_dicsoseglista_8h_source">dicsoseglista.h</link> fájl <link linkend="_dicsoseglista_8h_source_1l00016">16</link>. sorában.</para>
+</section>
+<para>
+Ez a dokumentáció a struktúráról a következő fájl alapján készült:</para>
+<link linkend="_dicsoseglista_8h">dicsoseglista.h</link></section>
+</section>

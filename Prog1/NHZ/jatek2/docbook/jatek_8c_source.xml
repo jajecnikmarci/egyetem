@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_jatek_8c_source" xml:lang="hu">
+<title>jatek.c</title>
+Ugrás a fájl dokumentációjához.<programlisting linenumbering="unnumbered"><anchor xml:id="_jatek_8c_source_1l00001"/>00001 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_jatek_8c_source_1l00002"/>00002 <emphasis role="comment">//&#32;Created&#32;by&#32;Jajecnik&#32;Marcell&#32;on&#32;2022.&#32;12.&#32;01..</emphasis>
+<anchor xml:id="_jatek_8c_source_1l00003"/>00003 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_jatek_8c_source_1l00004"/>00004 
+<anchor xml:id="_jatek_8c_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_jatek_8h">jatek.h</link>&quot;</emphasis>
+<anchor xml:id="_jatek_8c_source_1l00006"/>00006 
+<anchor xml:id="_jatek_8c_source_1l00007"/><link linkend="_jatek_8c_1a9277a4a90e115c7b8b567b84c5ef1688">00007</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_jatek_8c_1a9277a4a90e115c7b8b567b84c5ef1688">kivant_nehezsegi_szint</link>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;kerdesek_csoportositva[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegfajtak){
+<anchor xml:id="_jatek_8c_source_1l00008"/>00008 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Milyen&#32;nehézségi&#32;szinten&#32;szeretne&#32;játszani?&#32;Adjon&#32;meg&#32;egy&#32;számot&#32;1&#32;és&#32;%d&#32;között\n&quot;</emphasis>,&#32;nehezsegfajtak);
+<anchor xml:id="_jatek_8c_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegi_szint;
+<anchor xml:id="_jatek_8c_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>*&#32;sor&#32;=&#32;<link linkend="_beolvas_8c_1ab720d1d0e6867b8ccc60f4f0205dc206">sor_be</link>(stdin);
+<anchor xml:id="_jatek_8c_source_1l00011"/>00011 &#32;&#32;&#32;&#32;nehezsegi_szint&#32;=&#32;atoi(sor);
+<anchor xml:id="_jatek_8c_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(sor);
+<anchor xml:id="_jatek_8c_source_1l00013"/>00013 
+<anchor xml:id="_jatek_8c_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(nehezsegi_szint&#32;&lt;=&#32;nehezsegfajtak&#32;&amp;&amp;&#32;nehezsegi_szint&#32;&gt;&#32;0)&#32;{
+<anchor xml:id="_jatek_8c_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(kerdesek_csoportositva[nehezsegi_szint-1]&#32;&gt;=15){
+<anchor xml:id="_jatek_8c_source_1l00016"/>00016 
+<anchor xml:id="_jatek_8c_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;nehezsegi_szint;
+<anchor xml:id="_jatek_8c_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00019"/>00019 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00020"/>00020 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Ilyen&#32;nehézségi&#32;szinten&#32;sajnos&#32;jelenleg&#32;nem&#32;tud&#32;játszani,&#32;kérem&#32;válasszon&#32;egy&#32;másik&#32;nehézségiszintet\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_jatek_8c_1a9277a4a90e115c7b8b567b84c5ef1688">kivant_nehezsegi_szint</link>(kerdesek_csoportositva,&#32;nehezsegfajtak);
+<anchor xml:id="_jatek_8c_source_1l00022"/>00022 };
+<anchor xml:id="_jatek_8c_source_1l00023"/>00023 
+<anchor xml:id="_jatek_8c_source_1l00024"/><link linkend="_jatek_8c_1aacf43817bf40c738a1ad02a58995d45f">00024</link> <link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;<link linkend="_jatek_8c_1aacf43817bf40c738a1ad02a58995d45f">kerdes_felteves</link>&#32;(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;*kerdesektarhaza[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;kerdesek_csoportositva[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegi_szint){
+<anchor xml:id="_jatek_8c_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;index;
+<anchor xml:id="_jatek_8c_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">do</emphasis>&#32;{
+<anchor xml:id="_jatek_8c_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;index&#32;=&#32;rand()&#32;%&#32;(kerdesek_csoportositva[nehezsegi_szint&#32;-&#32;1]);
+<anchor xml:id="_jatek_8c_source_1l00029"/>00029 &#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">while</emphasis>&#32;(kerdesektarhaza[nehezsegi_szint-1][index].hasznalt);
+<anchor xml:id="_jatek_8c_source_1l00030"/>00030 
+<anchor xml:id="_jatek_8c_source_1l00031"/>00031 &#32;&#32;&#32;&#32;<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;kerdes&#32;=&#32;kerdesektarhaza[nehezsegi_szint-1][index];
+<anchor xml:id="_jatek_8c_source_1l00032"/>00032 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;%s\n&quot;</emphasis>,&#32;kerdes.<link linkend="_structker__csop__tomben_1aa6d42c5aa9a8eeed872fb41af0a5b139">kerdes</link>);
+<anchor xml:id="_jatek_8c_source_1l00033"/>00033 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;A:&#32;%s&#32;&#32;&#32;&#32;&#32;B:%s\nC:&#32;%s&#32;&#32;&#32;&#32;&#32;D:%s\n&quot;</emphasis>,&#32;kerdes.<link linkend="_structker__csop__tomben_1a4c3df1bfaa56a1489e9e789d9cefc2b7">a</link>,&#32;kerdes.<link linkend="_structker__csop__tomben_1a0b63f603e064fd5c2ab041112695761b">b</link>,&#32;kerdes.<link linkend="_structker__csop__tomben_1a172bb692b69754649b03c345cbd11c0f">c</link>,&#32;kerdes.<link linkend="_structker__csop__tomben_1a451b6a78a69494f831aa9eeb41ac2b2c">d</link>);
+<anchor xml:id="_jatek_8c_source_1l00034"/>00034 &#32;&#32;&#32;&#32;kerdesektarhaza[nehezsegi_szint-1][index].<link linkend="_structker__csop__tomben_1ac2cc4fa854b4bfc964bbe1ccc66fbaa1">hasznalt</link>=<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;kerdes;
+<anchor xml:id="_jatek_8c_source_1l00036"/>00036 };
+<anchor xml:id="_jatek_8c_source_1l00037"/>00037 
+<anchor xml:id="_jatek_8c_source_1l00038"/>00038 
+<anchor xml:id="_jatek_8c_source_1l00039"/>00039 <emphasis role="comment">//Bekér&#32;egy&#32;sort&#32;és&#32;visszatér&#32;az&#32;első&#32;karakterével.&#32;A&#32;hibás&#32;felhasználói&#32;bemente&#32;kezelése&#32;miatt&#32;szükséges.</emphasis>
+<anchor xml:id="_jatek_8c_source_1l00040"/>00040 <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;karakter_beker()&#32;{
+<anchor xml:id="_jatek_8c_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>*&#32;sor&#32;=&#32;<link linkend="_beolvas_8c_1ab720d1d0e6867b8ccc60f4f0205dc206">sor_be</link>(stdin);
+<anchor xml:id="_jatek_8c_source_1l00042"/>00042 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(strlen(sor)&gt;1){
+<anchor xml:id="_jatek_8c_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(sor);
+<anchor xml:id="_jatek_8c_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Érvénytelen&#32;válasz!&#32;Kérem&#32;próbálkozzon&#32;újra!\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;karakter_beker();
+<anchor xml:id="_jatek_8c_source_1l00046"/>00046 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00047"/>00047 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;c&#32;=&#32;sor[0];
+<anchor xml:id="_jatek_8c_source_1l00048"/>00048 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(sor);
+<anchor xml:id="_jatek_8c_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;c;
+<anchor xml:id="_jatek_8c_source_1l00050"/>00050 }
+<anchor xml:id="_jatek_8c_source_1l00051"/>00051 
+<anchor xml:id="_jatek_8c_source_1l00052"/>00052 <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;felezes(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;kerdes){
+<anchor xml:id="_jatek_8c_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;helyes&#32;=&#32;kerdes.<link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">helyes</link>&#32;-&#32;<emphasis role="charliteral">&apos;A&apos;</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00054"/>00054 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;valaszok[4]={<emphasis role="charliteral">&apos;A&apos;</emphasis>,<emphasis role="charliteral">&apos;B&apos;</emphasis>,<emphasis role="charliteral">&apos;C&apos;</emphasis>,<emphasis role="charliteral">&apos;D&apos;</emphasis>};
+<anchor xml:id="_jatek_8c_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;rosszak[3];
+<anchor xml:id="_jatek_8c_source_1l00056"/>00056 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;
+<anchor xml:id="_jatek_8c_source_1l00057"/>00057 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;4;&#32;++i)&#32;{
+<anchor xml:id="_jatek_8c_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;!=&#32;helyes)&#32;{
+<anchor xml:id="_jatek_8c_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rosszak[j]=valaszok[i];
+<anchor xml:id="_jatek_8c_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;j++;
+<anchor xml:id="_jatek_8c_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00062"/>00062 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00063"/>00063 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;kiirasi_sorrend&#32;=&#32;rand()&#32;%&#32;2;
+<anchor xml:id="_jatek_8c_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;rosszkerdes&#32;=&#32;rand()&#32;%&#32;3;
+<anchor xml:id="_jatek_8c_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;out[2];
+<anchor xml:id="_jatek_8c_source_1l00066"/>00066 &#32;&#32;&#32;&#32;out[kiirasi_sorrend]=rosszak[rosszkerdes];
+<anchor xml:id="_jatek_8c_source_1l00067"/>00067 &#32;&#32;&#32;&#32;out[1-kiirasi_sorrend]=kerdes.<link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">helyes</link>;
+<anchor xml:id="_jatek_8c_source_1l00068"/>00068 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;%c&#32;és&#32;%c&#32;között&#32;van&#32;a&#32;jó&#32;válasz\n&quot;</emphasis>,&#32;out[0],&#32;out[1]);
+<anchor xml:id="_jatek_8c_source_1l00069"/>00069 }
+<anchor xml:id="_jatek_8c_source_1l00070"/>00070 
+<anchor xml:id="_jatek_8c_source_1l00071"/>00071 <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;kozonseg_szavazata(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;kerdes){
+<anchor xml:id="_jatek_8c_source_1l00072"/>00072 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;szazalekok[4];&#32;<emphasis role="comment">//&#32;A&#32;4.&#32;elem&#32;biztosan&#32;a&#32;jo&#32;valasz</emphasis>
+<anchor xml:id="_jatek_8c_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;r=rand()%100;
+<anchor xml:id="_jatek_8c_source_1l00074"/>00074 
+<anchor xml:id="_jatek_8c_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&lt;50)&#32;szazalekok[3]=100-r;
+<anchor xml:id="_jatek_8c_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;szazalekok[3]=r;
+<anchor xml:id="_jatek_8c_source_1l00077"/>00077 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;maradek=100-szazalekok[3];
+<anchor xml:id="_jatek_8c_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;2;&#32;++i)&#32;{
+<anchor xml:id="_jatek_8c_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;szazalekok[i]=rand()%maradek;
+<anchor xml:id="_jatek_8c_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;maradek-=szazalekok[i];
+<anchor xml:id="_jatek_8c_source_1l00081"/>00081 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00082"/>00082 &#32;&#32;&#32;&#32;szazalekok[2]=maradek;
+<anchor xml:id="_jatek_8c_source_1l00083"/>00083 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;A&#32;nézők&#32;szavazatai:&#32;\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00084"/>00084 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;j=0;
+<anchor xml:id="_jatek_8c_source_1l00085"/>00085 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;4;&#32;i++)&#32;{
+<anchor xml:id="_jatek_8c_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(kerdes.<link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">helyes</link>&#32;-&#32;<emphasis role="charliteral">&apos;A&apos;</emphasis>&#32;==&#32;i)&#32;{
+<anchor xml:id="_jatek_8c_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;%c:&#32;%d%%&#32;&quot;</emphasis>,&#32;kerdes.<link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">helyes</link>,&#32;szazalekok[3]);
+<anchor xml:id="_jatek_8c_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_jatek_8c_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;%c:&#32;%d%%&#32;&#32;&quot;</emphasis>,&#32;i&#32;+&#32;<emphasis role="charliteral">&apos;A&apos;</emphasis>,&#32;szazalekok[j]);
+<anchor xml:id="_jatek_8c_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;j++;
+<anchor xml:id="_jatek_8c_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00093"/>00093 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00094"/>00094 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00095"/>00095 }
+<anchor xml:id="_jatek_8c_source_1l00096"/>00096 
+<anchor xml:id="_jatek_8c_source_1l00097"/><link linkend="_jatek_8c_1a66d6fb54d1cc31df76d4817c6e1bd378">00097</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_jatek_8c_1a66d6fb54d1cc31df76d4817c6e1bd378">segitseg_keres</link>(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;kerdes,&#32;<emphasis role="keywordtype">bool</emphasis>&#32;*felezes_hasznaltsag,&#32;<emphasis role="keywordtype">bool</emphasis>&#32;*kozonseg_szavazata_hasznaltsag){
+<anchor xml:id="_jatek_8c_source_1l00098"/>00098 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(*felezes_hasznaltsag&#32;&amp;&amp;&#32;*kozonseg_szavazata_hasznaltsag)&#32;<emphasis role="keywordflow">return</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00099"/>00099 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Szeretne&#32;segítséget&#32;használni?&#32;(F&#32;ha&#32;a&#32;felezést,&#32;K&#32;ha&#32;a&#32;közönség&#32;szavazatát&#32;és&#32;N&#32;ha&#32;nem&#32;szeretne&#32;segítséget&#32;használni)\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00100"/>00100 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;in&#32;=&#32;(char)toupper(karakter_beker());
+<anchor xml:id="_jatek_8c_source_1l00101"/>00101 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(in)&#32;{
+<anchor xml:id="_jatek_8c_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;F&apos;</emphasis>:
+<anchor xml:id="_jatek_8c_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(!(*felezes_hasznaltsag)){
+<anchor xml:id="_jatek_8c_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;felezes(kerdes);
+<anchor xml:id="_jatek_8c_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*felezes_hasznaltsag&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>{
+<anchor xml:id="_jatek_8c_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Ezt&#32;a&#32;segítséget&#32;már&#32;használta\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_jatek_8c_1a66d6fb54d1cc31df76d4817c6e1bd378">segitseg_keres</link>(kerdes,&#32;felezes_hasznaltsag,&#32;kozonseg_szavazata_hasznaltsag);
+<anchor xml:id="_jatek_8c_source_1l00109"/>00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;K&apos;</emphasis>:
+<anchor xml:id="_jatek_8c_source_1l00112"/>00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!(*kozonseg_szavazata_hasznaltsag))&#32;{
+<anchor xml:id="_jatek_8c_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;kozonseg_szavazata(kerdes);
+<anchor xml:id="_jatek_8c_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*kozonseg_szavazata_hasznaltsag&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_jatek_8c_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Ezt&#32;a&#32;segítséget&#32;már&#32;használta\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00117"/>00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_jatek_8c_1a66d6fb54d1cc31df76d4817c6e1bd378">segitseg_keres</link>(kerdes,&#32;felezes_hasznaltsag,&#32;kozonseg_szavazata_hasznaltsag);
+<anchor xml:id="_jatek_8c_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00120"/>00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;N&apos;</emphasis>:
+<anchor xml:id="_jatek_8c_source_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">default</emphasis>:&#32;{
+<anchor xml:id="_jatek_8c_source_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Érvénytelen&#32;válasz.\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00124"/>00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_jatek_8c_1a66d6fb54d1cc31df76d4817c6e1bd378">segitseg_keres</link>(kerdes,&#32;felezes_hasznaltsag,&#32;kozonseg_szavazata_hasznaltsag);
+<anchor xml:id="_jatek_8c_source_1l00125"/>00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00126"/>00126 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00127"/>00127 }
+<anchor xml:id="_jatek_8c_source_1l00128"/>00128 
+<anchor xml:id="_jatek_8c_source_1l00129"/><link linkend="_jatek_8c_1a9a4f7307dee2c276a0facc89751f248e">00129</link> <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_jatek_8c_1a9a4f7307dee2c276a0facc89751f248e">valasz_beker</link>(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;kerdes){
+<anchor xml:id="_jatek_8c_source_1l00130"/>00130 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;in&#32;=&#32;karakter_beker();
+<anchor xml:id="_jatek_8c_source_1l00131"/>00131 &#32;&#32;&#32;&#32;in&#32;=&#32;(char)toupper(in);
+<anchor xml:id="_jatek_8c_source_1l00132"/>00132 &#32;&#32;&#32;&#32;<emphasis role="comment">//getchar();</emphasis>
+<anchor xml:id="_jatek_8c_source_1l00133"/>00133 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(in==kerdes.<link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">helyes</link>)&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00134"/>00134 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(in&#32;&gt;=&#32;<emphasis role="charliteral">&apos;A&apos;</emphasis>&#32;&amp;&amp;&#32;in&#32;&lt;=&#32;<emphasis role="charliteral">&apos;D&apos;</emphasis>)
+<anchor xml:id="_jatek_8c_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_jatek_8c_source_1l00136"/>00136 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_jatek_8c_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Érvénytelen&#32;válasz!\n&quot;</emphasis>);
+<anchor xml:id="_jatek_8c_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_jatek_8c_1a9a4f7307dee2c276a0facc89751f248e">valasz_beker</link>(kerdes);
+<anchor xml:id="_jatek_8c_source_1l00139"/>00139 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_jatek_8c_source_1l00140"/>00140 };
+<anchor xml:id="_jatek_8c_source_1l00141"/>00141 
+<anchor xml:id="_jatek_8c_source_1l00142"/>00142 
+</programlisting></section>

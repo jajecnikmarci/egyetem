@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_jatek_8c" xml:lang="hu">
+<title>jatek.c fájlreferencia</title>
+<indexterm><primary>jatek.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;jatek.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Függvények    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_jatek_8c_1a9277a4a90e115c7b8b567b84c5ef1688">kivant_nehezsegi_szint</link> (int kerdesek_csoportositva[], int nehezsegfajtak)</para>
+
+<para>Beolvassa a kivant nehezsegi szintet es visszater a felhasznalo altal latott ertekkel;. </para>
+</listitem>
+            <listitem><para><link linkend="_structker__csop__tomben">ker_csop_tomben</link> <link linkend="_jatek_8c_1aacf43817bf40c738a1ad02a58995d45f">kerdes_felteves</link> (<link linkend="_structker__csop__tomben">ker_csop_tomben</link> *kerdesektarhaza[], int kerdesek_csoportositva[], int nehezsegi_szint)</para>
+
+<para>Feltesz egy random kerdest az adott nehezsegi szintbol, visszater a kerdessel. </para>
+</listitem>
+            <listitem><para>void <link linkend="_jatek_8c_1a66d6fb54d1cc31df76d4817c6e1bd378">segitseg_keres</link> (<link linkend="_structker__csop__tomben">ker_csop_tomben</link> kerdes, bool *felezes_hasznaltsag, bool *kozonseg_szavazata_hasznaltsag)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_jatek_8c_1a9a4f7307dee2c276a0facc89751f248e">valasz_beker</link> (<link linkend="_structker__csop__tomben">ker_csop_tomben</link> kerdes)</para>
+
+<para>Igazzal ter vissza, ha helyes a valasz, kezeli az ervenytelen valaszokat. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Függvények dokumentációja</title>
+<anchor xml:id="_jatek_8c_1aacf43817bf40c738a1ad02a58995d45f"/><section>
+    <title>kerdes_felteves()</title>
+<indexterm><primary>kerdes_felteves</primary><secondary>jatek.c</secondary></indexterm>
+<indexterm><primary>jatek.c</primary><secondary>kerdes_felteves</secondary></indexterm>
+<para><computeroutput><link linkend="_structker__csop__tomben">ker_csop_tomben</link> kerdes_felteves (<link linkend="_structker__csop__tomben">ker_csop_tomben</link> * kerdesektarhaza[], int kerdesek_csoportositva[], int nehezsegi_szint)</computeroutput></para><para>
+
+<para>Feltesz egy random kerdest az adott nehezsegi szintbol, visszater a kerdessel. </para>
+</para>
+
+<para>Kiírja a megválaszolandó kérédst és a hozzá tartozó válaszlehetőségeket</para>
+
+<para>Megfelelően sok kérdéssel véges időn belül véget ér a ciklus.</para>
+<para>
+Definíció a(z) <link linkend="_jatek_8c_source">jatek.c</link> fájl <link linkend="_jatek_8c_source_1l00024">24</link>. sorában.</para>
+</section>
+<anchor xml:id="_jatek_8c_1a9277a4a90e115c7b8b567b84c5ef1688"/><section>
+    <title>kivant_nehezsegi_szint()</title>
+<indexterm><primary>kivant_nehezsegi_szint</primary><secondary>jatek.c</secondary></indexterm>
+<indexterm><primary>jatek.c</primary><secondary>kivant_nehezsegi_szint</secondary></indexterm>
+<para><computeroutput>int kivant_nehezsegi_szint (int kerdesek_csoportositva[], int nehezsegfajtak)</computeroutput></para><para>
+
+<para>Beolvassa a kivant nehezsegi szintet es visszater a felhasznalo altal latott ertekkel;. </para>
+</para>
+
+<para>A játékos kiválasztja az általa kívánt nehézségi szintet amin a játék futni fog</para>
+<para>
+Definíció a(z) <link linkend="_jatek_8c_source">jatek.c</link> fájl <link linkend="_jatek_8c_source_1l00007">7</link>. sorában.</para>
+</section>
+<anchor xml:id="_jatek_8c_1a66d6fb54d1cc31df76d4817c6e1bd378"/><section>
+    <title>segitseg_keres()</title>
+<indexterm><primary>segitseg_keres</primary><secondary>jatek.c</secondary></indexterm>
+<indexterm><primary>jatek.c</primary><secondary>segitseg_keres</secondary></indexterm>
+<para><computeroutput>void segitseg_keres (<link linkend="_structker__csop__tomben">ker_csop_tomben</link> kerdes, bool * felezes_hasznaltsag, bool * kozonseg_szavazata_hasznaltsag)</computeroutput></para><para>
+Definíció a(z) <link linkend="_jatek_8c_source">jatek.c</link> fájl <link linkend="_jatek_8c_source_1l00097">97</link>. sorában.</para>
+</section>
+<anchor xml:id="_jatek_8c_1a9a4f7307dee2c276a0facc89751f248e"/><section>
+    <title>valasz_beker()</title>
+<indexterm><primary>valasz_beker</primary><secondary>jatek.c</secondary></indexterm>
+<indexterm><primary>jatek.c</primary><secondary>valasz_beker</secondary></indexterm>
+<para><computeroutput>bool valasz_beker (<link linkend="_structker__csop__tomben">ker_csop_tomben</link> kerdes)</computeroutput></para><para>
+
+<para>Igazzal ter vissza, ha helyes a valasz, kezeli az ervenytelen valaszokat. </para>
+</para>
+
+<para>A játékos válaszát kiértékeli és ha rossz a formátum rekurzívan fut</para>
+<para>
+Definíció a(z) <link linkend="_jatek_8c_source">jatek.c</link> fájl <link linkend="_jatek_8c_source_1l00129">129</link>. sorában.</para>
+</section>
+</section>
+</section>

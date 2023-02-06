@@ -1,0 +1,377 @@
+\hypertarget{beolvas_8h}{}\doxysection{beolvas.\+h File Reference}
+\label{beolvas_8h}\index{beolvas.h@{beolvas.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}debugmalloc.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_kerdes}{Kerdes}}
+\begin{DoxyCompactList}\small\item\em A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}}
+\begin{DoxyCompactList}\small\item\em A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_kerdes}{Kerdes}} \mbox{\hyperlink{beolvas_8h_a535c987f47562c33e1e59c6d50cb0aaa}{Kerdes}}
+\begin{DoxyCompactList}\small\item\em A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} \mbox{\hyperlink{beolvas_8h_a4336b5477be572937ae93163b8eb7921}{ker\+\_\+csop\+\_\+tomben}}
+\begin{DoxyCompactList}\small\item\em A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{beolvas_8h_a0d57e08bca0219f65eb7b01ef1b0846c}{beolvas}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$kerdes, FILE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Beolvassa egy sor elemeit egy láncolt listába. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{beolvas_8h_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\+\_\+be}} (FILE $\ast$f)
+\begin{DoxyCompactList}\small\item\em A fájlból beolvas egy sort és azt egy karaktertömben visszaadja. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{beolvas_8h_ab594ffb71c9823ba35b87d4842172bb3}{kerdest\+\_\+beszur}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$$\ast$peleje)
+\begin{DoxyCompactList}\small\item\em A lácolt listában létrehoz egy új elemet a következő beolvasáshoz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{beolvas_8h_a0d89848cb479cd1d01dec9e96cdf8697}{token}} (char $\ast$sor, char $\ast$token\+\_\+ptrek\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em A beolvasott sort elemekre bontja és visszaadja a rájuk mutató pointereket tartalmazó tömböt. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{beolvas_8h_a0d342e6f077337002b1015d9adaa4916}{lancoltbaolvas}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$$\ast$kerdesek\+\_\+eredeti)
+\begin{DoxyCompactList}\small\item\em A forrásfájl összes sorát beolvassa és eltárolja egy láncolt listában és visszaadja a beolvasott kérdések darabszámát. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{beolvas_8h_acc8e53f23b54287c14f939d3a20bf6ee}{nehezsegeket\+\_\+szamol}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$eleje, int $\ast$nehezsegfajtakszama)
+\begin{DoxyCompactList}\small\item\em Megszámolja hogy hány nehézségfajta van és hogy a bizonyos nehézségfajtákból hány darab kérdés van. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{beolvas_8h_aea0b000c67a3937d39288473b771d86b}{kerdest\+\_\+csoportosit}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$kerdesek, int $\ast$$\ast$kerdesek\+\_\+csoportositva)
+\begin{DoxyCompactList}\small\item\em A nehézségalapú csoportosítást letárolja és visszaadja a nehézségfajták számát. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} $\ast$$\ast$ \mbox{\hyperlink{beolvas_8h_ac4e5fac28c72baadcfa9ab06fd297dc7}{csop\+\_\+tomb\+\_\+belerak}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$kerdesek\+\_\+lacoltban, int nehezsegfajtak, int $\ast$kerdesek\+\_\+csoportositva)
+\begin{DoxyCompactList}\small\item\em A láncolt listában tárolt kérdéseket nehézség alapján csoportosítva belerakja egy 2 dimenziós tömbbe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} \mbox{\hyperlink{beolvas_8h_aee3cca7e0b7c5495b9bbd22e597a4565}{konvertal}} (\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$kerdes)
+\begin{DoxyCompactList}\small\item\em A láncolt listában tárolt kérdéseknek nincs szükség minden elemére de szükség van a használtságára a kérdésgenerálásnál később ezért konvertál. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{beolvas_8h_ab4e72ef8d466b9bbcd18eb534e05c141}{kerdeseket\+\_\+felszabadit}} (\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} $\ast$$\ast$kerdesek, int $\ast$kerdesek\+\_\+csoportositva, int nehezsegfajtak)
+\begin{DoxyCompactList}\small\item\em Felszabadítja a 2 dimenziós mátrixát a kérdéseknek a malloc-\/olás miatt a program lefutásának végén. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{beolvas_8h_a4336b5477be572937ae93163b8eb7921}\label{beolvas_8h_a4336b5477be572937ae93163b8eb7921}} 
+\index{beolvas.h@{beolvas.h}!ker\_csop\_tomben@{ker\_csop\_tomben}}
+\index{ker\_csop\_tomben@{ker\_csop\_tomben}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{ker\_csop\_tomben}{ker\_csop\_tomben}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} \mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}}}
+
+
+
+A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben. 
+
+\mbox{\Hypertarget{beolvas_8h_a535c987f47562c33e1e59c6d50cb0aaa}\label{beolvas_8h_a535c987f47562c33e1e59c6d50cb0aaa}} 
+\index{beolvas.h@{beolvas.h}!Kerdes@{Kerdes}}
+\index{Kerdes@{Kerdes}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{Kerdes}{Kerdes}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_kerdes}{Kerdes}} \mbox{\hyperlink{struct_kerdes}{Kerdes}}}
+
+
+
+A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben. 
+
+Created by Jajecnik Marcell on 2022. 11. 22.. \begin{DoxyAuthor}{Author}
+Jajecnik Marcell 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{beolvas_8h_a0d57e08bca0219f65eb7b01ef1b0846c}\label{beolvas_8h_a0d57e08bca0219f65eb7b01ef1b0846c}} 
+\index{beolvas.h@{beolvas.h}!beolvas@{beolvas}}
+\index{beolvas@{beolvas}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{beolvas()}{beolvas()}}
+{\footnotesize\ttfamily int beolvas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$}]{kerdes,  }\item[{FILE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Beolvassa egy sor elemeit egy láncolt listába. 
+
+Created by Jajecnik Marcell on 2022. 11. 22.. \begin{DoxyAuthor}{Author}
+Jajecnik Marcell 
+\end{DoxyAuthor}
+A fájlból beolvas egy sort és azt beteszi egy karaktertömbbbe
+
+EOF-\/nál
+
+Sor csak a lezáró \textbackslash{}0-\/at tartalmazza
+
+A tömb elemeire mutató pointereket tartalmazó tömb
+
+Sikerességre tesztelés a daraboláskor
+
+Memóriafoglalási hibánál
+
+Int-\/té alakítja majd berakja a nehézséget a kérdés sturct nehézség elemébe
+
+Felszabadít mert nincs szükség már a rá mutató pointerre
+
+A többi részelemet beteszi a nekik szánt helybe, mivel a beolvasás sorrendje ismert előre
+
+Mivel csak egy karaktert tárolunk így nincs szükség a lezáró 0-\/ra
+
+Ezt felszabadítja utána mivel a karakterre mutató pointerre később már nem lesz szükség
+
+A pointereket később a teljes program lefutásának végén szabadítjuk fel
+
+Felszabadítja a beolvasott sort
+
+Sikeres lefutáskor
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00010}{10}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_ac4e5fac28c72baadcfa9ab06fd297dc7}\label{beolvas_8h_ac4e5fac28c72baadcfa9ab06fd297dc7}} 
+\index{beolvas.h@{beolvas.h}!csop\_tomb\_belerak@{csop\_tomb\_belerak}}
+\index{csop\_tomb\_belerak@{csop\_tomb\_belerak}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{csop\_tomb\_belerak()}{csop\_tomb\_belerak()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} $\ast$$\ast$ csop\+\_\+tomb\+\_\+belerak (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$}]{kerdesek\+\_\+lacoltban,  }\item[{int}]{nehezsegfajtak,  }\item[{int $\ast$}]{kerdesek\+\_\+csoportositva }\end{DoxyParamCaption})}
+
+
+
+A láncolt listában tárolt kérdéseket nehézség alapján csoportosítva belerakja egy 2 dimenziós tömbbe. 
+
+Helyet foglal az 1. dimenziónak
+
+Ha nem sikerül a foglalás visszatér
+
+Helyet foglal a 2. dimenzióelemeinek
+
+Ha nem sikerül a foglalás akkor visszatér
+
+Létrehoz egy integer tömböt ami indexeket tárol a nehézségi szintekhez és elsőként minden eleme 0
+
+A láncolt lista végigjárásához
+
+Amíg el nem ér az utolsó elemig
+
+Eltárolja a következő elemre mutató helycímet
+
+A nehézségi szint szerinti legkisebb nem használt indexre berakja a láncolt lista elemét, amit a konvertáló függvény ad át módosítva
+
+Növeli a nehézség indexjét
+
+Felszabaditja a lancolt listat, de az elemek tartalma megmarad a konvertalt kerdesekben!
+
+A következő elemre állítja a mozgo-\/t
+
+Visszaadja a 2 dimenziós tömböt ami a kérdésekre és azok tulajdonságaira mutató pointereket tárolja tárolja
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00162}{162}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_ab4e72ef8d466b9bbcd18eb534e05c141}\label{beolvas_8h_ab4e72ef8d466b9bbcd18eb534e05c141}} 
+\index{beolvas.h@{beolvas.h}!kerdeseket\_felszabadit@{kerdeseket\_felszabadit}}
+\index{kerdeseket\_felszabadit@{kerdeseket\_felszabadit}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{kerdeseket\_felszabadit()}{kerdeseket\_felszabadit()}}
+{\footnotesize\ttfamily void kerdeseket\+\_\+felszabadit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} $\ast$$\ast$}]{kerdesek,  }\item[{int $\ast$}]{kerdesek\+\_\+csoportositva,  }\item[{int}]{nehezsegfajtak }\end{DoxyParamCaption})}
+
+
+
+Felszabadítja a 2 dimenziós mátrixát a kérdéseknek a malloc-\/olás miatt a program lefutásának végén. 
+
+Felszabadítja a 2 dimenziós mátrixát a kérdéseknek a malloc-\/olás miatt a program lefutásának végén. 
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00214}{214}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_ab594ffb71c9823ba35b87d4842172bb3}\label{beolvas_8h_ab594ffb71c9823ba35b87d4842172bb3}} 
+\index{beolvas.h@{beolvas.h}!kerdest\_beszur@{kerdest\_beszur}}
+\index{kerdest\_beszur@{kerdest\_beszur}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{kerdest\_beszur()}{kerdest\_beszur()}}
+{\footnotesize\ttfamily void kerdest\+\_\+beszur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$$\ast$}]{peleje }\end{DoxyParamCaption})}
+
+
+
+A lácolt listában létrehoz egy új elemet a következő beolvasáshoz. 
+
+Foglal az új elemre
+
+Üres listakor
+
+Berakja a láncolt lista eljére az új elemet
+
+A láncolt listára mutató pointert az új elemre állítja
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00058}{58}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_aea0b000c67a3937d39288473b771d86b}\label{beolvas_8h_aea0b000c67a3937d39288473b771d86b}} 
+\index{beolvas.h@{beolvas.h}!kerdest\_csoportosit@{kerdest\_csoportosit}}
+\index{kerdest\_csoportosit@{kerdest\_csoportosit}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{kerdest\_csoportosit()}{kerdest\_csoportosit()}}
+{\footnotesize\ttfamily int kerdest\+\_\+csoportosit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$}]{kerdesek,  }\item[{int $\ast$$\ast$}]{kerdesek\+\_\+csoportositva }\end{DoxyParamCaption})}
+
+
+
+A nehézségalapú csoportosítást letárolja és visszaadja a nehézségfajták számát. 
+
+A nehézségiszintekhez tartózó kérdések számát tároló tömbre mutató pointer
+
+Az összes nehézségfajta száma
+
+A visszakapott helycímre állítja a nehézségiszintekhez tartózó kérdések számát tároló tömb helycímét
+
+Ha sikertelen a számlálás visszatér
+
+A tömb által érintett kérdések száma
+
+Az eredeti tömbünk helycímét a most készítettre állítjuk
+
+Visszaadja a legnagyobb nehézségi szint értékét
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00149}{149}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_aee3cca7e0b7c5495b9bbd22e597a4565}\label{beolvas_8h_aee3cca7e0b7c5495b9bbd22e597a4565}} 
+\index{beolvas.h@{beolvas.h}!konvertal@{konvertal}}
+\index{konvertal@{konvertal}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{konvertal()}{konvertal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} konvertal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$}]{kerdes }\end{DoxyParamCaption})}
+
+
+
+A láncolt listában tárolt kérdéseknek nincs szükség minden elemére de szükség van a használtságára a kérdésgenerálásnál később ezért konvertál. 
+
+A láncolt listában tárolt kérdéseknek nincs szükség minden elemére de szükség van a használtságára a kérdésgenerálásnál később ezért konvertál. 
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00189}{189}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_a0d342e6f077337002b1015d9adaa4916}\label{beolvas_8h_a0d342e6f077337002b1015d9adaa4916}} 
+\index{beolvas.h@{beolvas.h}!lancoltbaolvas@{lancoltbaolvas}}
+\index{lancoltbaolvas@{lancoltbaolvas}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{lancoltbaolvas()}{lancoltbaolvas()}}
+{\footnotesize\ttfamily int lancoltbaolvas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$$\ast$}]{kerdesek\+\_\+eredeti }\end{DoxyParamCaption})}
+
+
+
+A forrásfájl összes sorát beolvassa és eltárolja egy láncolt listában és visszaadja a beolvasott kérdések darabszámát. 
+
+Létrehoz egy kérdés sturctot
+
+Létrehoz egy változót a kérdések forrásfájljának kezeléséhez
+
+Megnyitja olvasásra a kérdések forrásfájlját
+
+Memóriafoglalási hibakor fut le
+
+A forrásfájl elejében találtam 3 karaktert amit a szövegszerkesztők nem ismernek fel, ezért megnéztem hexaban és ott látszanak, de nem azonosíthatók, így ezek mentés nélküli beolvasással kiszűröm
+
+Beolvasás sikerességének tárolása
+
+Beolvasott kérdések számának számlálásához
+
+Ciklus addig ameddig a beolvasás sikeres
+
+Beszúr egy üres elemet a láncolt lista elejére
+
+Beolvassa egy sor tartalmát a létrehozott kerdes structba és visszaadja a sikerességet
+
+Növeli a beolvasott kérdések számát
+
+Mivel az utolsó elemkor a beolvas függvény már nem 0-\/at ad vissza de utána még növeljük az értéket a ciklusból kilépés előtt így levonunk egyet
+
+A tempben eltárolja a kérdések következő elemére mutató pointert
+
+felszabadítja azt
+
+Majd belerakja az eltárolt helycímet
+
+Kiírja a láncolt listába olvasott kérdések számát
+
+A kérdések eredetijének első elemét beállítja a függvényen belüli kérdésekre
+
+Visszaadja a beolvasott kérdések számát
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00095}{95}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_acc8e53f23b54287c14f939d3a20bf6ee}\label{beolvas_8h_acc8e53f23b54287c14f939d3a20bf6ee}} 
+\index{beolvas.h@{beolvas.h}!nehezsegeket\_szamol@{nehezsegeket\_szamol}}
+\index{nehezsegeket\_szamol@{nehezsegeket\_szamol}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{nehezsegeket\_szamol()}{nehezsegeket\_szamol()}}
+{\footnotesize\ttfamily int $\ast$ nehezsegeket\+\_\+szamol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_kerdes}{Kerdes}} $\ast$}]{eleje,  }\item[{int $\ast$}]{nehezsegfajtakszama }\end{DoxyParamCaption})}
+
+
+
+Megszámolja hogy hány nehézségfajta van és hogy a bizonyos nehézségfajtákból hány darab kérdés van. 
+
+Létrehoz egy integer pointert
+
+Létrehoz egy helyi kérdés structot
+
+Végigmegy a láncolt listán
+
+Ha olyan nehézségi szinttel találkozik ami nagyobb mint az eddigiek
+
+Memóriafoglalási hiba
+
+A temp int tömb minden elemét 0ra állítja a memóriaszemét elkerülése végett
+
+Belemásolja az eddig beolvasott adatokat
+
+Az aktuális nehézségi szint számlálóját egyre állítja mert ez az első alkalom hogy találkozott vele
+
+Feltételezzük, hogy a legnagyobb nehézségű kérdésnél minden kissebb nehézség létezik, de a kevés kérdést tartalmazó nehézségi szinteket később kiszűrjük
+
+Felszabadítjuk az eredeti tömböt
+
+És átállítjuk az eredeti helycímét a most létrehozottéra
+
+Ha már ismeri a nehézségfajtát akkor növeli a hozzá tartozó számláló értékét 1-\/gyel
+
+Végül visszaadja a tömbre mutató helycímet
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00124}{124}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_ab720d1d0e6867b8ccc60f4f0205dc206}\label{beolvas_8h_ab720d1d0e6867b8ccc60f4f0205dc206}} 
+\index{beolvas.h@{beolvas.h}!sor\_be@{sor\_be}}
+\index{sor\_be@{sor\_be}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{sor\_be()}{sor\_be()}}
+{\footnotesize\ttfamily char $\ast$ sor\+\_\+be (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+A fájlból beolvas egy sort és azt egy karaktertömben visszaadja. 
+
+Beolvasott karakter
+
+Beolvasott karaktertömb hossza
+
+Nyújtással beolvas mindig egy karaktert majd új tömböt foglalva belerakja az új tömbbe az előzőleg beolvasott elemeket és az új elemet
+
+Eddig
+
+Ha vége a fájlnak felszabadítja a sort és visszatér Nullal
+
+Visszaadja a beolvasott karaktertömbre mutató pointert
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00067}{67}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+
+\mbox{\Hypertarget{beolvas_8h_a0d89848cb479cd1d01dec9e96cdf8697}\label{beolvas_8h_a0d89848cb479cd1d01dec9e96cdf8697}} 
+\index{beolvas.h@{beolvas.h}!token@{token}}
+\index{token@{token}!beolvas.h@{beolvas.h}}
+\doxysubsubsection{\texorpdfstring{token()}{token()}}
+{\footnotesize\ttfamily int token (\begin{DoxyParamCaption}\item[{char $\ast$}]{sor,  }\item[{char $\ast$}]{token\+\_\+ptrek\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+A beolvasott sort elemekre bontja és visszaadja a rájuk mutató pointereket tartalmazó tömböt. 
+
+A beolvasott sor hossza
+
+A jelenlegi rész kezdő indexe az eredeti karaktertömbben
+
+indexelés a pointer tömbhöz
+
+Addig amíg az összes karaktert nem rakta be a tömbbe
+
+Ha elválasztó karaktert találtunk, vagy a sor végén vagyunk
+
+Új tömböt foglal a jelenlegi résznek
+
+Ha nem sikerült visszatér
+
+Átmásolja az eddig beolvasott részekre mutató pointereket az új tömbbe
+
+A rész végére beteszi a lezáró 0-\/át
+
+Átadja az eredeti tömbnek
+
+A kezdő indexet a következő elemre állítja a lezárt rész után
+
+A beolvasott részek száma
+
+Sikeres lefutáskor
+
+Definition at line \mbox{\hyperlink{beolvas_8c_source_l00037}{37}} of file \mbox{\hyperlink{beolvas_8c_source}{beolvas.\+c}}.
+

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="hu">
+<title>Adatszerkezetek</title>
+Az összes adatszerkezet listája rövid leírásokkal:<link linkend="_struct_debugmalloc_data">DebugmallocData</link><link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link><link linkend="_struct_eredmeny">Eredmeny</link><link linkend="_structker__csop__tomben">ker_csop_tomben</link>
+<para>A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben </para>
+<link linkend="_struct_kerdes">Kerdes</link>
+<para>A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben </para>
+</section>

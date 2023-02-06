@@ -1,0 +1,11 @@
+# ninja log v5
+1	100	1663842406676319730	CMakeFiles/tomb_frissito.dir/main.c.o	84c70a8ad2f4cd01
+101	176	1663842406753327875	tomb_frissito	f03bcb5beffe88e8
+0	56	1663842446811981964	CMakeFiles/tomb_frissito.dir/main.c.o	84c70a8ad2f4cd01
+56	130	1663842446886160696	tomb_frissito	f03bcb5beffe88e8
+0	57	1663842461169556639	CMakeFiles/tomb_frissito.dir/main.c.o	84c70a8ad2f4cd01
+57	133	1663842461247059113	tomb_frissito	f03bcb5beffe88e8
+0	56	1663842672150495719	CMakeFiles/tomb_frissito.dir/main.c.o	84c70a8ad2f4cd01
+56	129	1663842672224342792	tomb_frissito	f03bcb5beffe88e8
+1	56	1663842719902779565	CMakeFiles/tomb_frissito.dir/main.c.o	84c70a8ad2f4cd01
+56	129	1663842719976403204	tomb_frissito	f03bcb5beffe88e8

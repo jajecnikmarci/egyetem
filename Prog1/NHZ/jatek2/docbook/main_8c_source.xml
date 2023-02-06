@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8c_source" xml:lang="hu">
+<title>main.c</title>
+Ugrás a fájl dokumentációjához.<programlisting linenumbering="unnumbered"><anchor xml:id="_main_8c_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+<anchor xml:id="_main_8c_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;stdlib.h&gt;</emphasis>
+<anchor xml:id="_main_8c_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;time.h&gt;</emphasis>
+<anchor xml:id="_main_8c_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_beolvas_8h">beolvas.h</link>&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_jatek_8h">jatek.h</link>&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_dicsoseglista_8h">dicsoseglista.h</link>&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;time.h&gt;</emphasis>
+<anchor xml:id="_main_8c_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_debugmalloc_8h">debugmalloc.h</link>&quot;</emphasis>
+<anchor xml:id="_main_8c_source_1l00009"/>00009 
+<anchor xml:id="_main_8c_source_1l00010"/><link linkend="_main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4">00010</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link>()&#32;{
+<anchor xml:id="_main_8c_source_1l00011"/>00011 &#32;&#32;&#32;&#32;srand(time(0));
+<anchor xml:id="_main_8c_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<link linkend="_struct_kerdes">Kerdes</link>&#32;*kerdesek;
+<anchor xml:id="_main_8c_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;kerdesek_szama=0;
+<anchor xml:id="_main_8c_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;((kerdesek_szama=&#32;<link linkend="_beolvas_8c_1a0d342e6f077337002b1015d9adaa4916">lancoltbaolvas</link>(&amp;kerdesek))==-1)&#32;{
+<anchor xml:id="_main_8c_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Beolvasási&#32;hiba&quot;</emphasis>);
+<anchor xml:id="_main_8c_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_main_8c_source_1l00017"/>00017 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_main_8c_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;*kerdesek_csoportositva;
+<anchor xml:id="_main_8c_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegfajtak=0;
+<anchor xml:id="_main_8c_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;((nehezsegfajtak=<link linkend="_beolvas_8c_1aea0b000c67a3937d39288473b771d86b">kerdest_csoportosit</link>(kerdesek,&#32;&amp;kerdesek_csoportositva))==-1)&#32;{
+<anchor xml:id="_main_8c_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Beolvasási&#32;hiba&quot;</emphasis>);
+<anchor xml:id="_main_8c_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_main_8c_source_1l00023"/>00023 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_main_8c_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<link linkend="_structker__csop__tomben">ker_csop_tomben</link>**&#32;neh_csop_tomb_tomb;&#32;<emphasis role="comment">//nehezsegekalapjancsoportositotttomboktombje</emphasis>
+<anchor xml:id="_main_8c_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;((neh_csop_tomb_tomb&#32;=&#32;<link linkend="_beolvas_8c_1a5168173497a2b8c4f6f28d6a4d237364">csop_tomb_belerak</link>(kerdesek,&#32;nehezsegfajtak,&#32;kerdesek_csoportositva))==NULL)&#32;{
+<anchor xml:id="_main_8c_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Beolvasási&#32;hiba&quot;</emphasis>);
+<anchor xml:id="_main_8c_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_main_8c_source_1l00028"/>00028 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_main_8c_source_1l00029"/>00029 
+<anchor xml:id="_main_8c_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegiszint&#32;=&#32;<link linkend="_jatek_8c_1a9277a4a90e115c7b8b567b84c5ef1688">kivant_nehezsegi_szint</link>(kerdesek_csoportositva,&#32;nehezsegfajtak);
+<anchor xml:id="_main_8c_source_1l00031"/>00031 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;nyeremenyek[15]&#32;=&#32;{5000,&#32;10000,&#32;25000,&#32;50000,&#32;100000,&#32;200000,&#32;300000,&#32;500000,&#32;800000,&#32;1500000,&#32;3000000,&#32;5000000,&#32;10000000,&#32;20000000,&#32;40000000};
+<anchor xml:id="_main_8c_source_1l00032"/>00032 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;szint&#32;=&#32;0;
+<anchor xml:id="_main_8c_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;jatekeleje&#32;=&#32;(int)time(NULL);
+<anchor xml:id="_main_8c_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;felezes_hasznaltsag=<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_main_8c_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;kozonseg_szavazata_hasznaltsag=<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_main_8c_source_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(&#32;;&#32;szint&#32;&lt;&#32;15;&#32;++szint)&#32;{
+<anchor xml:id="_main_8c_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;\n%d&#32;Forintért&#32;íme&#32;a&#32;%d.&#32;kérdés.\n&quot;</emphasis>,nyeremenyek[szint],szint+1);
+<anchor xml:id="_main_8c_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;kerdes&#32;=&#32;<link linkend="_jatek_8c_1aacf43817bf40c738a1ad02a58995d45f">kerdes_felteves</link>(neh_csop_tomb_tomb,kerdesek_csoportositva,nehezsegiszint);
+<anchor xml:id="_main_8c_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_jatek_8c_1a66d6fb54d1cc31df76d4817c6e1bd378">segitseg_keres</link>(kerdes,&#32;&amp;felezes_hasznaltsag,&#32;&amp;kozonseg_szavazata_hasznaltsag);
+<anchor xml:id="_main_8c_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Adja&#32;meg&#32;a&#32;válaszát!\n&quot;</emphasis>);
+<anchor xml:id="_main_8c_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;helyes&#32;=&#32;<link linkend="_jatek_8c_1a9a4f7307dee2c276a0facc89751f248e">valasz_beker</link>(kerdes);
+<anchor xml:id="_main_8c_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!helyes)&#32;{
+<anchor xml:id="_main_8c_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Sajnos&#32;rossz&#32;a&#32;válasz.\n&quot;</emphasis>);
+<anchor xml:id="_main_8c_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(szint&#32;&gt;&#32;0)&#32;{
+<anchor xml:id="_main_8c_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Az&#32;ön&#32;nyereménye:%d&#32;Forint.&#32;Sok&#32;szerencsét&#32;legközelebb!\n&quot;</emphasis>,&#32;nyeremenyek[szint&#32;-&#32;1]);
+<anchor xml:id="_main_8c_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_main_8c_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_main_8c_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;printf(<emphasis role="stringliteral">&quot;Helyes&#32;válasz\n&quot;</emphasis>);
+<anchor xml:id="_main_8c_source_1l00049"/>00049 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_main_8c_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(szint==15)&#32;printf(<emphasis role="stringliteral">&quot;Gratulálunk&#32;ön&#32;megnyerte&#32;a&#32;főnyereményt&#32;(%d&#32;Forint)!\n&quot;</emphasis>,&#32;nyeremenyek[14]);
+<anchor xml:id="_main_8c_source_1l00051"/>00051 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;jatekido&#32;=&#32;(int)time(NULL)&#32;-&#32;jatekeleje;
+<anchor xml:id="_main_8c_source_1l00052"/>00052 
+<anchor xml:id="_main_8c_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<link linkend="_struct_eredmeny">Eredmeny</link>&#32;eredmeny;
+<anchor xml:id="_main_8c_source_1l00054"/>00054 &#32;&#32;&#32;&#32;eredmeny.<link linkend="_struct_eredmeny_1a836f5518cff34b84cc2d9cad57abeffe">ido</link>&#32;=&#32;jatekido;
+<anchor xml:id="_main_8c_source_1l00055"/>00055 &#32;&#32;&#32;&#32;eredmeny.<link linkend="_struct_eredmeny_1a5d76819d6e3c35c8f5e4716b3afc178f">megvalaszolt</link>&#32;=&#32;szint;
+<anchor xml:id="_main_8c_source_1l00056"/>00056 
+<anchor xml:id="_main_8c_source_1l00057"/>00057 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;\nAdja&#32;meg&#32;a&#32;játékosnevét:\n&quot;</emphasis>);
+<anchor xml:id="_main_8c_source_1l00058"/>00058 &#32;&#32;&#32;&#32;eredmeny.<link linkend="_struct_eredmeny_1ae8721cda7ae566103f9256b41efb04e1">jatekosnev</link>&#32;=&#32;<link linkend="_beolvas_8c_1ab720d1d0e6867b8ccc60f4f0205dc206">sor_be</link>(stdin);
+<anchor xml:id="_main_8c_source_1l00059"/>00059 &#32;&#32;&#32;&#32;<link linkend="_dicsoseglista_8c_1a0c18fb8e3f059d3ead8b0abee0321f2f">dicsoseglistat_kezel</link>(eredmeny,&#32;nehezsegiszint,&#32;nyeremenyek);
+<anchor xml:id="_main_8c_source_1l00060"/>00060 
+<anchor xml:id="_main_8c_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<link linkend="_beolvas_8c_1ab4e72ef8d466b9bbcd18eb534e05c141">kerdeseket_felszabadit</link>(neh_csop_tomb_tomb,&#32;kerdesek_csoportositva,&#32;nehezsegfajtak);
+<anchor xml:id="_main_8c_source_1l00062"/>00062 
+<anchor xml:id="_main_8c_source_1l00063"/>00063 
+<anchor xml:id="_main_8c_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_main_8c_source_1l00065"/>00065 }
+<anchor xml:id="_main_8c_source_1l00066"/>00066 
+<anchor xml:id="_main_8c_source_1l00067"/>00067 
+</programlisting></section>

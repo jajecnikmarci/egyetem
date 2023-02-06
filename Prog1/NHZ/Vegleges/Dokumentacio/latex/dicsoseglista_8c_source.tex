@@ -1,0 +1,109 @@
+\hypertarget{dicsoseglista_8c_source}{}\doxysection{dicsoseglista.\+c}
+\mbox{\hyperlink{dicsoseglista_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00002}00002 \textcolor{comment}{// Created by Jajecnik Marcell on 2022. 12. 02..}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00003}00003 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{dicsoseglista_8h}{dicsoseglista.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00007}00007 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} DICSOSEGLISTA\_MERET = 10;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00010}00010 \textcolor{keyword}{static} \textcolor{keywordtype}{void} dicsoseglista\_beolvas(FILE* fp, \mbox{\hyperlink{struct_eredmeny}{Eredmeny}} dicsoseglista[]) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00011}00011     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < DICSOSEGLISTA\_MERET; i++) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00012}00012         \textcolor{keywordtype}{char}* sor = \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}}(fp);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00013}00013         dicsoseglista[i].\mbox{\hyperlink{struct_eredmeny_a998594565b609f6df42f959408aa6eff}{jatekosnev}} = sor;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00014}00014         sor = \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}}(fp);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00015}00015         dicsoseglista[i].\mbox{\hyperlink{struct_eredmeny_a05caadba6f41e9f5e13409c3fb881c5e}{megvalaszolt}} = atoi(sor);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00016}00016         \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(sor);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00017}00017         sor = \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}}(fp);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00018}00018         dicsoseglista[i].\mbox{\hyperlink{struct_eredmeny_a11b0e07027a04b6c3140254942b8f030}{ido}} = atoi(sor);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00019}00019         \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(sor);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00020}00020     \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00024}00024 \textcolor{keyword}{static} \textcolor{keywordtype}{void} dicsoseglistabarak(\mbox{\hyperlink{struct_eredmeny}{Eredmeny}} eredmeny, \mbox{\hyperlink{struct_eredmeny}{Eredmeny}} dicsoseglista[])\{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00025}00025     dicsoseglista[DICSOSEGLISTA\_MERET].\mbox{\hyperlink{struct_eredmeny_a998594565b609f6df42f959408aa6eff}{jatekosnev}} = eredmeny.\mbox{\hyperlink{struct_eredmeny_a998594565b609f6df42f959408aa6eff}{jatekosnev}};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00026}00026     dicsoseglista[DICSOSEGLISTA\_MERET].\mbox{\hyperlink{struct_eredmeny_a05caadba6f41e9f5e13409c3fb881c5e}{megvalaszolt}} = eredmeny.\mbox{\hyperlink{struct_eredmeny_a05caadba6f41e9f5e13409c3fb881c5e}{megvalaszolt}};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00027}00027     dicsoseglista[DICSOSEGLISTA\_MERET].\mbox{\hyperlink{struct_eredmeny_a11b0e07027a04b6c3140254942b8f030}{ido}}=eredmeny.\mbox{\hyperlink{struct_eredmeny_a11b0e07027a04b6c3140254942b8f030}{ido}};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00028}00028 \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00031}00031 \textcolor{keyword}{static} \textcolor{keywordtype}{void} rendez(\mbox{\hyperlink{struct_eredmeny}{Eredmeny}} dicsoseglista[]) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00032}00032     \textcolor{keywordtype}{int} index = -\/1;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00033}00033     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < DICSOSEGLISTA\_MERET; ++i) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00034}00034         \textcolor{keywordflow}{if} (dicsoseglista[i].megvalaszolt==dicsoseglista[DICSOSEGLISTA\_MERET].megvalaszolt \&\& dicsoseglista[i].ido > dicsoseglista[DICSOSEGLISTA\_MERET].ido )\{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00040}00040             index = i;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00041}00041             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00042}00042         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (dicsoseglista[i].megvalaszolt<dicsoseglista[DICSOSEGLISTA\_MERET].megvalaszolt)\{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00049}00049             index = i;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00050}00050             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00051}00051         \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00052}00052     \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00054}00054     \textcolor{keywordflow}{if}(index == DICSOSEGLISTA\_MERET || index == -\/1) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00057}00057     \mbox{\hyperlink{struct_eredmeny}{Eredmeny}} temp = dicsoseglista[index];}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00058}00058     dicsoseglista[index]=dicsoseglista[DICSOSEGLISTA\_MERET]; }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00060}00060     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = index + 1; i < DICSOSEGLISTA\_MERET; ++i) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00063}00063         dicsoseglista[DICSOSEGLISTA\_MERET]=dicsoseglista[i];}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00066}00066         dicsoseglista[i] = temp;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00069}00069         temp = dicsoseglista[DICSOSEGLISTA\_MERET];}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00071}00071 \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00074}00074 \textcolor{keyword}{static} \textcolor{keywordtype}{void} dicsoseglistat\_deklaral(\mbox{\hyperlink{struct_eredmeny}{Eredmeny}} dicsoseglista[])\{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00075}00075     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < DICSOSEGLISTA\_MERET+1; ++i) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00079}00079         dicsoseglista[i].\mbox{\hyperlink{struct_eredmeny_a998594565b609f6df42f959408aa6eff}{jatekosnev}}=\textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00080}00080         dicsoseglista[i].\mbox{\hyperlink{struct_eredmeny_a05caadba6f41e9f5e13409c3fb881c5e}{megvalaszolt}}=-\/1;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00081}00081         dicsoseglista[i].\mbox{\hyperlink{struct_eredmeny_a11b0e07027a04b6c3140254942b8f030}{ido}}=0;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00082}00082     \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00083}00083 \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00086}00086 \textcolor{keyword}{static} \textcolor{keywordtype}{void} dicsoseglistatkiir(\mbox{\hyperlink{struct_eredmeny}{Eredmeny}} dicsoseglista[], \textcolor{keywordtype}{int} nyeremenyek[], \textcolor{keywordtype}{int} nehezsegiszint)\{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00087}00087     printf(\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n\%d. nehézségi szinten\(\backslash\)n"{}},nehezsegiszint);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00089}00089     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < DICSOSEGLISTA\_MERET; ++i) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00090}00090         \textcolor{keywordflow}{if} (dicsoseglista[i].megvalaszolt==-\/1) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00091}00091         printf(\textcolor{stringliteral}{"{}\%d. helyezett: \%s, \%d Ft nyert összeg, \%d másodperc alatt\(\backslash\)n"{}},}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00092}00092                i+1,}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00093}00093                dicsoseglista[i].jatekosnev,}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00094}00094                dicsoseglista[i].megvalaszolt > 0 ? nyeremenyek[dicsoseglista[i].megvalaszolt-\/1] : 0,}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00095}00095                dicsoseglista[i].ido);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00096}00096     \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00097}00097 \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00100}\mbox{\hyperlink{dicsoseglista_8c_a0c18fb8e3f059d3ead8b0abee0321f2f}{00100}} \textcolor{keywordtype}{void} \mbox{\hyperlink{dicsoseglista_8c_a0c18fb8e3f059d3ead8b0abee0321f2f}{dicsoseglistat\_kezel}}(\mbox{\hyperlink{struct_eredmeny}{Eredmeny}} eredmeny, \textcolor{keywordtype}{int} nehezsegiszint, \textcolor{keywordtype}{int} nyeremenyek[]) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00101}00101     \mbox{\hyperlink{struct_eredmeny}{Eredmeny}} dicsoseglista[DICSOSEGLISTA\_MERET + 1];}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00102}00102     dicsoseglistat\_deklaral(dicsoseglista);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00105}00105     FILE *fp;}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00106}00106     \textcolor{keywordtype}{char} fajlnev\_format[] = \textcolor{stringliteral}{"{}dicsoseglista\_\%d"{}};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00107}00107     \textcolor{keywordtype}{char} fajlnev[] = \textcolor{stringliteral}{"{}dicsoseglista\_00"{}};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00108}00108     sprintf(fajlnev, fajlnev\_format, nehezsegiszint);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00111}00111     fp = fopen(fajlnev, \textcolor{stringliteral}{"{}r+"{}});}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00115}00115     \textcolor{keywordflow}{if} (fp != NULL) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00116}00116         dicsoseglista\_beolvas(fp, dicsoseglista);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00117}00117         fclose(fp);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00118}00118     \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00121}00121     dicsoseglistabarak(eredmeny, dicsoseglista);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00124}00124     rendez(dicsoseglista);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00127}00127     dicsoseglistatkiir(dicsoseglista, nyeremenyek, nehezsegiszint);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00130}00130     fp = fopen(fajlnev, \textcolor{stringliteral}{"{}w"{}});}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00131}00131     \textcolor{keywordflow}{if} (fp == NULL) \textcolor{keywordflow}{return}; }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00132}00132     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < DICSOSEGLISTA\_MERET; ++i) \{}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00133}00133         fprintf(fp, \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}, dicsoseglista[i].jatekosnev);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00134}00134         \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(dicsoseglista[i].jatekosnev);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00135}00135         fprintf(fp, \textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}}, dicsoseglista[i].megvalaszolt);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00136}00136         fprintf(fp, \textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}}, dicsoseglista[i].ido);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00137}00137     \}}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00138}00138     fclose(fp);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00140}00140     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(dicsoseglista[DICSOSEGLISTA\_MERET].jatekosnev);}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00141}00141 \};}
+\DoxyCodeLine{\Hypertarget{dicsoseglista_8c_source_l00142}00142 }
+
+\end{DoxyCode}

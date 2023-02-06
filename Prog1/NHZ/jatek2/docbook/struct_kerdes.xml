@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_kerdes" xml:lang="hu">
+<title>Kerdes struktúrareferencia</title>
+<indexterm><primary>Kerdes</primary></indexterm>
+<para>
+
+<para>A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;beolvas.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Adatmezők    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_struct_kerdes_1aafe2cd723a5ed49b1ff625d04bf9f888">kerdes</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_struct_kerdes_1aeb6cc951279dcb926cf3b7c2f76189ad">a</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_struct_kerdes_1ad2f0c86b603832f03d12779659be489a">b</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_struct_kerdes_1a431bf858427255dfc131c7483021b42e">c</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_struct_kerdes_1a9cad5679b07cb70ae2af10ae6cc1acbb">d</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_kerdes_1adf118b1dd0220e07a96137e11554a781">helyes</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_struct_kerdes_1acebd49a6b38f8941e93bc249f6f36cdf">kategoria</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_kerdes">Kerdes</link> * <link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">kov</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Részletes leírás</title>
+
+<para>A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben. </para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00015">15</link>. sorában.</para>
+</section>
+<section>
+<title>Adatmezők dokumentációja</title>
+<anchor xml:id="_struct_kerdes_1aeb6cc951279dcb926cf3b7c2f76189ad"/><section>
+    <title>a</title>
+<indexterm><primary>a</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>a</secondary></indexterm>
+<para><computeroutput>char* Kerdes::a</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00018">18</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_kerdes_1ad2f0c86b603832f03d12779659be489a"/><section>
+    <title>b</title>
+<indexterm><primary>b</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>char* Kerdes::b</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00019">19</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_kerdes_1a431bf858427255dfc131c7483021b42e"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>c</secondary></indexterm>
+<para><computeroutput>char* Kerdes::c</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00020">20</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_kerdes_1a9cad5679b07cb70ae2af10ae6cc1acbb"/><section>
+    <title>d</title>
+<indexterm><primary>d</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>d</secondary></indexterm>
+<para><computeroutput>char* Kerdes::d</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00021">21</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_kerdes_1adf118b1dd0220e07a96137e11554a781"/><section>
+    <title>helyes</title>
+<indexterm><primary>helyes</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>helyes</secondary></indexterm>
+<para><computeroutput>char Kerdes::helyes</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00022">22</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_kerdes_1acebd49a6b38f8941e93bc249f6f36cdf"/><section>
+    <title>kategoria</title>
+<indexterm><primary>kategoria</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>kategoria</secondary></indexterm>
+<para><computeroutput>char* Kerdes::kategoria</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00023">23</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_kerdes_1aafe2cd723a5ed49b1ff625d04bf9f888"/><section>
+    <title>kerdes</title>
+<indexterm><primary>kerdes</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>kerdes</secondary></indexterm>
+<para><computeroutput>char* Kerdes::kerdes</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00017">17</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95"/><section>
+    <title>kov</title>
+<indexterm><primary>kov</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>kov</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_struct_kerdes">Kerdes</link>* Kerdes::kov</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00024">24</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb"/><section>
+    <title>nehezseg</title>
+<indexterm><primary>nehezseg</primary><secondary>Kerdes</secondary></indexterm>
+<indexterm><primary>Kerdes</primary><secondary>nehezseg</secondary></indexterm>
+<para><computeroutput>int Kerdes::nehezseg</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8h_source">beolvas.h</link> fájl <link linkend="_beolvas_8h_source_1l00016">16</link>. sorában.</para>
+</section>
+<para>
+Ez a dokumentáció a struktúráról a következő fájl alapján készült:</para>
+<link linkend="_beolvas_8h">beolvas.h</link></section>
+</section>

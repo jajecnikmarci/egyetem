@@ -1,0 +1,72 @@
+\hypertarget{main_8c_source}{}\doxysection{main.\+c}
+\mbox{\hyperlink{main_8c}{Ugrás a fájl dokumentációjához.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00001}00001 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00002}00002 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00003}00003 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{beolvas_8h}{beolvas.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{jatek_8h}{jatek.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{dicsoseglista_8h}{dicsoseglista.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00007}00007 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{debugmalloc_8h}{debugmalloc.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00010}\mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{00010}} \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00011}00011     srand(time(0));}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00012}00012     \mbox{\hyperlink{struct_kerdes}{Kerdes}} *kerdesek;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00013}00013     \textcolor{keywordtype}{int} kerdesek\_szama=0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00014}00014     \textcolor{keywordflow}{if} ((kerdesek\_szama= \mbox{\hyperlink{beolvas_8c_a0d342e6f077337002b1015d9adaa4916}{lancoltbaolvas}}(\&kerdesek))==-\/1) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00015}00015         printf(\textcolor{stringliteral}{"{}Beolvasási hiba"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00016}00016         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00017}00017     \};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00018}00018     \textcolor{keywordtype}{int} *kerdesek\_csoportositva;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00019}00019     \textcolor{keywordtype}{int} nehezsegfajtak=0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00020}00020     \textcolor{keywordflow}{if} ((nehezsegfajtak=\mbox{\hyperlink{beolvas_8c_aea0b000c67a3937d39288473b771d86b}{kerdest\_csoportosit}}(kerdesek, \&kerdesek\_csoportositva))==-\/1) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00021}00021         printf(\textcolor{stringliteral}{"{}Beolvasási hiba"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00022}00022         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00023}00023     \};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00024}00024     \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}}** neh\_csop\_tomb\_tomb; \textcolor{comment}{//nehezsegekalapjancsoportositotttomboktombje}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00025}00025     \textcolor{keywordflow}{if} ((neh\_csop\_tomb\_tomb = \mbox{\hyperlink{beolvas_8c_a5168173497a2b8c4f6f28d6a4d237364}{csop\_tomb\_belerak}}(kerdesek, nehezsegfajtak, kerdesek\_csoportositva))==NULL) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00026}00026         printf(\textcolor{stringliteral}{"{}Beolvasási hiba"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00027}00027         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00028}00028     \};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00030}00030     \textcolor{keywordtype}{int} nehezsegiszint = \mbox{\hyperlink{jatek_8c_a9277a4a90e115c7b8b567b84c5ef1688}{kivant\_nehezsegi\_szint}}(kerdesek\_csoportositva, nehezsegfajtak);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00031}00031     \textcolor{keywordtype}{int} nyeremenyek[15] = \{5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 800000, 1500000, 3000000, 5000000, 10000000, 20000000, 40000000\};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00032}00032     \textcolor{keywordtype}{int} szint = 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00033}00033     \textcolor{keywordtype}{int} jatekeleje = (int)time(NULL);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00034}00034     \textcolor{keywordtype}{bool} felezes\_hasznaltsag=\textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00035}00035     \textcolor{keywordtype}{bool} kozonseg\_szavazata\_hasznaltsag=\textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00036}00036     \textcolor{keywordflow}{for} ( ; szint < 15; ++szint) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00037}00037         printf(\textcolor{stringliteral}{"{}\(\backslash\)n\%d Forintért íme a \%d. kérdés.\(\backslash\)n"{}},nyeremenyek[szint],szint+1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00038}00038         \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} kerdes = \mbox{\hyperlink{jatek_8c_aacf43817bf40c738a1ad02a58995d45f}{kerdes\_felteves}}(neh\_csop\_tomb\_tomb,kerdesek\_csoportositva,nehezsegiszint);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00039}00039         \mbox{\hyperlink{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}{segitseg\_keres}}(kerdes, \&felezes\_hasznaltsag, \&kozonseg\_szavazata\_hasznaltsag);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00040}00040         printf(\textcolor{stringliteral}{"{}Adja meg a válaszát!\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00041}00041         \textcolor{keywordtype}{bool} helyes = \mbox{\hyperlink{jatek_8c_a9a4f7307dee2c276a0facc89751f248e}{valasz\_beker}}(kerdes);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00042}00042         \textcolor{keywordflow}{if} (!helyes) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00043}00043             printf(\textcolor{stringliteral}{"{}Sajnos rossz a válasz.\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00044}00044             \textcolor{keywordflow}{if} (szint > 0) \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00045}00045                 printf(\textcolor{stringliteral}{"{}Az ön nyereménye:\%d Forint. Sok szerencsét legközelebb!\(\backslash\)n"{}}, nyeremenyek[szint -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00046}00046             \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00047}00047             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00048}00048         \} \textcolor{keywordflow}{else} printf(\textcolor{stringliteral}{"{}Helyes válasz\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00050}00050     \textcolor{keywordflow}{if} (szint==15) printf(\textcolor{stringliteral}{"{}Gratulálunk ön megnyerte a főnyereményt (\%d Forint)!\(\backslash\)n"{}}, nyeremenyek[14]);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00051}00051     \textcolor{keywordtype}{int} jatekido = (int)time(NULL) -\/ jatekeleje;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00053}00053     \mbox{\hyperlink{struct_eredmeny}{Eredmeny}} eredmeny;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00054}00054     eredmeny.\mbox{\hyperlink{struct_eredmeny_a836f5518cff34b84cc2d9cad57abeffe}{ido}} = jatekido;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00055}00055     eredmeny.\mbox{\hyperlink{struct_eredmeny_a5d76819d6e3c35c8f5e4716b3afc178f}{megvalaszolt}} = szint;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00057}00057     printf(\textcolor{stringliteral}{"{}\(\backslash\)nAdja meg a játékosnevét:\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00058}00058     eredmeny.\mbox{\hyperlink{struct_eredmeny_ae8721cda7ae566103f9256b41efb04e1}{jatekosnev}} = \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}}(stdin);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00059}00059     \mbox{\hyperlink{dicsoseglista_8c_a0c18fb8e3f059d3ead8b0abee0321f2f}{dicsoseglistat\_kezel}}(eredmeny, nehezsegiszint, nyeremenyek);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00061}00061     \mbox{\hyperlink{beolvas_8c_ab4e72ef8d466b9bbcd18eb534e05c141}{kerdeseket\_felszabadit}}(neh\_csop\_tomb\_tomb, kerdesek\_csoportositva, nehezsegfajtak);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00064}00064     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00065}00065 \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00067}00067 }
+
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="hu">
+    <info>
+    <title>NHZ</title>
+    </info>
+<chapter>
+    <title>Adatszerkezetek dokumentációja</title>
+    <xi:include href="struct_debugmalloc_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_debugmalloc_entry.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_eredmeny.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structker__csop__tomben.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_kerdes.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Fájlok dokumentációja</title>
+    <xi:include href="beolvas_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="beolvas_8c_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="beolvas_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="beolvas_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="debugmalloc_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="debugmalloc_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dicsoseglista_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dicsoseglista_8c_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dicsoseglista_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dicsoseglista_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="jatek_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="jatek_8c_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="jatek_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="jatek_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="main_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="main_8c_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

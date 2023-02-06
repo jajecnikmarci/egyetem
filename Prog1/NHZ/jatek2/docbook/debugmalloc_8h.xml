@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_debugmalloc_8h" xml:lang="hu">
+<title>debugmalloc.h fájlreferencia</title>
+<indexterm><primary>debugmalloc.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdbool.h&gt;<?linebreak?>#include &lt;stddef.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &lt;stdio.h&gt;<?linebreak?>#include &lt;ctype.h&gt;<?linebreak?>#include &lt;string.h&gt;<?linebreak?>#include &lt;stdarg.h&gt;<?linebreak?>#include &lt;unistd.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Adatszerkezetek    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_debugmalloc_data">DebugmallocData</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Makródefiníciók    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32">malloc</link>(S)&#160;&#160;&#160;debugmalloc_malloc_full((S), &quot;malloc&quot;, #S, __FILE__, __LINE__, false)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_debugmalloc_8h_1ac07b71d27b6b37e81ac3a4c230f5794e">calloc</link>(N,  S)&#160;&#160;&#160;debugmalloc_malloc_full((N)*(S), &quot;calloc&quot;, #N &quot;, &quot; #S, __FILE__, __LINE__, true)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_debugmalloc_8h_1a54df243d89c451240697d7d3afb5663f">realloc</link>(P,  S)&#160;&#160;&#160;debugmalloc_realloc_full((P), (S), &quot;realloc&quot;, #S, __FILE__, __LINE__)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(P)&#160;&#160;&#160;debugmalloc_free_full((P), &quot;free&quot;, __FILE__, __LINE__)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Típusdefiníciók    </title>
+        <itemizedlist>
+            <listitem><para>typedef struct <link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link> <link linkend="_debugmalloc_8h_1a69e016f03a024f815bedf07ed671d4ea">DebugmallocEntry</link></para>
+</listitem>
+            <listitem><para>typedef struct <link linkend="_struct_debugmalloc_data">DebugmallocData</link> <link linkend="_debugmalloc_8h_1a6270b6c4128e9715c7e47c0d007e4367">DebugmallocData</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerációk    </title>
+        <itemizedlist>
+            <listitem><para>enum { <link linkend="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55bab345007cf28a2516c0ba24371a400520">debugmalloc_canary_size</link> = 64
+, <link linkend="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55ba8e3d5ad8628140edd887b8920f521cfd">debugmalloc_canary_char</link> = &apos;K&apos;
+, <link linkend="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55ba40803f0d5a26a349a78cbd998cb8a2a1">debugmalloc_tablesize</link> = 256
+, <link linkend="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55bae8726dfde3f35d4345009234ee734f6c">debugmalloc_max_block_size_default</link> = 1048576
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Makródefiníciók dokumentációja</title>
+<anchor xml:id="_debugmalloc_8h_1ac07b71d27b6b37e81ac3a4c230f5794e"/><section>
+    <title>calloc</title>
+<indexterm><primary>calloc</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>calloc</secondary></indexterm>
+<para><computeroutput>#define calloc( N,  S)&#160;&#160;&#160;debugmalloc_malloc_full((N)*(S), &quot;calloc&quot;, #N &quot;, &quot; #S, __FILE__, __LINE__, true)</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00499">499</link>. sorában.</para>
+</section>
+<anchor xml:id="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0"/><section>
+    <title>free</title>
+<indexterm><primary>free</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>free</secondary></indexterm>
+<para><computeroutput>#define free( P)&#160;&#160;&#160;debugmalloc_free_full((P), &quot;free&quot;, __FILE__, __LINE__)</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00501">501</link>. sorában.</para>
+</section>
+<anchor xml:id="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32"/><section>
+    <title>malloc</title>
+<indexterm><primary>malloc</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>malloc</secondary></indexterm>
+<para><computeroutput>#define malloc( S)&#160;&#160;&#160;debugmalloc_malloc_full((S), &quot;malloc&quot;, #S, __FILE__, __LINE__, false)</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00498">498</link>. sorában.</para>
+</section>
+<anchor xml:id="_debugmalloc_8h_1a54df243d89c451240697d7d3afb5663f"/><section>
+    <title>realloc</title>
+<indexterm><primary>realloc</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>realloc</secondary></indexterm>
+<para><computeroutput>#define realloc( P,  S)&#160;&#160;&#160;debugmalloc_realloc_full((P), (S), &quot;realloc&quot;, #S, __FILE__, __LINE__)</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00500">500</link>. sorában.</para>
+</section>
+</section>
+<section>
+<title>Típusdefiníciók dokumentációja</title>
+<anchor xml:id="_debugmalloc_8h_1a6270b6c4128e9715c7e47c0d007e4367"/><section>
+    <title>DebugmallocData</title>
+<indexterm><primary>DebugmallocData</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>DebugmallocData</secondary></indexterm>
+<para><computeroutput>typedef struct <link linkend="_struct_debugmalloc_data">DebugmallocData</link> <link linkend="_struct_debugmalloc_data">DebugmallocData</link></computeroutput></para></section>
+<anchor xml:id="_debugmalloc_8h_1a69e016f03a024f815bedf07ed671d4ea"/><section>
+    <title>DebugmallocEntry</title>
+<indexterm><primary>DebugmallocEntry</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>DebugmallocEntry</secondary></indexterm>
+<para><computeroutput>typedef struct <link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link> <link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link></computeroutput></para></section>
+</section>
+<section>
+<title>Enumerációk dokumentációja</title>
+<anchor xml:id="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55b"/><section>
+    <title>anonymous enum</title>
+<para><computeroutput>anonymous enum</computeroutput></para><informaltable frame="all">
+<title>Enumeráció-értékek</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>debugmalloc_canary_size</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>debugmalloc_canary_size</secondary></indexterm>
+<anchor xml:id="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55bab345007cf28a2516c0ba24371a400520"/>debugmalloc_canary_size</entry><entry></entry></row><row><entry><indexterm><primary>debugmalloc_canary_char</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>debugmalloc_canary_char</secondary></indexterm>
+<anchor xml:id="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55ba8e3d5ad8628140edd887b8920f521cfd"/>debugmalloc_canary_char</entry><entry></entry></row><row><entry><indexterm><primary>debugmalloc_tablesize</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>debugmalloc_tablesize</secondary></indexterm>
+<anchor xml:id="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55ba40803f0d5a26a349a78cbd998cb8a2a1"/>debugmalloc_tablesize</entry><entry></entry></row><row><entry><indexterm><primary>debugmalloc_max_block_size_default</primary><secondary>debugmalloc.h</secondary></indexterm>
+<indexterm><primary>debugmalloc.h</primary><secondary>debugmalloc_max_block_size_default</secondary></indexterm>
+<anchor xml:id="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55bae8726dfde3f35d4345009234ee734f6c"/>debugmalloc_max_block_size_default</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00013">13</link>. sorában.</para>
+</section>
+</section>
+</section>

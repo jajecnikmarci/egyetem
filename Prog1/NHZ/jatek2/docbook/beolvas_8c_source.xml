@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_beolvas_8c_source" xml:lang="hu">
+<title>beolvas.c</title>
+Ugrás a fájl dokumentációjához.<programlisting linenumbering="unnumbered"><anchor xml:id="_beolvas_8c_source_1l00001"/>00001 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_beolvas_8c_source_1l00002"/>00002 <emphasis role="comment">//&#32;Created&#32;by&#32;Jajecnik&#32;Marcell&#32;on&#32;2022.&#32;11.&#32;22..</emphasis>
+<anchor xml:id="_beolvas_8c_source_1l00003"/>00003 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_beolvas_8c_source_1l00004"/>00004 
+<anchor xml:id="_beolvas_8c_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_beolvas_8h">beolvas.h</link>&quot;</emphasis>
+<anchor xml:id="_beolvas_8c_source_1l00006"/>00006 
+<anchor xml:id="_beolvas_8c_source_1l00008"/><link linkend="_beolvas_8c_1a0d57e08bca0219f65eb7b01ef1b0846c">00008</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_beolvas_8c_1a0d57e08bca0219f65eb7b01ef1b0846c">beolvas</link>(<link linkend="_struct_kerdes">Kerdes</link>*&#32;kerdes,&#32;FILE&#32;*f){
+<anchor xml:id="_beolvas_8c_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*sor&#32;=&#32;<link linkend="_beolvas_8c_1ab720d1d0e6867b8ccc60f4f0205dc206">sor_be</link>(f);
+<anchor xml:id="_beolvas_8c_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(sor==NULL)&#32;<emphasis role="keywordflow">return</emphasis>&#32;2;&#32;
+<anchor xml:id="_beolvas_8c_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(strlen(sor)==1)&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;
+<anchor xml:id="_beolvas_8c_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*token_ptrek[8];
+<anchor xml:id="_beolvas_8c_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;darabolas_eredmenye=<link linkend="_beolvas_8c_1a0d89848cb479cd1d01dec9e96cdf8697">token</link>(sor,&#32;token_ptrek);
+<anchor xml:id="_beolvas_8c_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(darabolas_eredmenye==1)&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;
+<anchor xml:id="_beolvas_8c_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(darabolas_eredmenye==-1)&#32;<emphasis role="keywordflow">return</emphasis>&#32;-1;
+<anchor xml:id="_beolvas_8c_source_1l00016"/>00016 &#32;&#32;&#32;&#32;kerdes-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>&#32;=&#32;atoi(token_ptrek[0]);
+<anchor xml:id="_beolvas_8c_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(token_ptrek[0]);
+<anchor xml:id="_beolvas_8c_source_1l00018"/>00018 &#32;&#32;&#32;&#32;kerdes-&gt;<link linkend="_struct_kerdes_1aafe2cd723a5ed49b1ff625d04bf9f888">kerdes</link>&#32;=&#32;token_ptrek[1];
+<anchor xml:id="_beolvas_8c_source_1l00019"/>00019 &#32;&#32;&#32;&#32;kerdes-&gt;<link linkend="_struct_kerdes_1aeb6cc951279dcb926cf3b7c2f76189ad">a</link>&#32;=&#32;token_ptrek[2];
+<anchor xml:id="_beolvas_8c_source_1l00020"/>00020 &#32;&#32;&#32;&#32;kerdes-&gt;<link linkend="_struct_kerdes_1ad2f0c86b603832f03d12779659be489a">b</link>&#32;=&#32;token_ptrek[3];
+<anchor xml:id="_beolvas_8c_source_1l00021"/>00021 &#32;&#32;&#32;&#32;kerdes-&gt;<link linkend="_struct_kerdes_1a431bf858427255dfc131c7483021b42e">c</link>&#32;=&#32;token_ptrek[4];
+<anchor xml:id="_beolvas_8c_source_1l00022"/>00022 &#32;&#32;&#32;&#32;kerdes-&gt;<link linkend="_struct_kerdes_1a9cad5679b07cb70ae2af10ae6cc1acbb">d</link>&#32;=&#32;token_ptrek[5];
+<anchor xml:id="_beolvas_8c_source_1l00023"/>00023 &#32;&#32;&#32;&#32;kerdes-&gt;<link linkend="_struct_kerdes_1adf118b1dd0220e07a96137e11554a781">helyes</link>&#32;=&#32;token_ptrek[6][0];
+<anchor xml:id="_beolvas_8c_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(token_ptrek[6]);
+<anchor xml:id="_beolvas_8c_source_1l00025"/>00025 &#32;&#32;&#32;&#32;kerdes-&gt;<link linkend="_struct_kerdes_1acebd49a6b38f8941e93bc249f6f36cdf">kategoria</link>&#32;=&#32;token_ptrek[7];
+<anchor xml:id="_beolvas_8c_source_1l00026"/>00026 
+<anchor xml:id="_beolvas_8c_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(sor);
+<anchor xml:id="_beolvas_8c_source_1l00028"/>00028 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_beolvas_8c_source_1l00029"/>00029 };
+<anchor xml:id="_beolvas_8c_source_1l00030"/>00030 
+<anchor xml:id="_beolvas_8c_source_1l00032"/><link linkend="_beolvas_8c_1a0d89848cb479cd1d01dec9e96cdf8697">00032</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_beolvas_8c_1a0d89848cb479cd1d01dec9e96cdf8697">token</link>(<emphasis role="keywordtype">char</emphasis>&#32;*sor,&#32;<emphasis role="keywordtype">char</emphasis>&#32;*token_ptrek[]){
+<anchor xml:id="_beolvas_8c_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;l=&#32;strlen(sor);
+<anchor xml:id="_beolvas_8c_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;jelen_resz_kezdo_index=0;
+<anchor xml:id="_beolvas_8c_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ptr_szamlalo=0;
+<anchor xml:id="_beolvas_8c_source_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;l;&#32;++i)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(sor[i]==<emphasis role="charliteral">&apos;;&apos;</emphasis>||sor[i]==<emphasis role="charliteral">&apos;\r&apos;</emphasis>){
+<anchor xml:id="_beolvas_8c_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>*&#32;t=(<emphasis role="keywordtype">char</emphasis>&#32;*)&#32;<link linkend="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32">malloc</link>(<emphasis role="keyword">sizeof</emphasis>&#32;(<emphasis role="keywordtype">char</emphasis>&#32;)*(i-jelen_resz_kezdo_index+1));
+<anchor xml:id="_beolvas_8c_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(t==NULL)&#32;<emphasis role="keywordflow">return</emphasis>&#32;-1;
+<anchor xml:id="_beolvas_8c_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;i-jelen_resz_kezdo_index;&#32;++j)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t[j]=sor[jelen_resz_kezdo_index+j];
+<anchor xml:id="_beolvas_8c_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t[i-jelen_resz_kezdo_index]=<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="_beolvas_8c_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;token_ptrek[ptr_szamlalo]=t;
+<anchor xml:id="_beolvas_8c_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;jelen_resz_kezdo_index=i+1;
+<anchor xml:id="_beolvas_8c_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ptr_szamlalo++;
+<anchor xml:id="_beolvas_8c_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00048"/>00048 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00049"/>00049 
+<anchor xml:id="_beolvas_8c_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_beolvas_8c_source_1l00051"/>00051 };
+<anchor xml:id="_beolvas_8c_source_1l00052"/>00052 
+<anchor xml:id="_beolvas_8c_source_1l00054"/><link linkend="_beolvas_8c_1ab594ffb71c9823ba35b87d4842172bb3">00054</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_beolvas_8c_1ab594ffb71c9823ba35b87d4842172bb3">kerdest_beszur</link>(<link linkend="_struct_kerdes">Kerdes</link>&#32;**peleje)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<link linkend="_struct_kerdes">Kerdes</link>&#32;*uj&#32;=&#32;(<link linkend="_struct_kerdes">Kerdes</link>&#32;*)&#32;<link linkend="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32">malloc</link>(<emphasis role="keyword">sizeof</emphasis>(<link linkend="_struct_kerdes">Kerdes</link>));
+<anchor xml:id="_beolvas_8c_source_1l00056"/>00056 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(peleje==NULL)&#32;uj-&gt;<link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">kov</link>=NULL;
+<anchor xml:id="_beolvas_8c_source_1l00057"/>00057 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;uj-&gt;<link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">kov</link>=*peleje;
+<anchor xml:id="_beolvas_8c_source_1l00058"/>00058 &#32;&#32;&#32;&#32;*peleje&#32;=&#32;uj;
+<anchor xml:id="_beolvas_8c_source_1l00059"/>00059 }
+<anchor xml:id="_beolvas_8c_source_1l00060"/>00060 
+<anchor xml:id="_beolvas_8c_source_1l00062"/><link linkend="_beolvas_8c_1ab720d1d0e6867b8ccc60f4f0205dc206">00062</link> <emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_beolvas_8c_1ab720d1d0e6867b8ccc60f4f0205dc206">sor_be</link>&#32;(FILE&#32;*f)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00063"/>00063 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;c_in;
+<anchor xml:id="_beolvas_8c_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;db&#32;=&#32;0;
+<anchor xml:id="_beolvas_8c_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*sor&#32;=&#32;(<emphasis role="keywordtype">char</emphasis>&#32;*)&#32;<link linkend="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32">malloc</link>(<emphasis role="keyword">sizeof</emphasis>(<emphasis role="keywordtype">char</emphasis>)&#32;*&#32;1);
+<anchor xml:id="_beolvas_8c_source_1l00066"/>00066 &#32;&#32;&#32;&#32;sor[0]&#32;=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="_beolvas_8c_source_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;((c_in&#32;=&#32;fgetc(f))&#32;!=&#32;<emphasis role="charliteral">&apos;\n&apos;</emphasis>&#32;&amp;&amp;&#32;c_in&#32;!=&#32;EOF)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00068"/>00068 
+<anchor xml:id="_beolvas_8c_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*ujtomb&#32;=&#32;(<emphasis role="keywordtype">char</emphasis>&#32;*)&#32;<link linkend="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32">malloc</link>(<emphasis role="keyword">sizeof</emphasis>(<emphasis role="keywordtype">char</emphasis>)&#32;*&#32;(db&#32;+&#32;1&#32;+&#32;1));
+<anchor xml:id="_beolvas_8c_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;db;&#32;++i)
+<anchor xml:id="_beolvas_8c_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ujtomb[i]&#32;=&#32;sor[i];
+<anchor xml:id="_beolvas_8c_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(sor);
+<anchor xml:id="_beolvas_8c_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sor&#32;=&#32;ujtomb;
+<anchor xml:id="_beolvas_8c_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ujtomb[db]&#32;=&#32;c_in;
+<anchor xml:id="_beolvas_8c_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ujtomb[db&#32;+&#32;1]&#32;=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="_beolvas_8c_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;++db;
+<anchor xml:id="_beolvas_8c_source_1l00077"/>00077 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c_in&#32;==&#32;EOF)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(sor);
+<anchor xml:id="_beolvas_8c_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;NULL;
+<anchor xml:id="_beolvas_8c_source_1l00081"/>00081 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00082"/>00082 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;sor;
+<anchor xml:id="_beolvas_8c_source_1l00083"/>00083 };
+<anchor xml:id="_beolvas_8c_source_1l00084"/>00084 
+<anchor xml:id="_beolvas_8c_source_1l00086"/><link linkend="_beolvas_8c_1a0d342e6f077337002b1015d9adaa4916">00086</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_beolvas_8c_1a0d342e6f077337002b1015d9adaa4916">lancoltbaolvas</link>(<link linkend="_struct_kerdes">Kerdes</link>&#32;**kerdesek_eredeti){
+<anchor xml:id="_beolvas_8c_source_1l00087"/>00087 &#32;&#32;&#32;&#32;<link linkend="_struct_kerdes">Kerdes</link>&#32;*kerdesek=NULL;
+<anchor xml:id="_beolvas_8c_source_1l00088"/>00088 &#32;&#32;&#32;&#32;FILE&#32;*fp;
+<anchor xml:id="_beolvas_8c_source_1l00089"/>00089 &#32;&#32;&#32;&#32;fp=&#32;fopen(<emphasis role="stringliteral">&quot;kerdes.csv&quot;</emphasis>,<emphasis role="stringliteral">&quot;r&quot;</emphasis>);
+<anchor xml:id="_beolvas_8c_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(fp==NULL)&#32;<emphasis role="keywordflow">return</emphasis>&#32;-1;
+<anchor xml:id="_beolvas_8c_source_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="comment">//A&#32;forrásfájl&#32;elején&#32;hexa&#32;alapján&#32;van&#32;3&#32;extra&#32;karakter</emphasis>
+<anchor xml:id="_beolvas_8c_source_1l00092"/>00092 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;3;&#32;++i)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;fgetc(fp);
+<anchor xml:id="_beolvas_8c_source_1l00094"/>00094 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00095"/>00095 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;jo=0;
+<anchor xml:id="_beolvas_8c_source_1l00096"/>00096 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;db=0;
+<anchor xml:id="_beolvas_8c_source_1l00097"/>00097 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(1)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_beolvas_8c_1ab594ffb71c9823ba35b87d4842172bb3">kerdest_beszur</link>(&amp;kerdesek);
+<anchor xml:id="_beolvas_8c_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;jo=<link linkend="_beolvas_8c_1a0d57e08bca0219f65eb7b01ef1b0846c">beolvas</link>(kerdesek,&#32;fp);
+<anchor xml:id="_beolvas_8c_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(jo!=0)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_struct_kerdes">Kerdes</link>&#32;*temp=kerdesek-&gt;<link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">kov</link>;
+<anchor xml:id="_beolvas_8c_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdesek);
+<anchor xml:id="_beolvas_8c_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;kerdesek=temp;
+<anchor xml:id="_beolvas_8c_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_beolvas_8c_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;db++;
+<anchor xml:id="_beolvas_8c_source_1l00107"/>00107 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00108"/>00108 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;%d&#32;kérdés&#32;beolvasva&#32;láncolt&#32;listába\n&quot;</emphasis>,db);
+<anchor xml:id="_beolvas_8c_source_1l00109"/>00109 &#32;&#32;&#32;&#32;*kerdesek_eredeti=kerdesek;
+<anchor xml:id="_beolvas_8c_source_1l00110"/>00110 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;db;
+<anchor xml:id="_beolvas_8c_source_1l00111"/>00111 };
+<anchor xml:id="_beolvas_8c_source_1l00112"/>00112 
+<anchor xml:id="_beolvas_8c_source_1l00114"/><link linkend="_beolvas_8c_1a6586b86a3d412f67a3721414e81ddc70">00114</link> <link linkend="_struct_kerdes">Kerdes</link>&#32;*<link linkend="_beolvas_8c_1a6586b86a3d412f67a3721414e81ddc70">felszabadit</link>&#32;(<link linkend="_struct_kerdes">Kerdes</link>*&#32;torlendo_kerdes){
+<anchor xml:id="_beolvas_8c_source_1l00115"/>00115 &#32;&#32;&#32;&#32;<link linkend="_struct_kerdes">Kerdes</link>&#32;*temp=torlendo_kerdes-&gt;<link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">kov</link>;
+<anchor xml:id="_beolvas_8c_source_1l00116"/>00116 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(torlendo_kerdes-&gt;<link linkend="_struct_kerdes_1aafe2cd723a5ed49b1ff625d04bf9f888">kerdes</link>);
+<anchor xml:id="_beolvas_8c_source_1l00117"/>00117 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(torlendo_kerdes-&gt;<link linkend="_struct_kerdes_1aeb6cc951279dcb926cf3b7c2f76189ad">a</link>);
+<anchor xml:id="_beolvas_8c_source_1l00118"/>00118 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(torlendo_kerdes-&gt;<link linkend="_struct_kerdes_1ad2f0c86b603832f03d12779659be489a">b</link>);
+<anchor xml:id="_beolvas_8c_source_1l00119"/>00119 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(torlendo_kerdes-&gt;<link linkend="_struct_kerdes_1a431bf858427255dfc131c7483021b42e">c</link>);
+<anchor xml:id="_beolvas_8c_source_1l00120"/>00120 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(torlendo_kerdes-&gt;<link linkend="_struct_kerdes_1a9cad5679b07cb70ae2af10ae6cc1acbb">d</link>);
+<anchor xml:id="_beolvas_8c_source_1l00121"/>00121 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(torlendo_kerdes-&gt;<link linkend="_struct_kerdes_1acebd49a6b38f8941e93bc249f6f36cdf">kategoria</link>);
+<anchor xml:id="_beolvas_8c_source_1l00122"/>00122 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(torlendo_kerdes);
+<anchor xml:id="_beolvas_8c_source_1l00123"/>00123 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;temp;
+<anchor xml:id="_beolvas_8c_source_1l00124"/>00124 }
+<anchor xml:id="_beolvas_8c_source_1l00125"/>00125 
+<anchor xml:id="_beolvas_8c_source_1l00127"/><link linkend="_beolvas_8c_1acc8e53f23b54287c14f939d3a20bf6ee">00127</link> <emphasis role="keywordtype">int</emphasis>*&#32;<link linkend="_beolvas_8c_1acc8e53f23b54287c14f939d3a20bf6ee">nehezsegeket_szamol</link>(<link linkend="_struct_kerdes">Kerdes</link>*&#32;eleje,&#32;<emphasis role="keywordtype">int</emphasis>&#32;*nehezsegfajtakszama){&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;*t=NULL;
+<anchor xml:id="_beolvas_8c_source_1l00128"/>00128 &#32;&#32;&#32;&#32;<link linkend="_struct_kerdes">Kerdes</link>&#32;*mozgo;
+<anchor xml:id="_beolvas_8c_source_1l00129"/>00129 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(mozgo&#32;=&#32;eleje;&#32;mozgo&#32;!=&#32;NULL;&#32;mozgo&#32;=&#32;mozgo-&gt;<link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">kov</link>){
+<anchor xml:id="_beolvas_8c_source_1l00130"/>00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(*nehezsegfajtakszama&lt;mozgo-&gt;nehezseg)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00131"/>00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;*temp&#32;=&#32;(<emphasis role="keywordtype">int</emphasis>&#32;*)&#32;<link linkend="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32">malloc</link>(<emphasis role="keyword">sizeof</emphasis>(<emphasis role="keywordtype">int</emphasis>)&#32;*&#32;mozgo-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>);
+<anchor xml:id="_beolvas_8c_source_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(temp==NULL)&#32;<emphasis role="keywordflow">return</emphasis>&#32;NULL;
+<anchor xml:id="_beolvas_8c_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;mozgo-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>;&#32;++i)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;temp[i]=0;
+<anchor xml:id="_beolvas_8c_source_1l00136"/>00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;*nehezsegfajtakszama;&#32;++i)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;temp[i]=t[i];
+<anchor xml:id="_beolvas_8c_source_1l00139"/>00139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00140"/>00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;temp[mozgo-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>-1]=1;
+<anchor xml:id="_beolvas_8c_source_1l00141"/>00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*nehezsegfajtakszama=mozgo-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>;
+<anchor xml:id="_beolvas_8c_source_1l00142"/>00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(t);
+<anchor xml:id="_beolvas_8c_source_1l00143"/>00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t=temp;
+<anchor xml:id="_beolvas_8c_source_1l00144"/>00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00145"/>00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;t[mozgo-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>-1]++;
+<anchor xml:id="_beolvas_8c_source_1l00146"/>00146 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00147"/>00147 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;t;
+<anchor xml:id="_beolvas_8c_source_1l00148"/>00148 };
+<anchor xml:id="_beolvas_8c_source_1l00149"/>00149 
+<anchor xml:id="_beolvas_8c_source_1l00151"/><link linkend="_beolvas_8c_1aea0b000c67a3937d39288473b771d86b">00151</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_beolvas_8c_1aea0b000c67a3937d39288473b771d86b">kerdest_csoportosit</link>&#32;(<link linkend="_struct_kerdes">Kerdes</link>&#32;*kerdesek,&#32;<emphasis role="keywordtype">int</emphasis>&#32;**kerdesek_csoportositva){
+<anchor xml:id="_beolvas_8c_source_1l00152"/>00152 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;*t;
+<anchor xml:id="_beolvas_8c_source_1l00153"/>00153 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegfajtakszama=0;
+<anchor xml:id="_beolvas_8c_source_1l00154"/>00154 &#32;&#32;&#32;&#32;t=<link linkend="_beolvas_8c_1acc8e53f23b54287c14f939d3a20bf6ee">nehezsegeket_szamol</link>(kerdesek,&amp;nehezsegfajtakszama);
+<anchor xml:id="_beolvas_8c_source_1l00155"/>00155 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(t==NULL)&#32;<emphasis role="keywordflow">return</emphasis>&#32;-1;
+<anchor xml:id="_beolvas_8c_source_1l00156"/>00156 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;osszeg=0;
+<anchor xml:id="_beolvas_8c_source_1l00157"/>00157 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;nehezsegfajtakszama;&#32;++i)&#32;osszeg+=t[i];
+<anchor xml:id="_beolvas_8c_source_1l00158"/>00158 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;%d&#32;db&#32;kérdés&#32;nehézség&#32;alapján&#32;csoportosítva\n&quot;</emphasis>,osszeg);
+<anchor xml:id="_beolvas_8c_source_1l00159"/>00159 &#32;&#32;&#32;&#32;*kerdesek_csoportositva=t;
+<anchor xml:id="_beolvas_8c_source_1l00160"/>00160 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;nehezsegfajtakszama;
+<anchor xml:id="_beolvas_8c_source_1l00161"/>00161 }
+<anchor xml:id="_beolvas_8c_source_1l00162"/>00162 
+<anchor xml:id="_beolvas_8c_source_1l00164"/><link linkend="_beolvas_8c_1a5168173497a2b8c4f6f28d6a4d237364">00164</link> <link linkend="_structker__csop__tomben">ker_csop_tomben</link>**&#32;<link linkend="_beolvas_8c_1a5168173497a2b8c4f6f28d6a4d237364">csop_tomb_belerak</link>(<link linkend="_struct_kerdes">Kerdes</link>&#32;*kerdesek_lancoltban,&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegfajtak,<emphasis role="keywordtype">int</emphasis>&#32;*kerdesek_csoportositva){
+<anchor xml:id="_beolvas_8c_source_1l00165"/>00165 &#32;&#32;&#32;&#32;<link linkend="_structker__csop__tomben">ker_csop_tomben</link>**&#32;t=(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>**)&#32;<link linkend="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32">malloc</link>(<emphasis role="keyword">sizeof</emphasis>(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>*)*nehezsegfajtak);
+<anchor xml:id="_beolvas_8c_source_1l00166"/>00166 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(t==NULL)&#32;<emphasis role="keywordflow">return</emphasis>&#32;NULL;
+<anchor xml:id="_beolvas_8c_source_1l00167"/>00167 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;nehezsegfajtak;&#32;++i)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00168"/>00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;*t_belso=(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>*)&#32;<link linkend="_debugmalloc_8h_1a535b58ab5aa48e2e86073e334d43fd32">malloc</link>(<emphasis role="keyword">sizeof</emphasis>(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>)*kerdesek_csoportositva[i]);
+<anchor xml:id="_beolvas_8c_source_1l00169"/>00169 
+<anchor xml:id="_beolvas_8c_source_1l00170"/>00170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(t_belso==NULL)&#32;<emphasis role="keywordflow">return</emphasis>&#32;NULL;
+<anchor xml:id="_beolvas_8c_source_1l00171"/>00171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t[i]=t_belso;
+<anchor xml:id="_beolvas_8c_source_1l00172"/>00172 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00173"/>00173 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;jelenhely[nehezsegfajtak];
+<anchor xml:id="_beolvas_8c_source_1l00174"/>00174 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;nehezsegfajtak;&#32;++i)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00175"/>00175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;jelenhely[i]=0;
+<anchor xml:id="_beolvas_8c_source_1l00176"/>00176 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00177"/>00177 
+<anchor xml:id="_beolvas_8c_source_1l00178"/>00178 &#32;&#32;&#32;&#32;<link linkend="_struct_kerdes">Kerdes</link>&#32;*mozgo&#32;=&#32;kerdesek_lancoltban;
+<anchor xml:id="_beolvas_8c_source_1l00179"/>00179 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>(mozgo&#32;!=&#32;NULL)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00180"/>00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_struct_kerdes">Kerdes</link>*&#32;kov&#32;=&#32;mozgo-&gt;<link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">kov</link>;
+<anchor xml:id="_beolvas_8c_source_1l00181"/>00181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t[mozgo-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>-1][jelenhely[mozgo-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>-1]]=<link linkend="_beolvas_8c_1aee3cca7e0b7c5495b9bbd22e597a4565">konvertal</link>(mozgo);
+<anchor xml:id="_beolvas_8c_source_1l00182"/>00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(jelenhely[mozgo-&gt;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>-1])++;
+<anchor xml:id="_beolvas_8c_source_1l00183"/>00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(mozgo);&#32;
+<anchor xml:id="_beolvas_8c_source_1l00184"/>00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mozgo&#32;=&#32;kov;
+<anchor xml:id="_beolvas_8c_source_1l00185"/>00185 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00186"/>00186 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Kérdések&#32;használatra&#32;kész&#32;állapotban\n\n\n\n\n\n\n\n\n\n\n\n\n&quot;</emphasis>);
+<anchor xml:id="_beolvas_8c_source_1l00187"/>00187 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;t;
+<anchor xml:id="_beolvas_8c_source_1l00188"/>00188 }
+<anchor xml:id="_beolvas_8c_source_1l00189"/>00189 
+<anchor xml:id="_beolvas_8c_source_1l00191"/><link linkend="_beolvas_8c_1aee3cca7e0b7c5495b9bbd22e597a4565">00191</link> <link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;<link linkend="_beolvas_8c_1aee3cca7e0b7c5495b9bbd22e597a4565">konvertal</link>(<link linkend="_struct_kerdes">Kerdes</link>*&#32;kerdes){&#32;&#32;&#32;&#32;<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;helyi;
+<anchor xml:id="_beolvas_8c_source_1l00192"/>00192 &#32;&#32;&#32;&#32;helyi.<link linkend="_structker__csop__tomben_1aa6d42c5aa9a8eeed872fb41af0a5b139">kerdes</link>=kerdes-&gt;<link linkend="_struct_kerdes_1aafe2cd723a5ed49b1ff625d04bf9f888">kerdes</link>;
+<anchor xml:id="_beolvas_8c_source_1l00193"/>00193 &#32;&#32;&#32;&#32;helyi.<link linkend="_structker__csop__tomben_1a4c3df1bfaa56a1489e9e789d9cefc2b7">a</link>=kerdes-&gt;<link linkend="_struct_kerdes_1aeb6cc951279dcb926cf3b7c2f76189ad">a</link>;
+<anchor xml:id="_beolvas_8c_source_1l00194"/>00194 &#32;&#32;&#32;&#32;helyi.<link linkend="_structker__csop__tomben_1a0b63f603e064fd5c2ab041112695761b">b</link>=kerdes-&gt;<link linkend="_struct_kerdes_1ad2f0c86b603832f03d12779659be489a">b</link>;
+<anchor xml:id="_beolvas_8c_source_1l00195"/>00195 &#32;&#32;&#32;&#32;helyi.<link linkend="_structker__csop__tomben_1a172bb692b69754649b03c345cbd11c0f">c</link>=kerdes-&gt;<link linkend="_struct_kerdes_1a431bf858427255dfc131c7483021b42e">c</link>;
+<anchor xml:id="_beolvas_8c_source_1l00196"/>00196 &#32;&#32;&#32;&#32;helyi.<link linkend="_structker__csop__tomben_1a451b6a78a69494f831aa9eeb41ac2b2c">d</link>=kerdes-&gt;<link linkend="_struct_kerdes_1a9cad5679b07cb70ae2af10ae6cc1acbb">d</link>;
+<anchor xml:id="_beolvas_8c_source_1l00197"/>00197 &#32;&#32;&#32;&#32;helyi.<link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">helyes</link>=kerdes-&gt;<link linkend="_struct_kerdes_1adf118b1dd0220e07a96137e11554a781">helyes</link>;
+<anchor xml:id="_beolvas_8c_source_1l00198"/>00198 &#32;&#32;&#32;&#32;helyi.<link linkend="_structker__csop__tomben_1a4b43ceebd6ce2e6d20c5b9e123a9f555">kategoria</link>=kerdes-&gt;<link linkend="_struct_kerdes_1acebd49a6b38f8941e93bc249f6f36cdf">kategoria</link>;
+<anchor xml:id="_beolvas_8c_source_1l00199"/>00199 &#32;&#32;&#32;&#32;helyi.<link linkend="_structker__csop__tomben_1ac2cc4fa854b4bfc964bbe1ccc66fbaa1">hasznalt</link>=<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_beolvas_8c_source_1l00200"/>00200 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;helyi;
+<anchor xml:id="_beolvas_8c_source_1l00201"/>00201 }
+<anchor xml:id="_beolvas_8c_source_1l00202"/>00202 
+<anchor xml:id="_beolvas_8c_source_1l00203"/>00203 <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;egy_kerdest_felszabadit(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;*kerdes){
+<anchor xml:id="_beolvas_8c_source_1l00204"/>00204 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdes-&gt;<link linkend="_structker__csop__tomben_1aa6d42c5aa9a8eeed872fb41af0a5b139">kerdes</link>);
+<anchor xml:id="_beolvas_8c_source_1l00205"/>00205 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdes-&gt;<link linkend="_structker__csop__tomben_1a4c3df1bfaa56a1489e9e789d9cefc2b7">a</link>);
+<anchor xml:id="_beolvas_8c_source_1l00206"/>00206 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdes-&gt;<link linkend="_structker__csop__tomben_1a0b63f603e064fd5c2ab041112695761b">b</link>);
+<anchor xml:id="_beolvas_8c_source_1l00207"/>00207 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdes-&gt;<link linkend="_structker__csop__tomben_1a172bb692b69754649b03c345cbd11c0f">c</link>);
+<anchor xml:id="_beolvas_8c_source_1l00208"/>00208 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdes-&gt;<link linkend="_structker__csop__tomben_1a451b6a78a69494f831aa9eeb41ac2b2c">d</link>);
+<anchor xml:id="_beolvas_8c_source_1l00209"/>00209 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdes-&gt;<link linkend="_structker__csop__tomben_1a4b43ceebd6ce2e6d20c5b9e123a9f555">kategoria</link>);
+<anchor xml:id="_beolvas_8c_source_1l00210"/>00210 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>;
+<anchor xml:id="_beolvas_8c_source_1l00211"/>00211 }
+<anchor xml:id="_beolvas_8c_source_1l00212"/>00212 
+<anchor xml:id="_beolvas_8c_source_1l00213"/><link linkend="_beolvas_8c_1ab4e72ef8d466b9bbcd18eb534e05c141">00213</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_beolvas_8c_1ab4e72ef8d466b9bbcd18eb534e05c141">kerdeseket_felszabadit</link>(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;**kerdesek,&#32;<emphasis role="keywordtype">int</emphasis>&#32;*kerdesek_csoportositva,&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegfajtak){
+<anchor xml:id="_beolvas_8c_source_1l00214"/>00214 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;nehezsegfajtak;&#32;++i)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00215"/>00215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;kerdesek_csoportositva[i];&#32;++j)&#32;{
+<anchor xml:id="_beolvas_8c_source_1l00216"/>00216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;egy_kerdest_felszabadit(&amp;kerdesek[i][j]);
+<anchor xml:id="_beolvas_8c_source_1l00217"/>00217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00218"/>00218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdesek[i]);
+<anchor xml:id="_beolvas_8c_source_1l00219"/>00219 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_beolvas_8c_source_1l00220"/>00220 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdesek);
+<anchor xml:id="_beolvas_8c_source_1l00221"/>00221 &#32;&#32;&#32;&#32;<link linkend="_debugmalloc_8h_1aa7943e5d135734f6801bebcc37401fc0">free</link>(kerdesek_csoportositva);
+<anchor xml:id="_beolvas_8c_source_1l00222"/>00222 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>;
+<anchor xml:id="_beolvas_8c_source_1l00223"/>00223 }
+<anchor xml:id="_beolvas_8c_source_1l00224"/>00224 
+</programlisting></section>

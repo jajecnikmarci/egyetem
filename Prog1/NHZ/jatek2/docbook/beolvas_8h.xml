@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_beolvas_8h" xml:lang="hu">
+<title>beolvas.h fájlreferencia</title>
+<indexterm><primary>beolvas.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;string.h&gt;<?linebreak?>#include &lt;assert.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &lt;stdbool.h&gt;<?linebreak?>#include &quot;debugmalloc.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Adatszerkezetek    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_kerdes">Kerdes</link></para>
+
+<para>A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben. </para>
+</listitem>
+            <listitem><para>struct <link linkend="_structker__csop__tomben">ker_csop_tomben</link></para>
+
+<para>A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Típusdefiníciók    </title>
+        <itemizedlist>
+            <listitem><para>typedef struct <link linkend="_struct_kerdes">Kerdes</link> <link linkend="_beolvas_8h_1a535c987f47562c33e1e59c6d50cb0aaa">Kerdes</link></para>
+
+<para>A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben. </para>
+</listitem>
+            <listitem><para>typedef struct <link linkend="_structker__csop__tomben">ker_csop_tomben</link> <link linkend="_beolvas_8h_1a4336b5477be572937ae93163b8eb7921">ker_csop_tomben</link></para>
+
+<para>A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Függvények    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_beolvas_8h_1a0d57e08bca0219f65eb7b01ef1b0846c">beolvas</link> (<link linkend="_struct_kerdes">Kerdes</link> *kerdes, FILE *f)</para>
+
+<para>Beolvassa egy sor elemeit egy láncolt listába. </para>
+</listitem>
+            <listitem><para>char * <link linkend="_beolvas_8h_1ab720d1d0e6867b8ccc60f4f0205dc206">sor_be</link> (FILE *f)</para>
+
+<para>A fájlból beolvas egy sort és azt egy karaktertömben visszaadja. </para>
+</listitem>
+            <listitem><para>void <link linkend="_beolvas_8h_1ab594ffb71c9823ba35b87d4842172bb3">kerdest_beszur</link> (<link linkend="_struct_kerdes">Kerdes</link> **peleje)</para>
+
+<para>A lácolt listában létrehoz egy új elemet a következő beolvasáshoz. </para>
+</listitem>
+            <listitem><para>int <link linkend="_beolvas_8h_1a0d89848cb479cd1d01dec9e96cdf8697">token</link> (char *sor, char *token_ptrek[])</para>
+
+<para>A beolvasott sort elemekre bontja és visszaadja a rájuk mutató pointereket tartalmazó tömböt. </para>
+</listitem>
+            <listitem><para>int <link linkend="_beolvas_8h_1a0d342e6f077337002b1015d9adaa4916">lancoltbaolvas</link> (<link linkend="_struct_kerdes">Kerdes</link> **kerdesek_eredeti)</para>
+
+<para>A forrásfájl összes sorát beolvassa és eltárolja egy láncolt listában és visszaadja a beolvasott kérdések darabszámát. </para>
+</listitem>
+            <listitem><para>int * <link linkend="_beolvas_8h_1acc8e53f23b54287c14f939d3a20bf6ee">nehezsegeket_szamol</link> (<link linkend="_struct_kerdes">Kerdes</link> *eleje, int *nehezsegfajtakszama)</para>
+
+<para>Megszámolja hogy hány nehézségfajta van és hogy a bizonyos nehézségfajtákból hány darab kérdés van. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_kerdes">Kerdes</link> * <link linkend="_beolvas_8h_1a19bd28fc1a5b0de9603ea9c7edd03be0">felszabadit</link> (<link linkend="_struct_kerdes">Kerdes</link> *kerdes)</para>
+
+<para>Felszabadítja a lácolt lista egy elemét. </para>
+</listitem>
+            <listitem><para>int <link linkend="_beolvas_8h_1aea0b000c67a3937d39288473b771d86b">kerdest_csoportosit</link> (<link linkend="_struct_kerdes">Kerdes</link> *kerdesek, int **kerdesek_csoportositva)</para>
+
+<para>A nehézségalapú csoportosítást letárolja és visszaadja a nehézségfajták számát. </para>
+</listitem>
+            <listitem><para><link linkend="_structker__csop__tomben">ker_csop_tomben</link> ** <link linkend="_beolvas_8h_1ac4e5fac28c72baadcfa9ab06fd297dc7">csop_tomb_belerak</link> (<link linkend="_struct_kerdes">Kerdes</link> *kerdesek_lacoltban, int nehezsegfajtak, int *kerdesek_csoportositva)</para>
+
+<para>A láncolt listában tárolt kérdéseket nehézség alapján csoportosítva belerakja egy 2 dimenziós tömbbe. </para>
+</listitem>
+            <listitem><para><link linkend="_structker__csop__tomben">ker_csop_tomben</link> <link linkend="_beolvas_8h_1aee3cca7e0b7c5495b9bbd22e597a4565">konvertal</link> (<link linkend="_struct_kerdes">Kerdes</link> *kerdes)</para>
+
+<para>A láncolt listában tárolt kérdéseknek nincs szükség minden elemére de szükség van a használtságára a kérdésgenerálásnál később. </para>
+</listitem>
+            <listitem><para>void <link linkend="_beolvas_8h_1ab4e72ef8d466b9bbcd18eb534e05c141">kerdeseket_felszabadit</link> (<link linkend="_structker__csop__tomben">ker_csop_tomben</link> **kerdesek, int *kerdesek_csoportositva, int nehezsegfajtak)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Típusdefiníciók dokumentációja</title>
+<anchor xml:id="_beolvas_8h_1a4336b5477be572937ae93163b8eb7921"/><section>
+    <title>ker_csop_tomben</title>
+<indexterm><primary>ker_csop_tomben</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>ker_csop_tomben</secondary></indexterm>
+<para><computeroutput>typedef struct <link linkend="_structker__csop__tomben">ker_csop_tomben</link> <link linkend="_structker__csop__tomben">ker_csop_tomben</link></computeroutput></para><para>
+
+<para>A láncoltlistába olvasott kérdéseimet tárolja majd egy 2 dimenziós tömbben. </para>
+</para>
+</section>
+<anchor xml:id="_beolvas_8h_1a535c987f47562c33e1e59c6d50cb0aaa"/><section>
+    <title>Kerdes</title>
+<indexterm><primary>Kerdes</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>Kerdes</secondary></indexterm>
+<para><computeroutput>typedef struct <link linkend="_struct_kerdes">Kerdes</link> <link linkend="_struct_kerdes">Kerdes</link></computeroutput></para><para>
+
+<para>A kerdes struct egy beolvasott sor feldarabolt elemeit tárolja, ebből később egy láncolt listát építek, beolvasási sorrendben. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Függvények dokumentációja</title>
+<anchor xml:id="_beolvas_8h_1a0d57e08bca0219f65eb7b01ef1b0846c"/><section>
+    <title>beolvas()</title>
+<indexterm><primary>beolvas</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>beolvas</secondary></indexterm>
+<para><computeroutput>int beolvas (<link linkend="_struct_kerdes">Kerdes</link> * kerdes, FILE * f)</computeroutput></para><para>
+
+<para>Beolvassa egy sor elemeit egy láncolt listába. </para>
+</para>
+
+<para>EOF</para>
+
+<para>Sor csak a lezáró \0-at tartalmazza</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00008">8</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1ac4e5fac28c72baadcfa9ab06fd297dc7"/><section>
+    <title>csop_tomb_belerak()</title>
+<indexterm><primary>csop_tomb_belerak</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>csop_tomb_belerak</secondary></indexterm>
+<para><computeroutput><link linkend="_structker__csop__tomben">ker_csop_tomben</link> ** csop_tomb_belerak (<link linkend="_struct_kerdes">Kerdes</link> * kerdesek_lacoltban, int nehezsegfajtak, int * kerdesek_csoportositva)</computeroutput></para><para>
+
+<para>A láncolt listában tárolt kérdéseket nehézség alapján csoportosítva belerakja egy 2 dimenziós tömbbe. </para>
+</para>
+
+<para>Felszabaditja a lancolt listat, de az elemek tartalma megmarad a konvertalt kerdesekben!</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00164">164</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1a19bd28fc1a5b0de9603ea9c7edd03be0"/><section>
+    <title>felszabadit()</title>
+<indexterm><primary>felszabadit</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>felszabadit</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_kerdes">Kerdes</link> * felszabadit (<link linkend="_struct_kerdes">Kerdes</link> * kerdes)</computeroutput></para><para>
+
+<para>Felszabadítja a lácolt lista egy elemét. </para>
+</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00114">114</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1ab4e72ef8d466b9bbcd18eb534e05c141"/><section>
+    <title>kerdeseket_felszabadit()</title>
+<indexterm><primary>kerdeseket_felszabadit</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>kerdeseket_felszabadit</secondary></indexterm>
+<para><computeroutput>void kerdeseket_felszabadit (<link linkend="_structker__csop__tomben">ker_csop_tomben</link> ** kerdesek, int * kerdesek_csoportositva, int nehezsegfajtak)</computeroutput></para><para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00213">213</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1ab594ffb71c9823ba35b87d4842172bb3"/><section>
+    <title>kerdest_beszur()</title>
+<indexterm><primary>kerdest_beszur</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>kerdest_beszur</secondary></indexterm>
+<para><computeroutput>void kerdest_beszur (<link linkend="_struct_kerdes">Kerdes</link> ** peleje)</computeroutput></para><para>
+
+<para>A lácolt listában létrehoz egy új elemet a következő beolvasáshoz. </para>
+</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00054">54</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1aea0b000c67a3937d39288473b771d86b"/><section>
+    <title>kerdest_csoportosit()</title>
+<indexterm><primary>kerdest_csoportosit</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>kerdest_csoportosit</secondary></indexterm>
+<para><computeroutput>int kerdest_csoportosit (<link linkend="_struct_kerdes">Kerdes</link> * kerdesek, int ** kerdesek_csoportositva)</computeroutput></para><para>
+
+<para>A nehézségalapú csoportosítást letárolja és visszaadja a nehézségfajták számát. </para>
+</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00151">151</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1aee3cca7e0b7c5495b9bbd22e597a4565"/><section>
+    <title>konvertal()</title>
+<indexterm><primary>konvertal</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>konvertal</secondary></indexterm>
+<para><computeroutput><link linkend="_structker__csop__tomben">ker_csop_tomben</link> konvertal (<link linkend="_struct_kerdes">Kerdes</link> * kerdes)</computeroutput></para><para>
+
+<para>A láncolt listában tárolt kérdéseknek nincs szükség minden elemére de szükség van a használtságára a kérdésgenerálásnál később. </para>
+</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00191">191</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1a0d342e6f077337002b1015d9adaa4916"/><section>
+    <title>lancoltbaolvas()</title>
+<indexterm><primary>lancoltbaolvas</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>lancoltbaolvas</secondary></indexterm>
+<para><computeroutput>int lancoltbaolvas (<link linkend="_struct_kerdes">Kerdes</link> ** kerdesek_eredeti)</computeroutput></para><para>
+
+<para>A forrásfájl összes sorát beolvassa és eltárolja egy láncolt listában és visszaadja a beolvasott kérdések darabszámát. </para>
+</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00086">86</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1acc8e53f23b54287c14f939d3a20bf6ee"/><section>
+    <title>nehezsegeket_szamol()</title>
+<indexterm><primary>nehezsegeket_szamol</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>nehezsegeket_szamol</secondary></indexterm>
+<para><computeroutput>int * nehezsegeket_szamol (<link linkend="_struct_kerdes">Kerdes</link> * eleje, int * nehezsegfajtakszama)</computeroutput></para><para>
+
+<para>Megszámolja hogy hány nehézségfajta van és hogy a bizonyos nehézségfajtákból hány darab kérdés van. </para>
+</para>
+
+<para>Feltételezzük, hogy a legnagyobb nehézségű kérdésnél minden kissebb nehézség létezik, de a kevés kérdést tartalmazó nehézségi szinteket később kiszűrjük</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00127">127</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1ab720d1d0e6867b8ccc60f4f0205dc206"/><section>
+    <title>sor_be()</title>
+<indexterm><primary>sor_be</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>sor_be</secondary></indexterm>
+<para><computeroutput>char * sor_be (FILE * f)</computeroutput></para><para>
+
+<para>A fájlból beolvas egy sort és azt egy karaktertömben visszaadja. </para>
+</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00062">62</link>. sorában.</para>
+</section>
+<anchor xml:id="_beolvas_8h_1a0d89848cb479cd1d01dec9e96cdf8697"/><section>
+    <title>token()</title>
+<indexterm><primary>token</primary><secondary>beolvas.h</secondary></indexterm>
+<indexterm><primary>beolvas.h</primary><secondary>token</secondary></indexterm>
+<para><computeroutput>int token (char * sor, char * token_ptrek[])</computeroutput></para><para>
+
+<para>A beolvasott sort elemekre bontja és visszaadja a rájuk mutató pointereket tartalmazó tömböt. </para>
+</para>
+<para>
+Definíció a(z) <link linkend="_beolvas_8c_source">beolvas.c</link> fájl <link linkend="_beolvas_8c_source_1l00032">32</link>. sorában.</para>
+</section>
+</section>
+</section>

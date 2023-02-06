@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_debugmalloc_data" xml:lang="hu">
+<title>DebugmallocData struktúrareferencia</title>
+<indexterm><primary>DebugmallocData</primary></indexterm>
+<para>
+<computeroutput>#include &lt;debugmalloc.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Adatmezők    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_struct_debugmalloc_data_1aaeb43a3c1fa6ff02ae2e49f00083cc45">logfile</link> [256]</para>
+</listitem>
+            <listitem><para>long <link linkend="_struct_debugmalloc_data_1a3efccbd2d65ddc16ee04c084a6885952">max_block_size</link></para>
+</listitem>
+            <listitem><para>long <link linkend="_struct_debugmalloc_data_1a657e328e74eabe097c916856a5168bd4">alloc_count</link></para>
+</listitem>
+            <listitem><para>long long <link linkend="_struct_debugmalloc_data_1acdde6dca667a33cc5face7647a8bbf9f">alloc_bytes</link></para>
+</listitem>
+            <listitem><para>long <link linkend="_struct_debugmalloc_data_1ae76cf1e973fe60e91222a1da3f17a754">all_alloc_count</link></para>
+</listitem>
+            <listitem><para>long long <link linkend="_struct_debugmalloc_data_1ae0268ac149302566a274deb380794455">all_alloc_bytes</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link> <link linkend="_struct_debugmalloc_data_1a0b5d4a71fa812641106443ebe09e7a01">head</link> [<link linkend="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55ba40803f0d5a26a349a78cbd998cb8a2a1">debugmalloc_tablesize</link>]</para>
+</listitem>
+            <listitem><para><link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link> <link linkend="_struct_debugmalloc_data_1a702f3dd81d3f44a3c65c73891ba0fddf">tail</link> [<link linkend="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55ba40803f0d5a26a349a78cbd998cb8a2a1">debugmalloc_tablesize</link>]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Részletes leírás</title>
+<para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00064">64</link>. sorában.</para>
+</section>
+<section>
+<title>Adatmezők dokumentációja</title>
+<anchor xml:id="_struct_debugmalloc_data_1ae0268ac149302566a274deb380794455"/><section>
+    <title>all_alloc_bytes</title>
+<indexterm><primary>all_alloc_bytes</primary><secondary>DebugmallocData</secondary></indexterm>
+<indexterm><primary>DebugmallocData</primary><secondary>all_alloc_bytes</secondary></indexterm>
+<para><computeroutput>long long DebugmallocData::all_alloc_bytes</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00070">70</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_debugmalloc_data_1ae76cf1e973fe60e91222a1da3f17a754"/><section>
+    <title>all_alloc_count</title>
+<indexterm><primary>all_alloc_count</primary><secondary>DebugmallocData</secondary></indexterm>
+<indexterm><primary>DebugmallocData</primary><secondary>all_alloc_count</secondary></indexterm>
+<para><computeroutput>long DebugmallocData::all_alloc_count</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00069">69</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_debugmalloc_data_1acdde6dca667a33cc5face7647a8bbf9f"/><section>
+    <title>alloc_bytes</title>
+<indexterm><primary>alloc_bytes</primary><secondary>DebugmallocData</secondary></indexterm>
+<indexterm><primary>DebugmallocData</primary><secondary>alloc_bytes</secondary></indexterm>
+<para><computeroutput>long long DebugmallocData::alloc_bytes</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00068">68</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_debugmalloc_data_1a657e328e74eabe097c916856a5168bd4"/><section>
+    <title>alloc_count</title>
+<indexterm><primary>alloc_count</primary><secondary>DebugmallocData</secondary></indexterm>
+<indexterm><primary>DebugmallocData</primary><secondary>alloc_count</secondary></indexterm>
+<para><computeroutput>long DebugmallocData::alloc_count</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00067">67</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_debugmalloc_data_1a0b5d4a71fa812641106443ebe09e7a01"/><section>
+    <title>head</title>
+<indexterm><primary>head</primary><secondary>DebugmallocData</secondary></indexterm>
+<indexterm><primary>DebugmallocData</primary><secondary>head</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link> DebugmallocData::head[<link linkend="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55ba40803f0d5a26a349a78cbd998cb8a2a1">debugmalloc_tablesize</link>]</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00071">71</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_debugmalloc_data_1aaeb43a3c1fa6ff02ae2e49f00083cc45"/><section>
+    <title>logfile</title>
+<indexterm><primary>logfile</primary><secondary>DebugmallocData</secondary></indexterm>
+<indexterm><primary>DebugmallocData</primary><secondary>logfile</secondary></indexterm>
+<para><computeroutput>char DebugmallocData::logfile[256]</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00065">65</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_debugmalloc_data_1a3efccbd2d65ddc16ee04c084a6885952"/><section>
+    <title>max_block_size</title>
+<indexterm><primary>max_block_size</primary><secondary>DebugmallocData</secondary></indexterm>
+<indexterm><primary>DebugmallocData</primary><secondary>max_block_size</secondary></indexterm>
+<para><computeroutput>long DebugmallocData::max_block_size</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00066">66</link>. sorában.</para>
+</section>
+<anchor xml:id="_struct_debugmalloc_data_1a702f3dd81d3f44a3c65c73891ba0fddf"/><section>
+    <title>tail</title>
+<indexterm><primary>tail</primary><secondary>DebugmallocData</secondary></indexterm>
+<indexterm><primary>DebugmallocData</primary><secondary>tail</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_debugmalloc_entry">DebugmallocEntry</link> DebugmallocData::tail[<link linkend="_debugmalloc_8h_1a06fc87d81c62e9abb8790b6e5713c55ba40803f0d5a26a349a78cbd998cb8a2a1">debugmalloc_tablesize</link>]</computeroutput></para><para>
+Definíció a(z) <link linkend="_debugmalloc_8h_source">debugmalloc.h</link> fájl <link linkend="_debugmalloc_8h_source_1l00071">71</link>. sorában.</para>
+</section>
+<para>
+Ez a dokumentáció a struktúráról a következő fájl alapján készült:</para>
+<link linkend="_debugmalloc_8h">debugmalloc.h</link></section>
+</section>

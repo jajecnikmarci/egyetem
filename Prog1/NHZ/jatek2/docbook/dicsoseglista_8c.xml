@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dicsoseglista_8c" xml:lang="hu">
+<title>dicsoseglista.c fájlreferencia</title>
+<indexterm><primary>dicsoseglista.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;dicsoseglista.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Függvények    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_dicsoseglista_8c_1a0c18fb8e3f059d3ead8b0abee0321f2f">dicsoseglistat_kezel</link> (<link linkend="_struct_eredmeny">Eredmeny</link> eredmeny, int nehezsegiszint, int nyeremenyek[])</para>
+
+<para>A &quot;dicsoseglista.txt&quot; fajlban tarolja a 10 legjobb idot nehézségi szint alapján. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Függvények dokumentációja</title>
+<anchor xml:id="_dicsoseglista_8c_1a0c18fb8e3f059d3ead8b0abee0321f2f"/><section>
+    <title>dicsoseglistat_kezel()</title>
+<indexterm><primary>dicsoseglistat_kezel</primary><secondary>dicsoseglista.c</secondary></indexterm>
+<indexterm><primary>dicsoseglista.c</primary><secondary>dicsoseglistat_kezel</secondary></indexterm>
+<para><computeroutput>void dicsoseglistat_kezel (<link linkend="_struct_eredmeny">Eredmeny</link> eredmeny, int nehezsegiszint, int nyeremenyek[])</computeroutput></para><para>
+
+<para>A &quot;dicsoseglista.txt&quot; fajlban tarolja a 10 legjobb idot nehézségi szint alapján. </para>
+</para>
+
+<para>Mivel egy új elemet akarunk belerakni, és a végén csak a TOP 10 íródik ki</para>
+
+<para>Fájlba kiír</para>
+<para>
+Definíció a(z) <link linkend="_dicsoseglista_8c_source">dicsoseglista.c</link> fájl <link linkend="_dicsoseglista_8c_source_1l00076">76</link>. sorában.</para>
+</section>
+</section>
+</section>

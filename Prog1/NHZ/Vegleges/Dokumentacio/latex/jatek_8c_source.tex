@@ -1,0 +1,139 @@
+\hypertarget{jatek_8c_source}{}\doxysection{jatek.\+c}
+\mbox{\hyperlink{jatek_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{jatek_8h}{jatek.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00009}\mbox{\hyperlink{jatek_8c_a9277a4a90e115c7b8b567b84c5ef1688}{00009}} \textcolor{keywordtype}{int} \mbox{\hyperlink{jatek_8c_a9277a4a90e115c7b8b567b84c5ef1688}{kivant\_nehezsegi\_szint}} (\textcolor{keywordtype}{int} kerdesek\_csoportositva[], \textcolor{keywordtype}{int} nehezsegfajtak)\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00010}00010     printf(\textcolor{stringliteral}{"{}Milyen nehézségi szinten szeretne játszani? Adjon meg egy számot 1 és \%d között\(\backslash\)n"{}}, nehezsegfajtak);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00011}00011     \textcolor{keywordtype}{int} nehezsegi\_szint;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00012}00012     \textcolor{keywordtype}{char}* sor = \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}}(stdin);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00013}00013     nehezsegi\_szint = atoi(sor);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00014}00014     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(sor);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00016}00016     \textcolor{keywordflow}{if} (nehezsegi\_szint <= nehezsegfajtak \&\& nehezsegi\_szint > 0) \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00017}00017         \textcolor{keywordflow}{if} (kerdesek\_csoportositva[nehezsegi\_szint-\/1] >=15)\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00019}00019                 \textcolor{keywordflow}{return} nehezsegi\_szint;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00020}00020         \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00021}00021     \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00024}00024     printf(\textcolor{stringliteral}{"{}Ilyen nehézségi szinten sajnos jelenleg nem tud játszani, kérem válasszon egy másik nehézségiszintet\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00025}00025     \textcolor{keywordflow}{return} \mbox{\hyperlink{jatek_8c_a9277a4a90e115c7b8b567b84c5ef1688}{kivant\_nehezsegi\_szint}}(kerdesek\_csoportositva, nehezsegfajtak);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00026}00026 \};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00029}\mbox{\hyperlink{jatek_8c_aacf43817bf40c738a1ad02a58995d45f}{00029}} \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} \mbox{\hyperlink{jatek_8c_aacf43817bf40c738a1ad02a58995d45f}{kerdes\_felteves}} (\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} *kerdesektarhaza[], \textcolor{keywordtype}{int} kerdesek\_csoportositva[], \textcolor{keywordtype}{int} nehezsegi\_szint)\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00030}00030     \textcolor{keywordtype}{int} index;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00034}00034     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00035}00035         index = rand() \% (kerdesek\_csoportositva[nehezsegi\_szint -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00036}00036     \} \textcolor{keywordflow}{while} (kerdesektarhaza[nehezsegi\_szint-\/1][index].hasznalt);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00038}00038     \mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} kerdes = kerdesektarhaza[nehezsegi\_szint-\/1][index];}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00039}00039     printf(\textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}, kerdes.\mbox{\hyperlink{structker__csop__tomben_a80b9412c87430e513ec2e0ab194e5765}{kerdes}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00040}00040     printf(\textcolor{stringliteral}{"{}A: \%s     B:\%s\(\backslash\)nC: \%s     D:\%s\(\backslash\)n"{}}, kerdes.\mbox{\hyperlink{structker__csop__tomben_ae46bdd7e2214e709576b46f5282340b8}{a}}, kerdes.\mbox{\hyperlink{structker__csop__tomben_aafe80d64508a05a94be4d07b648244d0}{b}}, kerdes.\mbox{\hyperlink{structker__csop__tomben_a9df78bd38aa81763ad1c56f3de8d5d3e}{c}}, kerdes.\mbox{\hyperlink{structker__csop__tomben_aba5bef156a7312a95d46e73fa56f21d0}{d}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00041}00041     kerdesektarhaza[nehezsegi\_szint-\/1][index].\mbox{\hyperlink{structker__csop__tomben_a7f5637b08a221ebe2d949bf7ce268d18}{hasznalt}}=\textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00042}00042     \textcolor{keywordflow}{return} kerdes;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00043}00043 \};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00047}00047 \textcolor{keyword}{static} \textcolor{keywordtype}{char} karakter\_beker() \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00048}00048     \textcolor{keywordtype}{char}* sor = \mbox{\hyperlink{beolvas_8c_ab720d1d0e6867b8ccc60f4f0205dc206}{sor\_be}}(stdin);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00049}00049     \textcolor{keywordflow}{if} (strlen(sor)>1)\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00050}00050         \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(sor);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00051}00051         printf(\textcolor{stringliteral}{"{}Érvénytelen válasz! Kérem próbálkozzon újra!\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00052}00052         \textcolor{keywordflow}{return} karakter\_beker();}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00054}00054     \textcolor{keywordtype}{char} c = sor[0];}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00055}00055     \mbox{\hyperlink{debugmalloc_8h_aa7943e5d135734f6801bebcc37401fc0}{free}}(sor);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00056}00056     \textcolor{keywordflow}{return} c;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00057}00057 \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00060}00060 \textcolor{keyword}{static} \textcolor{keywordtype}{void} felezes(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} kerdes)\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00061}00061     \textcolor{keywordtype}{int} helyes = kerdes.\mbox{\hyperlink{structker__csop__tomben_a49976598f610d29bcab8ac29372a8770}{helyes}} -\/ \textcolor{charliteral}{'A'};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00062}00062     \textcolor{keywordtype}{char} valaszok[4]=\{\textcolor{charliteral}{'A'},\textcolor{charliteral}{'B'},\textcolor{charliteral}{'C'},\textcolor{charliteral}{'D'}\};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00063}00063     \textcolor{keywordtype}{char} rosszak[3];}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00064}00064     \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00065}00065     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 4; ++i) \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00066}00066         \textcolor{keywordflow}{if} (i != helyes) \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00067}00067             rosszak[j]=valaszok[i];}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00068}00068             j++;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00069}00069         \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00071}00071     \textcolor{keywordtype}{int} kiirasi\_sorrend = rand() \% 2;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00072}00072     \textcolor{keywordtype}{int} rosszkerdes = rand() \% 3;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00073}00073     \textcolor{keywordtype}{char} out[2];}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00074}00074     out[kiirasi\_sorrend]=rosszak[rosszkerdes];}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00075}00075     out[1-\/kiirasi\_sorrend]=kerdes.\mbox{\hyperlink{structker__csop__tomben_a49976598f610d29bcab8ac29372a8770}{helyes}};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00076}00076     printf(\textcolor{stringliteral}{"{}\%c és \%c között van a jó válasz\(\backslash\)n"{}}, out[0], out[1]);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00077}00077 \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00080}00080 \textcolor{keyword}{static} \textcolor{keywordtype}{void} kozonseg\_szavazata(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} kerdes)\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00081}00081     \textcolor{keywordtype}{int} szazalekok[4]; }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00082}00082     \textcolor{keywordtype}{int} r=rand()\%100;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00084}00084     \textcolor{keywordflow}{if} (r<50) szazalekok[3]=100-\/r;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00085}00085     \textcolor{keywordflow}{else} szazalekok[3]=r;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00087}00087     \textcolor{keywordtype}{int} maradek=100-\/szazalekok[3];}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00088}00088     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 2; ++i) \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00089}00089         szazalekok[i]=rand()\%maradek;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00090}00090         maradek-\/=szazalekok[i];}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00091}00091     \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00092}00092     szazalekok[2]=maradek;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00094}00094     printf(\textcolor{stringliteral}{"{}A nézők szavazatai: \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00096}00096     \textcolor{keywordtype}{int} j=0;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00099}00099     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 4; i++) \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00100}00100         \textcolor{keywordflow}{if}(kerdes.\mbox{\hyperlink{structker__csop__tomben_a49976598f610d29bcab8ac29372a8770}{helyes}} -\/ \textcolor{charliteral}{'A'} == i) \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00101}00101             printf(\textcolor{stringliteral}{"{}\%c: \%d\%\% "{}}, kerdes.\mbox{\hyperlink{structker__csop__tomben_a49976598f610d29bcab8ac29372a8770}{helyes}}, szazalekok[3]);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00102}00102         \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00103}00103         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00104}00104             printf(\textcolor{stringliteral}{"{}\%c: \%d\%\%  "{}}, i + \textcolor{charliteral}{'A'}, szazalekok[j]);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00105}00105             j++;}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00106}00106         \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00108}00108     printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00109}00109 \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00112}\mbox{\hyperlink{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}{00112}} \textcolor{keywordtype}{void} \mbox{\hyperlink{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}{segitseg\_keres}}(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} kerdes, \textcolor{keywordtype}{bool} *felezes\_hasznaltsag, \textcolor{keywordtype}{bool} *kozonseg\_szavazata\_hasznaltsag)\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00113}00113     \textcolor{keywordflow}{if} (*felezes\_hasznaltsag \&\& *kozonseg\_szavazata\_hasznaltsag) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00114}00114     printf(\textcolor{stringliteral}{"{}Szeretne segítséget használni? (F ha a felezést, K ha a közönség szavazatát és N ha nem szeretne segítséget használni)\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00115}00115     \textcolor{keywordtype}{char} in = (char)toupper(karakter\_beker());}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00116}00116     \textcolor{keywordflow}{switch} (in) \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00117}00117         \textcolor{keywordflow}{case} \textcolor{charliteral}{'F'}:}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00118}00118             \textcolor{keywordflow}{if}(!(*felezes\_hasznaltsag))\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00122}00122                 felezes(kerdes);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00123}00123                 *felezes\_hasznaltsag = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00124}00124             \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00125}00125                 printf(\textcolor{stringliteral}{"{}Ezt a segítséget már használta\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00126}00126                 \mbox{\hyperlink{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}{segitseg\_keres}}(kerdes, felezes\_hasznaltsag, kozonseg\_szavazata\_hasznaltsag);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00127}00127             \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00128}00128             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00129}00129         \textcolor{keywordflow}{case} \textcolor{charliteral}{'K'}:}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00130}00130             \textcolor{keywordflow}{if} (!(*kozonseg\_szavazata\_hasznaltsag)) \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00134}00134                 kozonseg\_szavazata(kerdes);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00135}00135                 *kozonseg\_szavazata\_hasznaltsag = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00136}00136             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00137}00137                 printf(\textcolor{stringliteral}{"{}Ezt a segítséget már használta\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00138}00138                 \mbox{\hyperlink{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}{segitseg\_keres}}(kerdes, felezes\_hasznaltsag, kozonseg\_szavazata\_hasznaltsag);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00139}00139             \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00140}00140             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00141}00141         \textcolor{keywordflow}{case} \textcolor{charliteral}{'N'}:}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00142}00142             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00143}00143         \textcolor{keywordflow}{default}: \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00144}00144             printf(\textcolor{stringliteral}{"{}Érvénytelen válasz.\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00148}00148             \mbox{\hyperlink{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}{segitseg\_keres}}(kerdes, felezes\_hasznaltsag, kozonseg\_szavazata\_hasznaltsag);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00149}00149         \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00150}00150     \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00151}00151 \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00154}\mbox{\hyperlink{jatek_8c_a9a4f7307dee2c276a0facc89751f248e}{00154}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{jatek_8c_a9a4f7307dee2c276a0facc89751f248e}{valasz\_beker}}(\mbox{\hyperlink{structker__csop__tomben}{ker\_csop\_tomben}} kerdes)\{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00155}00155     \textcolor{keywordtype}{char} in = karakter\_beker();}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00156}00156     in = (char)toupper(in);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00157}00157     \textcolor{keywordflow}{if} (in==kerdes.\mbox{\hyperlink{structker__csop__tomben_a49976598f610d29bcab8ac29372a8770}{helyes}}) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00158}00158     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (in >= \textcolor{charliteral}{'A'} \&\& in <= \textcolor{charliteral}{'D'})}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00162}00162         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00163}00163     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00167}00167         printf(\textcolor{stringliteral}{"{}Érvénytelen válasz!\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00168}00168         \textcolor{keywordflow}{return} \mbox{\hyperlink{jatek_8c_a9a4f7307dee2c276a0facc89751f248e}{valasz\_beker}}(kerdes);}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00169}00169     \}}
+\DoxyCodeLine{\Hypertarget{jatek_8c_source_l00170}00170 \};}
+
+\end{DoxyCode}

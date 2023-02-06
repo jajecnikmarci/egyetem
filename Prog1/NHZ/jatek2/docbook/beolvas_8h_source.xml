@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_beolvas_8h_source" xml:lang="hu">
+<title>beolvas.h</title>
+Ugrás a fájl dokumentációjához.<programlisting linenumbering="unnumbered"><anchor xml:id="_beolvas_8h_source_1l00001"/>00001 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00002"/>00002 <emphasis role="comment">//&#32;Created&#32;by&#32;Jajecnik&#32;Marcell&#32;on&#32;2022.&#32;11.&#32;22..</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00003"/>00003 <emphasis role="comment">//</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00004"/>00004 
+<anchor xml:id="_beolvas_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#ifndef&#32;JATEK2_BEOLVAS_H</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#define&#32;JATEK2_BEOLVAS_H</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;string.h&gt;</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&lt;assert.h&gt;</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00010"/>00010 <emphasis role="preprocessor">#include&#32;&lt;stdlib.h&gt;</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00011"/>00011 <emphasis role="preprocessor">#include&#32;&lt;stdbool.h&gt;</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_debugmalloc_8h">debugmalloc.h</link>&quot;</emphasis>
+<anchor xml:id="_beolvas_8h_source_1l00013"/>00013 
+<anchor xml:id="_beolvas_8h_source_1l00015"/><link linkend="_struct_kerdes">00015</link> <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_kerdes">Kerdes</link>{
+<anchor xml:id="_beolvas_8h_source_1l00016"/><link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_kerdes_1a1e173c84ffac6a19c4a3d60e49363fdb">nehezseg</link>;
+<anchor xml:id="_beolvas_8h_source_1l00017"/><link linkend="_struct_kerdes_1aafe2cd723a5ed49b1ff625d04bf9f888">00017</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_struct_kerdes_1aafe2cd723a5ed49b1ff625d04bf9f888">kerdes</link>;
+<anchor xml:id="_beolvas_8h_source_1l00018"/><link linkend="_struct_kerdes_1aeb6cc951279dcb926cf3b7c2f76189ad">00018</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_struct_kerdes_1aeb6cc951279dcb926cf3b7c2f76189ad">a</link>;
+<anchor xml:id="_beolvas_8h_source_1l00019"/><link linkend="_struct_kerdes_1ad2f0c86b603832f03d12779659be489a">00019</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_struct_kerdes_1ad2f0c86b603832f03d12779659be489a">b</link>;
+<anchor xml:id="_beolvas_8h_source_1l00020"/><link linkend="_struct_kerdes_1a431bf858427255dfc131c7483021b42e">00020</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_struct_kerdes_1a431bf858427255dfc131c7483021b42e">c</link>;
+<anchor xml:id="_beolvas_8h_source_1l00021"/><link linkend="_struct_kerdes_1a9cad5679b07cb70ae2af10ae6cc1acbb">00021</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_struct_kerdes_1a9cad5679b07cb70ae2af10ae6cc1acbb">d</link>;
+<anchor xml:id="_beolvas_8h_source_1l00022"/><link linkend="_struct_kerdes_1adf118b1dd0220e07a96137e11554a781">00022</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_struct_kerdes_1adf118b1dd0220e07a96137e11554a781">helyes</link>;
+<anchor xml:id="_beolvas_8h_source_1l00023"/><link linkend="_struct_kerdes_1acebd49a6b38f8941e93bc249f6f36cdf">00023</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_struct_kerdes_1acebd49a6b38f8941e93bc249f6f36cdf">kategoria</link>;
+<anchor xml:id="_beolvas_8h_source_1l00024"/><link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">00024</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_kerdes">Kerdes</link>*&#32;<link linkend="_struct_kerdes_1a2cb3b43e998233533a209211872b7b95">kov</link>;
+<anchor xml:id="_beolvas_8h_source_1l00025"/><link linkend="_beolvas_8h_1a535c987f47562c33e1e59c6d50cb0aaa">00025</link> }<link linkend="_struct_kerdes">Kerdes</link>;
+<anchor xml:id="_beolvas_8h_source_1l00026"/>00026 
+<anchor xml:id="_beolvas_8h_source_1l00028"/><link linkend="_structker__csop__tomben">00028</link> <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structker__csop__tomben">ker_csop_tomben</link>{
+<anchor xml:id="_beolvas_8h_source_1l00029"/><link linkend="_structker__csop__tomben_1aa6d42c5aa9a8eeed872fb41af0a5b139">00029</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_structker__csop__tomben_1aa6d42c5aa9a8eeed872fb41af0a5b139">kerdes</link>;
+<anchor xml:id="_beolvas_8h_source_1l00030"/><link linkend="_structker__csop__tomben_1a4c3df1bfaa56a1489e9e789d9cefc2b7">00030</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_structker__csop__tomben_1a4c3df1bfaa56a1489e9e789d9cefc2b7">a</link>;
+<anchor xml:id="_beolvas_8h_source_1l00031"/><link linkend="_structker__csop__tomben_1a0b63f603e064fd5c2ab041112695761b">00031</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_structker__csop__tomben_1a0b63f603e064fd5c2ab041112695761b">b</link>;
+<anchor xml:id="_beolvas_8h_source_1l00032"/><link linkend="_structker__csop__tomben_1a172bb692b69754649b03c345cbd11c0f">00032</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_structker__csop__tomben_1a172bb692b69754649b03c345cbd11c0f">c</link>;
+<anchor xml:id="_beolvas_8h_source_1l00033"/><link linkend="_structker__csop__tomben_1a451b6a78a69494f831aa9eeb41ac2b2c">00033</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_structker__csop__tomben_1a451b6a78a69494f831aa9eeb41ac2b2c">d</link>;
+<anchor xml:id="_beolvas_8h_source_1l00034"/><link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_structker__csop__tomben_1a08bffbe430a1c51d77b8e274e54499ed">helyes</link>;
+<anchor xml:id="_beolvas_8h_source_1l00035"/><link linkend="_structker__csop__tomben_1a4b43ceebd6ce2e6d20c5b9e123a9f555">00035</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_structker__csop__tomben_1a4b43ceebd6ce2e6d20c5b9e123a9f555">kategoria</link>;
+<anchor xml:id="_beolvas_8h_source_1l00036"/><link linkend="_structker__csop__tomben_1ac2cc4fa854b4bfc964bbe1ccc66fbaa1">00036</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_structker__csop__tomben_1ac2cc4fa854b4bfc964bbe1ccc66fbaa1">hasznalt</link>;
+<anchor xml:id="_beolvas_8h_source_1l00037"/><link linkend="_beolvas_8h_1a4336b5477be572937ae93163b8eb7921">00037</link> }<link linkend="_structker__csop__tomben">ker_csop_tomben</link>;
+<anchor xml:id="_beolvas_8h_source_1l00038"/>00038 
+<anchor xml:id="_beolvas_8h_source_1l00040"/>00040 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_beolvas_8h_1a0d57e08bca0219f65eb7b01ef1b0846c">beolvas</link>(<link linkend="_struct_kerdes">Kerdes</link>*&#32;kerdes,&#32;FILE&#32;*f);
+<anchor xml:id="_beolvas_8h_source_1l00041"/>00041 
+<anchor xml:id="_beolvas_8h_source_1l00043"/>00043 <emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_beolvas_8h_1ab720d1d0e6867b8ccc60f4f0205dc206">sor_be</link>&#32;(FILE&#32;*f);
+<anchor xml:id="_beolvas_8h_source_1l00044"/>00044 
+<anchor xml:id="_beolvas_8h_source_1l00046"/>00046 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_beolvas_8h_1ab594ffb71c9823ba35b87d4842172bb3">kerdest_beszur</link>(<link linkend="_struct_kerdes">Kerdes</link>&#32;**peleje);
+<anchor xml:id="_beolvas_8h_source_1l00047"/>00047 
+<anchor xml:id="_beolvas_8h_source_1l00049"/>00049 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_beolvas_8h_1a0d89848cb479cd1d01dec9e96cdf8697">token</link>(<emphasis role="keywordtype">char</emphasis>&#32;*sor,<emphasis role="keywordtype">char</emphasis>&#32;*token_ptrek[]);
+<anchor xml:id="_beolvas_8h_source_1l00050"/>00050 
+<anchor xml:id="_beolvas_8h_source_1l00052"/>00052 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_beolvas_8h_1a0d342e6f077337002b1015d9adaa4916">lancoltbaolvas</link>(<link linkend="_struct_kerdes">Kerdes</link>&#32;**kerdesek_eredeti);
+<anchor xml:id="_beolvas_8h_source_1l00053"/>00053 
+<anchor xml:id="_beolvas_8h_source_1l00055"/>00055 <emphasis role="keywordtype">int</emphasis>*&#32;<link linkend="_beolvas_8h_1acc8e53f23b54287c14f939d3a20bf6ee">nehezsegeket_szamol</link>(<link linkend="_struct_kerdes">Kerdes</link>*&#32;eleje,&#32;<emphasis role="keywordtype">int</emphasis>&#32;*nehezsegfajtakszama);
+<anchor xml:id="_beolvas_8h_source_1l00056"/>00056 
+<anchor xml:id="_beolvas_8h_source_1l00058"/>00058 <link linkend="_struct_kerdes">Kerdes</link>&#32;*<link linkend="_beolvas_8h_1a19bd28fc1a5b0de9603ea9c7edd03be0">felszabadit</link>&#32;(<link linkend="_struct_kerdes">Kerdes</link>*&#32;kerdes);
+<anchor xml:id="_beolvas_8h_source_1l00059"/>00059 
+<anchor xml:id="_beolvas_8h_source_1l00061"/>00061 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_beolvas_8h_1aea0b000c67a3937d39288473b771d86b">kerdest_csoportosit</link>&#32;(<link linkend="_struct_kerdes">Kerdes</link>&#32;*kerdesek,&#32;<emphasis role="keywordtype">int</emphasis>&#32;**kerdesek_csoportositva);
+<anchor xml:id="_beolvas_8h_source_1l00062"/>00062 
+<anchor xml:id="_beolvas_8h_source_1l00064"/>00064 <link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;**<link linkend="_beolvas_8h_1ac4e5fac28c72baadcfa9ab06fd297dc7">csop_tomb_belerak</link>(<link linkend="_struct_kerdes">Kerdes</link>&#32;*kerdesek_lacoltban,&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegfajtak,<emphasis role="keywordtype">int</emphasis>&#32;*kerdesek_csoportositva);
+<anchor xml:id="_beolvas_8h_source_1l00065"/>00065 
+<anchor xml:id="_beolvas_8h_source_1l00067"/>00067 <link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;<link linkend="_beolvas_8h_1aee3cca7e0b7c5495b9bbd22e597a4565">konvertal</link>(<link linkend="_struct_kerdes">Kerdes</link>*&#32;kerdes);
+<anchor xml:id="_beolvas_8h_source_1l00068"/>00068 
+<anchor xml:id="_beolvas_8h_source_1l00069"/>00069 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_beolvas_8h_1ab4e72ef8d466b9bbcd18eb534e05c141">kerdeseket_felszabadit</link>(<link linkend="_structker__csop__tomben">ker_csop_tomben</link>&#32;**kerdesek,&#32;<emphasis role="keywordtype">int</emphasis>&#32;*kerdesek_csoportositva,&#32;<emphasis role="keywordtype">int</emphasis>&#32;nehezsegfajtak);
+<anchor xml:id="_beolvas_8h_source_1l00070"/>00070 
+<anchor xml:id="_beolvas_8h_source_1l00071"/>00071 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//JATEK2_BEOLVAS_H</emphasis>
+</programlisting></section>

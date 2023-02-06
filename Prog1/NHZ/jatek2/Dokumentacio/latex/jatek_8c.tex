@@ -1,0 +1,124 @@
+\hypertarget{jatek_8c}{}\doxysection{jatek.\+c File Reference}
+\label{jatek_8c}\index{jatek.c@{jatek.c}}
+{\ttfamily \#include \char`\"{}jatek.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{jatek_8c_a9277a4a90e115c7b8b567b84c5ef1688}{kivant\+\_\+nehezsegi\+\_\+szint}} (int kerdesek\+\_\+csoportositva\mbox{[}$\,$\mbox{]}, int nehezsegfajtak)
+\begin{DoxyCompactList}\small\item\em Bekér egy nehézségi szintet a játékostól és ellenőrzi, hogy azon a nehézségi szinten játszható-\/e a játék. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} \mbox{\hyperlink{jatek_8c_aacf43817bf40c738a1ad02a58995d45f}{kerdes\+\_\+felteves}} (\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} $\ast$kerdesektarhaza\mbox{[}$\,$\mbox{]}, int kerdesek\+\_\+csoportositva\mbox{[}$\,$\mbox{]}, int nehezsegi\+\_\+szint)
+\begin{DoxyCompactList}\small\item\em Kiír a consol-\/ra egy kérdést és a hozzá tartózó válaszlehetőségeket. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}{segitseg\+\_\+keres}} (\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} kerdes, bool $\ast$felezes\+\_\+hasznaltsag, bool $\ast$kozonseg\+\_\+szavazata\+\_\+hasznaltsag)
+\begin{DoxyCompactList}\small\item\em A segítségkérések vezérlése. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{jatek_8c_a9a4f7307dee2c276a0facc89751f248e}{valasz\+\_\+beker}} (\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} kerdes)
+\begin{DoxyCompactList}\small\item\em A játékos válaszát kiértékeli és ha rossz a formátum rekurzívan fut. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{jatek_8c_aacf43817bf40c738a1ad02a58995d45f}\label{jatek_8c_aacf43817bf40c738a1ad02a58995d45f}} 
+\index{jatek.c@{jatek.c}!kerdes\_felteves@{kerdes\_felteves}}
+\index{kerdes\_felteves@{kerdes\_felteves}!jatek.c@{jatek.c}}
+\doxysubsubsection{\texorpdfstring{kerdes\_felteves()}{kerdes\_felteves()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} kerdes\+\_\+felteves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}} $\ast$}]{kerdesektarhaza\mbox{[}$\,$\mbox{]},  }\item[{int}]{kerdesek\+\_\+csoportositva\mbox{[}$\,$\mbox{]},  }\item[{int}]{nehezsegi\+\_\+szint }\end{DoxyParamCaption})}
+
+
+
+Kiír a consol-\/ra egy kérdést és a hozzá tartózó válaszlehetőségeket. 
+
+Feltesz egy random kerdest az adott nehezsegi szintbol, visszater a kerdessel. Az adott nehézségi szinthez tartózó kérdések közül kisorsol egy indexet
+
+Megfelelően sok kérdéssel véges időn belül véget ér a ciklus.
+
+Belerakja a generált maximálisan a nehézségi kérdéshez tartozó maximális nagyságú számot
+
+Addig ameddig olyat nem talál amit még nem használt
+
+A kisorsolt kérdést eltárolja helyileg
+
+Definition at line \mbox{\hyperlink{jatek_8c_source_l00029}{29}} of file \mbox{\hyperlink{jatek_8c_source}{jatek.\+c}}.
+
+\mbox{\Hypertarget{jatek_8c_a9277a4a90e115c7b8b567b84c5ef1688}\label{jatek_8c_a9277a4a90e115c7b8b567b84c5ef1688}} 
+\index{jatek.c@{jatek.c}!kivant\_nehezsegi\_szint@{kivant\_nehezsegi\_szint}}
+\index{kivant\_nehezsegi\_szint@{kivant\_nehezsegi\_szint}!jatek.c@{jatek.c}}
+\doxysubsubsection{\texorpdfstring{kivant\_nehezsegi\_szint()}{kivant\_nehezsegi\_szint()}}
+{\footnotesize\ttfamily int kivant\+\_\+nehezsegi\+\_\+szint (\begin{DoxyParamCaption}\item[{int}]{kerdesek\+\_\+csoportositva\mbox{[}$\,$\mbox{]},  }\item[{int}]{nehezsegfajtak }\end{DoxyParamCaption})}
+
+
+
+Bekér egy nehézségi szintet a játékostól és ellenőrzi, hogy azon a nehézségi szinten játszható-\/e a játék. 
+
+Beolvassa a kivant nehezsegi szintet es visszater a felhasznalo altal latott ertekkel;.
+
+Created by Jajecnik Marcell on 2022. 12. 01.. \begin{DoxyAuthor}{Author}
+Jajecnik Marcell 
+\end{DoxyAuthor}
+A játékos kiválasztja az általa kívánt nehézségi szintet amin a játék futni fog
+
+A bekért nehézségi szintet tárolja
+
+Beolvassa a consolra írt sort az enterig
+
+Átalakítja integerré a beolvasott adatot, ha sikertelen 0-\/at vissza
+
+Majd a sort felszabadítja
+
+Ha a formátum helyes
+
+És van elég kérdés a játékhoz
+
+Visszaadja a bekért nehézségi szintet
+
+Ha nem lehet a bekért nehézségi szinten játszani
+
+Rekurzívan addig kér be amíg futtatható értéket nem kap
+
+Definition at line \mbox{\hyperlink{jatek_8c_source_l00009}{9}} of file \mbox{\hyperlink{jatek_8c_source}{jatek.\+c}}.
+
+\mbox{\Hypertarget{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}\label{jatek_8c_a66d6fb54d1cc31df76d4817c6e1bd378}} 
+\index{jatek.c@{jatek.c}!segitseg\_keres@{segitseg\_keres}}
+\index{segitseg\_keres@{segitseg\_keres}!jatek.c@{jatek.c}}
+\doxysubsubsection{\texorpdfstring{segitseg\_keres()}{segitseg\_keres()}}
+{\footnotesize\ttfamily void segitseg\+\_\+keres (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}}}]{kerdes,  }\item[{bool $\ast$}]{felezes\+\_\+hasznaltsag,  }\item[{bool $\ast$}]{kozonseg\+\_\+szavazata\+\_\+hasznaltsag }\end{DoxyParamCaption})}
+
+
+
+A segítségkérések vezérlése. 
+
+A játékos segítségkéréseit teszteli és végrehajtja ha jogosult rá Ha már nincs lehetősége segítséget hazsnálni akkor nem fut le
+
+Bekér egy karaktert amit naggyá alakít
+
+Ha van még lehetősége felezést használni akkor végrehajtja és a használtságot igazra állítja
+
+Ha nincs, akkor rekurzív
+
+Ha van még lehetősége használni akkor végrehajtja és a használtságot igazra állítja
+
+Ha nincs akkor rekurzív
+
+Ha nem jó formátumú a válasz akkor rekurzív
+
+Definition at line \mbox{\hyperlink{jatek_8c_source_l00112}{112}} of file \mbox{\hyperlink{jatek_8c_source}{jatek.\+c}}.
+
+\mbox{\Hypertarget{jatek_8c_a9a4f7307dee2c276a0facc89751f248e}\label{jatek_8c_a9a4f7307dee2c276a0facc89751f248e}} 
+\index{jatek.c@{jatek.c}!valasz\_beker@{valasz\_beker}}
+\index{valasz\_beker@{valasz\_beker}!jatek.c@{jatek.c}}
+\doxysubsubsection{\texorpdfstring{valasz\_beker()}{valasz\_beker()}}
+{\footnotesize\ttfamily bool valasz\+\_\+beker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structker__csop__tomben}{ker\+\_\+csop\+\_\+tomben}}}]{kerdes }\end{DoxyParamCaption})}
+
+
+
+A játékos válaszát kiértékeli és ha rossz a formátum rekurzívan fut. 
+
+Igazzal ter vissza, ha helyes a valasz, kezeli az ervenytelen valaszokat. Eltárolja a beolvasott karaktert
+
+Nagybetűssé teszi
+
+Ha a válasz helyes igazat ad vissza
+
+Ha nem igaz akkor hamisat
+
+Ha pedig nem jó az adott válasz formátuma akkor rekurzív
+
+Definition at line \mbox{\hyperlink{jatek_8c_source_l00154}{154}} of file \mbox{\hyperlink{jatek_8c_source}{jatek.\+c}}.
+

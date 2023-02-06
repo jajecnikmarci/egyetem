@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NHZ: dicsoseglista.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NHZ
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Betöltés...</div>
+<div class="SRStatus" id="Searching">Keresés...</div>
+<div class="SRStatus" id="NoMatches">Nincs egyezés</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">dicsoseglista.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="dicsoseglista_8h.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by Jajecnik Marcell on 2022. 12. 02..</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef JATEK2_MENTES_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define JATEK2_MENTES_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="beolvas_8h.html">beolvas.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="debugmalloc_8h.html">debugmalloc.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_eredmeny.html">   14</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_eredmeny.html">Eredmeny</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_eredmeny.html#ae8721cda7ae566103f9256b41efb04e1">   15</a></span>    <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct_eredmeny.html#ae8721cda7ae566103f9256b41efb04e1">jatekosnev</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_eredmeny.html#a5d76819d6e3c35c8f5e4716b3afc178f">   16</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_eredmeny.html#a5d76819d6e3c35c8f5e4716b3afc178f">megvalaszolt</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_eredmeny.html#a836f5518cff34b84cc2d9cad57abeffe">   17</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_eredmeny.html#a836f5518cff34b84cc2d9cad57abeffe">ido</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="dicsoseglista_8h.html#a35c6cb0d490612e6045c1a108dc40d21">   18</a></span>} <a class="code hl_struct" href="struct_eredmeny.html">Eredmeny</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="dicsoseglista_8h.html#a0c18fb8e3f059d3ead8b0abee0321f2f">dicsoseglistat_kezel</a>(<a class="code hl_struct" href="struct_eredmeny.html">Eredmeny</a> eredmeny, <span class="keywordtype">int</span> nehezsegiszint, <span class="keywordtype">int</span> nyeremenyek[]);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">//JATEK2_MENTES_H</span></div>
+<div class="ttc" id="abeolvas_8h_html"><div class="ttname"><a href="beolvas_8h.html">beolvas.h</a></div></div>
+<div class="ttc" id="adebugmalloc_8h_html"><div class="ttname"><a href="debugmalloc_8h.html">debugmalloc.h</a></div></div>
+<div class="ttc" id="adicsoseglista_8h_html_a0c18fb8e3f059d3ead8b0abee0321f2f"><div class="ttname"><a href="dicsoseglista_8h.html#a0c18fb8e3f059d3ead8b0abee0321f2f">dicsoseglistat_kezel</a></div><div class="ttdeci">void dicsoseglistat_kezel(Eredmeny eredmeny, int nehezsegiszint, int nyeremenyek[])</div><div class="ttdoc">A &quot;dicsoseglista.txt&quot; fajlban tarolja a 10 legjobb idot nehézségi szint alapján.</div><div class="ttdef"><b>Definition:</b> <a href="dicsoseglista_8c_source.html#l00076">dicsoseglista.c:76</a></div></div>
+<div class="ttc" id="astruct_eredmeny_html"><div class="ttname"><a href="struct_eredmeny.html">Eredmeny</a></div><div class="ttdef"><b>Definition:</b> <a href="dicsoseglista_8h_source.html#l00014">dicsoseglista.h:14</a></div></div>
+<div class="ttc" id="astruct_eredmeny_html_a5d76819d6e3c35c8f5e4716b3afc178f"><div class="ttname"><a href="struct_eredmeny.html#a5d76819d6e3c35c8f5e4716b3afc178f">Eredmeny::megvalaszolt</a></div><div class="ttdeci">int megvalaszolt</div><div class="ttdef"><b>Definition:</b> <a href="dicsoseglista_8h_source.html#l00016">dicsoseglista.h:16</a></div></div>
+<div class="ttc" id="astruct_eredmeny_html_a836f5518cff34b84cc2d9cad57abeffe"><div class="ttname"><a href="struct_eredmeny.html#a836f5518cff34b84cc2d9cad57abeffe">Eredmeny::ido</a></div><div class="ttdeci">int ido</div><div class="ttdef"><b>Definition:</b> <a href="dicsoseglista_8h_source.html#l00017">dicsoseglista.h:17</a></div></div>
+<div class="ttc" id="astruct_eredmeny_html_ae8721cda7ae566103f9256b41efb04e1"><div class="ttname"><a href="struct_eredmeny.html#ae8721cda7ae566103f9256b41efb04e1">Eredmeny::jatekosnev</a></div><div class="ttdeci">char * jatekosnev</div><div class="ttdef"><b>Definition:</b> <a href="dicsoseglista_8h_source.html#l00015">dicsoseglista.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

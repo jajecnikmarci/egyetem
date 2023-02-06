@@ -1,0 +1,3 @@
+/Users/jajecnik.marci/CLionProjects/Labor6/tombelo/cmake-build-debug/CMakeFiles/tombelo.dir
+/Users/jajecnik.marci/CLionProjects/Labor6/tombelo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jajecnik.marci/CLionProjects/Labor6/tombelo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
