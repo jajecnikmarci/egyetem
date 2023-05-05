@@ -1,0 +1,13 @@
+# ninja log v5
+29	3727	1683319863329031606	CMakeFiles/skeleton.dir/date.cpp.o	2ab2bae4552c916d
+1	1184	1683270717078727850	CMakeFiles/skeleton.dir/clients.cpp.o	3bd99f23a8d6f1d6
+2	1187	1683270717083072080	CMakeFiles/skeleton.dir/MVM.cpp.o	fe36e28581ecf266
+1	1378	1683270717269143703	CMakeFiles/skeleton.dir/main.cpp.o	ae364aa3aef48d66
+25	4817	1683319864407907654	CMakeFiles/skeleton.dir/Test.cpp.o	de25505d15d803e7
+19	1635	1683320014483868014	CMakeFiles/skeleton.dir/contracts.cpp.o	72074c9d1db24375
+34	4604	1683320084739297342	CMakeFiles/skeleton.dir/contracts.cpp.o	72074c9d1db24375
+23	832	1683320391140046257	CMakeFiles/skeleton.dir/contracts.cpp.o	72074c9d1db24375
+23	854	1683320391163168653	CMakeFiles/skeleton.dir/MVM.cpp.o	4ae7c90d5d2b996c
+26	3167	1683320434009215175	CMakeFiles/skeleton.dir/contracts.cpp.o	72074c9d1db24375
+26	3177	1683320434035965188	CMakeFiles/skeleton.dir/MVM.cpp.o	4ae7c90d5d2b996c
+26	3236	1683320434098459461	CMakeFiles/skeleton.dir/clients.cpp.o	8f977d5aac547fe6
