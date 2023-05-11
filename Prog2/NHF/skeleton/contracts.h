@@ -8,19 +8,7 @@
 
 class Client;
 
-/** @enum ContractType
- * A szerződés fajtáját lehet beállítani vele
- */
-enum ContractType {
-    Regular,
-    VIP,
-    Premium,
-    Corporate,
-    Student,
-    SeniorCitizen,
-    Government,
-    Onetime
-};
+
 
 /**
  * @class Contract
@@ -35,6 +23,19 @@ enum ContractType {
  */
 class Contract {
 private:
+/** @enum ContractType
+ * A szerződés fajtáját lehet beállítani vele
+ */
+    enum ContractType {
+        Regular,
+        VIP,
+        Premium,
+        Corporate,
+        Student,
+        SeniorCitizen,
+        Government,
+        Onetime
+    };
     Client* client;
     ContractType contract_type;
     Contract_date contract_time;

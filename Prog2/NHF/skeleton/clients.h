@@ -70,7 +70,7 @@ public:
     /**@brief Destruktor
      *
      */
-    ~Person();
+    ~Person(){};
 };
 
 /**@brief Egy cég adatait tárolja
