@@ -8,7 +8,19 @@
 
 class Client;
 
-
+/** @enum ContractType
+ * A szerződés fajtáját lehet beállítani vele
+ */
+enum ContractType {
+    Regular,
+    VIP,
+    Premium,
+    Corporate,
+    Student,
+    SeniorCitizen,
+    Government,
+    Onetime
+};
 
 /**
  * @class Contract
@@ -23,19 +35,7 @@ class Client;
  */
 class Contract {
 private:
-/** @enum ContractType
- * A szerződés fajtáját lehet beállítani vele
- */
-    enum ContractType {
-        Regular,
-        VIP,
-        Premium,
-        Corporate,
-        Student,
-        SeniorCitizen,
-        Government,
-        Onetime
-    };
+
     Client* client;
     ContractType contract_type;
     Contract_date contract_time;
@@ -55,8 +55,8 @@ public:
      * @param balance_in Jelenlegi egyenleg
      * @param consumption_in Jelenlegi fogyasztás
      */
-    Contract(Client* client_in, ContractType ctype_in=ContractType::Onetime, Contract_date ctime_in= Contract_date(), time_t last_invoicing_in = time(nullptr),double tariff_in=0.0, double balance_in=0.0, double consumption_in=0.0)
-            :client(client_in), contract_type(ctype_in), contract_time(ctime_in), last_invoicing(last_invoicing_in), tariff(tariff_in), balance(balance_in), consumption(consumption_in)
+    Contract(Client* client_in, ContractType ctype_in, int year_begin, int month_begin, int day_begin, int year_end, int month_end, int day_end, time_t last_invoicing_in = time(nullptr),double tariff_in=0.0, double balance_in=0.0, double consumption_in=0.0)
+            :client(client_in), contract_type(ctype_in), contract_time(year_begin, month_begin, day_begin, year_end, month_end, day_end), last_invoicing(last_invoicing_in), tariff(tariff_in), balance(balance_in), consumption(consumption_in)
     {}
 
     // Setter functions

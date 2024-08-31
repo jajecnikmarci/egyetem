@@ -1,2 +1,16 @@
-﻿  Test.cpp
-  MVM.vcxproj -> C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\x64\Debug\MVM.exe
+﻿  MVM.cpp
+  Test.cpp
+  clients.cpp
+  contracts.cpp
+  date.cpp
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.cpp(20,12): error C2511: 'bool Date::operator ==(const Date &)': overloaded member function not found in 'Date'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.h(11,7): message : see declaration of 'Date'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.cpp(21,13): error C2597: illegal reference to non-static member 'Date::tp'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.h(13,43): message : see declaration of 'Date::tp'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.cpp(65,21): error C2511: 'bool Contract_date::contains(const Date &) const': overloaded member function not found in 'Contract_date'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.h(55,7): message : see declaration of 'Contract_date'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.cpp(66,24): error C2597: illegal reference to non-static member 'Contract_date::begin'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.h(57,10): message : see declaration of 'Contract_date::begin'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.cpp(66,44): error C2597: illegal reference to non-static member 'Contract_date::end'
+C:\Users\Marci\Documents\github\egyetem\Prog2\NHF\skeleton\date.h(58,10): message : see declaration of 'Contract_date::end'
+  Generating Code...
