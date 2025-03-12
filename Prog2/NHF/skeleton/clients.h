@@ -37,7 +37,7 @@ public:
     /**@brief Virtuális destruktor
      *
      */
-    virtual ~Client()=0;
+    virtual ~Client(){};
 };
 
 /**@brief Magánszemély adatait tárolja
@@ -70,7 +70,7 @@ public:
     /**@brief Destruktor
      *
      */
-    ~Person(){};
+    ~Person();
 };
 
 /**@brief Egy cég adatait tárolja

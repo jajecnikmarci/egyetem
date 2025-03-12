@@ -1,0 +1,3 @@
+C:/Users/Marci/Documents/github/egyetem/Prog2/NHF/skeleton/out/build/x64-Debug/CMakeFiles/skeleton.dir
+C:/Users/Marci/Documents/github/egyetem/Prog2/NHF/skeleton/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Marci/Documents/github/egyetem/Prog2/NHF/skeleton/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
